@@ -8,11 +8,11 @@ library("boot")
 # simulation settings
 
 N_sim <- 50
-N_bs <- 50
+N_bs <- NA
 n <- 100
 p <- 200
 sigma <- 0.5
-rho <- 0.5
+rho <- 0.2
 id <- FALSE
 normalize <- TRUE
 model_list <- list()
@@ -42,7 +42,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
 
         results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), FN = numeric(N_sim), FP = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim))
         for (i in 1:N_sim) {
-            if (i %% 1 == 0) {
+            if (i %% 20 == 0) {
                 print(paste("Round", i))
             }
             # generate data
@@ -71,18 +71,19 @@ for (tau in c(0.25, 0.5, 0.75)) {
         #--------------------------
         # bootstrap
 
+        if(!is.na(N_bs)){
+            med_stats <- function(data, i) {
+                apply(data[i, ], 2, median)
+            }
+            bootstrap_results <- boot(data = results_df, statistic = med_stats, R = N_bs)
 
-        # Define a function to calculate the median and standard deviation of the median
-        # med_stats <- function(data, i) {
-        #     apply(data[i, ], 2, median)
-        # }
-        # bootstrap_results <- boot(data = results_df, statistic = med_stats, R = N_bs)
-
-        # bootstrap_median <- apply(bootstrap_results$t, 2, mean)
-        # bootstrap_median_std <- apply(bootstrap_results$t, 2, sd)
-        bootstrap_median <- apply(results_df, 2, mean)
-        bootstrap_median_std <- apply(results_df, 2, sd)
-
+            bootstrap_median <- apply(bootstrap_results$t, 2, mean)
+            bootstrap_median_std <- apply(bootstrap_results$t, 2, sd)
+        }
+        else{
+            bootstrap_median <- apply(results_df, 2, mean)
+            bootstrap_median_std <- apply(results_df, 2, sd)
+        }
 
         #--------------------------
         # save results
