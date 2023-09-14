@@ -1,0 +1,207 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+
+Attaching package: 'boot'
+
+The following object is masked _by_ '.GlobalEnv':
+
+    tau
+
+[1] "results/eic/_n30_p50_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                          lambda        SE         PE FN        FP       linf
+bootstrap_median     0.134605219 2.5397077 0.47209341  1 9.6445000 0.82595128
+bootstrap_median_std 0.004864943 0.1096001 0.01488576  0 0.4828073 0.02970861
+Time difference of 34.9816 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/eic/_n30_p50_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                          lambda        SE       PE        FN        FP
+bootstrap_median     0.365596493 4.3960175 1.326599 2.6350000 5.1205000
+bootstrap_median_std 0.009274032 0.1203212 0.069169 0.4727563 0.3159582
+                           linf
+bootstrap_median     1.19990379
+bootstrap_median_std 0.01433509
+Time difference of 15.36326 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/eic/_n30_p50_tau1_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                         lambda        SE         PE        FN        FP
+bootstrap_median     0.97086863 6.8321346 3.60453602 4.2460000 2.0580000
+bootstrap_median_std 0.02775796 0.1385161 0.09931541 0.4203102 0.2273493
+                            linf
+bootstrap_median     1.402466578
+bootstrap_median_std 0.008550543
+Time difference of 9.134469 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coda/_n30_p50_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                          lambda         SE         PE FN         FP      linf
+bootstrap_median     0.110250956 2.66682796 0.47943424  1 11.5755000 0.8593101
+bootstrap_median_std 0.009168092 0.08997325 0.01570736  0  0.5237596 0.0291048
+Time difference of 43.51017 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coda/_n30_p50_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                         lambda        SE         PE         FN        FP
+bootstrap_median     0.27241557 4.5878242 1.28530125 2.00300000 7.9645000
+bootstrap_median_std 0.01189169 0.1153461 0.06421099 0.04993489 0.5918953
+                           linf
+bootstrap_median     1.19680199
+bootstrap_median_std 0.01834434
+Time difference of 22.0228 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coda/_n30_p50_tau1_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                         lambda        SE        PE FN        FP        linf
+bootstrap_median     0.72703775 6.8857215 3.5466382  4 4.0480000 1.400067249
+bootstrap_median_std 0.04211434 0.1016539 0.1075224  0 0.4414645 0.001068435
+Time difference of 6.944633 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coco/_n30_p50_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                          lambda        SE         PE        FN        FP
+bootstrap_median     0.152735883 2.8699518 0.51436160 1.9455000 8.8795000
+bootstrap_median_std 0.008348401 0.1243463 0.01633668 0.2175479 0.3198939
+                           linf
+bootstrap_median     0.95304157
+bootstrap_median_std 0.03455789
+Time difference of 5.987394 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coco/_n30_p50_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                         lambda        SE        PE FN        FP       linf
+bootstrap_median     0.37567951 4.9326956 1.4018346  3 4.9950000 1.23651299
+bootstrap_median_std 0.01345859 0.1402375 0.0487609  0 0.1717688 0.03394144
+Time difference of 4.562914 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "Round 120"
+[1] "Round 140"
+[1] "Round 160"
+[1] "Round 180"
+[1] "Round 200"
+[1] "Round 220"
+[1] "Round 240"
+[1] "Round 260"
+[1] "Round 280"
+[1] "Round 300"
+[1] "results/coco/_n30_p50_tau1_rho0.5_sigma0.5_idFALSE_Nsim300_Nbs1000_normTRUE"
+                         lambda       SE         PE FN        FP        linf
+bootstrap_median     0.99792906 6.978327 3.60235752  5 1.7005000 1.401278212
+bootstrap_median_std 0.02708356 0.116661 0.07797249  0 0.4463732 0.006237714
+Time difference of 5.20254 mins

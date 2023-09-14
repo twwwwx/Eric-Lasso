@@ -1,0 +1,115 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+norm/_n100_p200_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                          lambda         SE          PE FN        FP       linf
+bootstrap_median     0.087235405 0.61188927 0.221837644  0 28.110000 0.42977174
+bootstrap_median_std 0.002755866 0.02967891 0.008361393  0  1.138066 0.01646393
+Time difference of 3.249853 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+norm/_n100_p200_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                          lambda         SE          PE FN        FP       linf
+bootstrap_median     0.088022294 0.97473764 0.303659509  0 30.562500 0.53753448
+bootstrap_median_std 0.002796271 0.03962737 0.007498575  0  1.233436 0.01764677
+Time difference of 2.982742 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+norm/_n100_p200_tau0.25_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                          lambda         SE        PE FN         FP       linf
+bootstrap_median     0.079152176 0.63259543 0.2299393  0 30.9265000 0.43130132
+bootstrap_median_std 0.003550712 0.04068406 0.0105763  0  0.8683904 0.01710224
+Time difference of 28.54069 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+norm/_n100_p200_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                          lambda         SE         PE         FN         FP
+bootstrap_median     0.221277989 1.97879439 0.69513464 0.99800000 13.9745000
+bootstrap_median_std 0.006632165 0.08622647 0.03226227 0.03869751  0.5557955
+                             linf
+bootstrap_median     0.7999814252
+bootstrap_median_std 0.0004682633
+Time difference of 2.282739 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+norm/_n100_p200_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                        lambda         SE         PE FN        FP       linf
+bootstrap_median     0.1994020 2.73987418 1.00881243  1 20.843500 0.82251204
+bootstrap_median_std 0.0103654 0.06661453 0.03090743  0  1.226075 0.01475876
+Time difference of 1.754871 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+norm/_n100_p200_tau0.5_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                          lambda        SE         PE        FN         FP
+bootstrap_median     0.201637147 1.9397825 0.63735653 0.9965000 17.5520000
+bootstrap_median_std 0.004986725 0.1255113 0.02083895 0.0569297  0.8024587
+                            linf
+bootstrap_median     0.798626553
+bootstrap_median_std 0.007014323
+Time difference of 52.45439 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+norm/_n100_p200_tau1_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                         lambda        SE         PE        FN       FP
+bootstrap_median     0.57095379 4.6869299 2.44798221 2.9230000 6.272500
+bootstrap_median_std 0.01209501 0.1255541 0.06693169 0.2552178 0.599878
+                           linf
+bootstrap_median     1.22112305
+bootstrap_median_std 0.03335532
+Time difference of 1.898787 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+norm/_n100_p200_tau1_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                         lambda         SE         PE         FN        FP
+bootstrap_median     0.39313392 5.50257682 2.81205731 2.00150000 15.513000
+bootstrap_median_std 0.01793811 0.06457152 0.05463688 0.03534118  1.053062
+                          linf
+bootstrap_median     1.2390797
+bootstrap_median_std 0.0202699
+Time difference of 56.86723 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+norm/_n100_p200_tau1_rho0.5_sigma0.5_idFALSE_Nsim100_Nbs1000_normTRUE"
+                        lambda        SE         PE         FN        FP
+bootstrap_median     0.5658790 5.0236919 2.50833052 3.00150000 5.3685000
+bootstrap_median_std 0.0164932 0.1258812 0.06734274 0.03534118 0.5130507
+                           linf
+bootstrap_median     1.27771884
+bootstrap_median_std 0.04341715
+Time difference of 1.350934 hours
+Error: unexpected ',' in "FALSE,"
+Execution halted
