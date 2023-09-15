@@ -1,9 +1,10 @@
-library("MASS")
+library(MASS)
+library(dirmult)
 #--------------------------------------------
 # Generate data
 #--------------------------------------------
 
-generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type = "AR", id = TRUE, normalize = FALSE, type = 1) {
+generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type = "AR", id = TRUE, normalize = FALSE, type = "lognormal") {
     # n: number of rows
     # p: number of columns
     # beta_star: true beta
@@ -31,13 +32,15 @@ generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type
         B <- matrix(rnorm(n * p, mean = 0, sd = tau), nrow = n, ncol = p)
         Sig_B <- tau**2 * diag(p)
     }
-    if(type=1){
-    X <- exp(W) / rowSums(exp(W))}
-    else{
-        X=matrix(NA,n,p)
-        for(i in 1:n){
-            X[i,]=rdirichlet(1,alpha=rep(1/p,p))}
+    if (type == "lognormal") {
+        X <- exp(W) / rowSums(exp(W))
+    } else {
+        X <- matrix(NA, n, p)
+        for (i in 1:n) {
+            X[i, ] <- rdirichlet(1, alpha = rep(1 / p, p))
+            X[i, ][X[i, ] < 1e-10] <- 1e-10
         }
+    }
     if (normalize) {
         Z <- X * exp(B)
         Z <- Z / rowSums(Z)

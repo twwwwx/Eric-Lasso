@@ -6,13 +6,13 @@ library("boot")
 # --------------------------
 
 # simulation settings
-
-N_sim <- 50
+data_type <- "dirichlet"
+N_sim <- 100
 N_bs <- NA
 n <- 100
 p <- 200
 sigma <- 0.5
-rho <- 0.2
+rho <- 0.5
 id <- FALSE
 normalize <- TRUE
 model_list <- list()
@@ -48,7 +48,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
             # generate data
             beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
             theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
-            data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, id = id, normalize = normalize)
+            data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, id = id, normalize = normalize, type = data_type)
 
             # record time
             fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = proj, constrain = constrain)
@@ -71,7 +71,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
         #--------------------------
         # bootstrap
 
-        if(!is.na(N_bs)){
+        if (!is.na(N_bs)) {
             med_stats <- function(data, i) {
                 apply(data[i, ], 2, median)
             }
@@ -79,8 +79,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
 
             bootstrap_median <- apply(bootstrap_results$t, 2, mean)
             bootstrap_median_std <- apply(bootstrap_results$t, 2, sd)
-        }
-        else{
+        } else {
             bootstrap_median <- apply(results_df, 2, mean)
             bootstrap_median_std <- apply(results_df, 2, sd)
         }
@@ -89,7 +88,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
         # save results
         file_name <- "results/results_table.csv"
         if (!file.exists(file_name)) {
-            write.table(c("model", "n", "p", "N_sim", "N_bs", "tau", "rho", "lam", "SE", "PE", "FN", "FP", "l_inf", "FPR", "FNR"),
+            write.table(c("model", "data_type", "n", "p", "N_sim", "N_bs", "tau", "rho", "lam", "SE", "PE", "FN", "FP", "l_inf", "FPR", "FNR"),
                 file = file_name, sep = ",", row.names = FALSE, col.names = FALSE
             )
         }
@@ -101,7 +100,7 @@ for (tau in c(0.25, 0.5, 0.75)) {
         l_inf_value <- paste0(round(bootstrap_median[6], 2), "(", round(bootstrap_median_std[6], 2), ")")
         FPR_value <- paste0(round(bootstrap_median[7], 2), "(", round(bootstrap_median_std[7], 2), ")")
         FNR_value <- paste0(round(bootstrap_median[8], 2), "(", round(bootstrap_median_std[8], 2), ")")
-        values <- t(as.matrix(c(model_name, n, p, N_sim, N_bs, tau, rho, lam_value, SE_value, PE_value, FN_value, FP_value, l_inf_value, FPR_value, FNR_value)))
+        values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, N_bs, tau, rho, lam_value, SE_value, PE_value, FN_value, FP_value, l_inf_value, FPR_value, FNR_value)))
 
         write.table(values,
             file = file_name, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
