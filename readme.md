@@ -39,8 +39,7 @@ install.packages("MASS","boot","rlist","emdbook")
 - `rho`: correlation
 - `tau`: sdandard deviation of measurement error
 - `sigma`: sdandard deviation of true covariance matrix
-- `id`: measurements identification
-- `norm`: normalize `Z` or not
+
 
 3. simulation parameters:
 - `N_sim`: number of simulations
@@ -48,3 +47,4 @@ install.packages("MASS","boot","rlist","emdbook")
   
 ### Outputs
 Files will be automatedly saved in `results/results_table.csv`.
+The output log will be automatedly saved in `results/month_day_hour.log`.
