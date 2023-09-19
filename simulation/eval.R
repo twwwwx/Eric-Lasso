@@ -6,13 +6,14 @@ library("boot")
 # --------------------------
 
 # simulation settings
+# data_type <- "lognormal"
 data_type <- "dirichlet"
 N_sim <- 100
-n <- 100
+n <- 50
 # p <- 20
 sigma <- 0.5
 rho <- 0.5
-tau <- 0.5
+tau <- 1
 
 # model settings
 model_list <- list()
@@ -20,7 +21,7 @@ model_list[["eic"]] <- c(TRUE, TRUE)
 model_list[["coda"]] <- c(TRUE, FALSE)
 model_list[["coco"]] <- c(FALSE, TRUE)
 # --------------------------
-for (p in c(20, 50, 100, 200)) {
+for (p in c(50)) {
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
@@ -35,7 +36,7 @@ for (p in c(20, 50, 100, 200)) {
         start_time <- Sys.time()
         set.seed(1234567)
 
-        results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim))
+        results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim),sum_beta = numeric(N_sim))
         for (i in 1:N_sim) {
             if (i %% 20 == 0) {
                 print(paste("Round", i))
@@ -52,7 +53,7 @@ for (p in c(20, 50, 100, 200)) {
             results_df$lambda[i] <- fit_additive$lambda.opt
 
             centered_X <- data$X - rep(fit_additive$mean.Z, each = n)
-            measures <- eval_results(fit_additive$beta, centered_X, beta_star)
+            measures <- eval_results(fit_additive$beta.opt, centered_X, beta_star)
             results_df$SE[i] <- measures$SE
             results_df$PE[i] <- measures$PE
             # results_df$FN[i] <- measures$FN
@@ -60,35 +61,47 @@ for (p in c(20, 50, 100, 200)) {
             results_df$FPR[i] <- measures$FPR
             results_df$FNR[i] <- measures$FNR
             results_df$linf[i] <- measures$l_inf
+            results_df$sum_beta[i] <- sum(fit_additive$beta.opt)
         }
         runtime <- Sys.time() - start_time
 
         #--------------------------
-        # bootstrap
+        # bootstrap and p value
 
         bootstrap_mean <- apply(results_df, 2, mean)
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
+        p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
 
 
         #--------------------------
         # save results
         file_name <- "results/results_table.csv"
-        if (!file.exists(file_name)) {
-            colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR"))
-            write.table(colname,
+        file_name_sum <- "results/results_sum.csv"
+        colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR"))
+        write.table(colname,
                 file = file_name, sep = ",", row.names = FALSE, col.names = FALSE
             )
-        }
+
+        colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "sum","p value"))
+        write.table(colname,
+            file = file_name_sum, sep = ",", row.names = FALSE, col.names = FALSE
+        )
+
         lam_value <- round(bootstrap_mean[1], 2)
-        SE_value <- paste0(round(bootstrap_mean[2], 2), "(", round(bootstrap_mean_std[2], 2), ")")
-        PE_value <- paste0(round(bootstrap_mean[3], 2), "(", round(bootstrap_mean_std[3], 2), ")")
-        l_inf_value <- paste0(round(bootstrap_mean[4], 2), "(", round(bootstrap_mean_std[4], 2), ")")
-        FPR_value <- paste0(round(bootstrap_mean[5], 2), "(", round(bootstrap_mean_std[5], 2), ")")
-        FNR_value <- paste0(round(bootstrap_mean[6], 2), "(", round(bootstrap_mean_std[6], 2), ")")
+        SE_value <- paste0(round(bootstrap_mean[2], 4), "(", round(bootstrap_mean_std[2], 4), ")")
+        PE_value <- paste0(round(bootstrap_mean[3], 4), "(", round(bootstrap_mean_std[3], 4), ")")
+        l_inf_value <- paste0(round(bootstrap_mean[4], 4), "(", round(bootstrap_mean_std[4], 4), ")")
+        FPR_value <- paste0(round(bootstrap_mean[5], 4), "(", round(bootstrap_mean_std[5], 4), ")")
+        FNR_value <- paste0(round(bootstrap_mean[6], 4), "(", round(bootstrap_mean_std[6], 4), ")")
         values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value)))
+        sum_value <- paste0(round(bootstrap_mean[7], 4), "(", round(bootstrap_mean_std[7], 4), ")")
+        sum_values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, sum_value, p_value)))
 
         write.table(values,
             file = file_name, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+        )
+        write.table(sum_values,
+            file = file_name_sum, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
         )
 
         # print results
@@ -99,5 +112,6 @@ for (p in c(20, 50, 100, 200)) {
 
         print(runtime)
     }
-    cat("\n", file = "results/results_table.csv", append = TRUE)
+    cat("\n", file = file_name, append = TRUE)
+    cat("\n", file = file_name_sum, append = TRUE)
 }

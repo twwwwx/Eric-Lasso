@@ -1,0 +1,2 @@
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+coco,dirichlet,50,100,10,1,0.5,0.1579(0.1402),0.289391157287883

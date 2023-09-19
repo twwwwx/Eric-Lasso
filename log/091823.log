@@ -1,0 +1,32 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "results/eic/_n50_p100_tau1_rho0.5_sigma0.5_Nsim10"
+                      lambda         SE        PE       linf       FPR FNR
+bootstrap_mean     1.6824682 0.20502124 3.0073086 0.23229140 0.2414894   0
+bootstrap_mean_std 0.2353592 0.02538418 0.2600123 0.02134051 0.0232019   0
+                       sum_beta
+bootstrap_mean     2.683882e-07
+bootstrap_mean_std 5.367171e-07
+Time difference of 3.551666 mins
+[1] "results/coda/_n50_p100_tau1_rho0.5_sigma0.5_Nsim10"
+                      lambda         SE       PE       linf        FPR FNR
+bootstrap_mean     1.6371395 0.29385959 3.404263 0.28816554 0.24893617   0
+bootstrap_mean_std 0.1814018 0.03704713 0.213954 0.02945915 0.01877759   0
+                       sum_beta
+bootstrap_mean     2.321723e-07
+bootstrap_mean_std 2.446993e-07
+Time difference of 2.622362 mins
+[1] "results/coco/_n50_p100_tau1_rho0.5_sigma0.5_Nsim10"
+                      lambda        SE       PE       linf        FPR FNR
+bootstrap_mean     2.7647853 0.5274558 6.500132 0.36071116 0.18297872   0
+bootstrap_mean_std 0.8297201 0.2765432 3.436764 0.09057953 0.02150001   0
+                    sum_beta
+bootstrap_mean     0.1578703
+bootstrap_mean_std 0.1402347
+Time difference of 1.146508 mins
