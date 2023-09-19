@@ -1,2 +1,17 @@
 "model","data_type","n","p","N_sim","tau","rho","sum","p value"
-coco,dirichlet,50,100,10,1,0.5,0.1579(0.1402),0.289391157287883
+coco,dirichlet,50,50,2,0.5,0.5,0.0918(0.1486),0.647767640756807
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+eic,dirichlet,50,50,100,0.5,0.5,0(0),1.55553558540639e-09
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+coda,dirichlet,50,50,100,0.5,0.5,0(0),4.52026478871127e-09
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+coco,dirichlet,50,50,100,0.5,0.5,0.109(0.0073),3.15323538742282e-27
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+eic,dirichlet,50,50,100,0.5,0.5,0(0),0.980120707115477
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+coda,dirichlet,50,50,100,0.5,0.5,0(0),0.528039751040566
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+coco,dirichlet,50,50,100,0.5,0.5,-0.01(0.0131),0.446494793306865
+

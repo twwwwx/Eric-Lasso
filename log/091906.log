@@ -1,0 +1,47 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic/_n50_p50_tau0.5_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE        linf        FPR FNR
+bootstrap_mean     1.26103294 0.02456178 0.82381930 0.087368427 0.30159091   0
+bootstrap_mean_std 0.04095115 0.00120859 0.03002815 0.002508855 0.01102505   0
+                        sum_beta
+bootstrap_mean     -4.297021e-08
+bootstrap_mean_std  1.720142e-06
+Time difference of 13.84698 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda/_n50_p50_tau0.5_rho0.5_sigma0.5_Nsim100"
+                       lambda          SE         PE        linf       FPR FNR
+bootstrap_mean     1.25422532 0.030025727 0.92233132 0.096985050 0.3106818   0
+bootstrap_mean_std 0.04211108 0.001483758 0.03207558 0.002740211 0.0106652   0
+                       sum_beta
+bootstrap_mean     1.028146e-06
+bootstrap_mean_std 1.623638e-06
+Time difference of 13.18377 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco/_n50_p50_tau0.5_rho0.5_sigma0.5_Nsim100"
+                       lambda          SE         PE        linf        FPR FNR
+bootstrap_mean     1.19786249 0.025515316 0.83944139 0.089186488 0.29931818   0
+bootstrap_mean_std 0.03570121 0.001220052 0.02911559 0.002715765 0.01021543   0
+                      sum_beta
+bootstrap_mean     -0.01002267
+bootstrap_mean_std  0.01311319
+Time difference of 1.693781 mins
