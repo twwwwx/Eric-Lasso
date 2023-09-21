@@ -47,4 +47,8 @@ install.packages("MASS","boot","rlist","emdbook")
   
 ### Outputs
 Files will be automatedly saved in `results/results_table.csv`.
+If you are running it on linux, run the bash script
+```
+bash action.sh
+```
 The output log will be automatedly saved in `results/month_day_hour.log`.
