@@ -46,6 +46,52 @@ generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type
     return(list(X = X, Z = Z, y = y, Sig_B = Sig_B))
 }
 
+generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA) {
+    # n: number of rows
+    # p: number of columns
+    # beta_star: true beta
+    # sigma: noise level
+    # tau: sd of measurement eror
+    # rho: correlation between columns of W
+    # theta: mean of W
+
+    if (anyNA(theta)) theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
+    W <-  AR(n,p,rho) + rep(theta,each=n)
+    X <- exp(W) / rowSums(exp(W))
+
+    ## Count matrix simulated from community compositions
+    for(i in 1:nrow(W)){
+        nSeq <- rnbinom(1, mu = 10000, size = 25)
+        W[i, ] <- rmultinom(1, nSeq, prob=X[i, ])[, 1]
+        }
+    W=W+0.5   ## recommendated by 2023 BKA paper
+    Z=W / rowSums(W)
+
+    Z <- log(Z)
+    X <- log(X)
+    y <- X %*% beta_star + rnorm(n, sd = sigma)
+
+    return(list(X = X, Z = Z, y = y))
+}
+
+# Estimate the Sig_B through Monte-Carlo simulation
+
+MC_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK=10000 %/% p) {
+    varB <- matrix(NA, N_MK, p)
+    for(mk in 1:N_MK){
+        tmp_data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
+        B <- tmp_data$Z - tmp_data$X
+        for(i in 1:ncol(B)){
+            varB[mk,i]=var(B[,i])
+            }
+    }   
+    varB <- colMeans(varB)
+    varB[1:5] <- mean(varB[1:5])
+    varB[6:p] <- mean(varB[6:p])
+    Sig_B <- diag(varB)
+    return(Sig_B)
+}
+
 
 # Function to generate the covariance matrix with geometric decay
 AR_covariance_matrix <- function(n, rho) {

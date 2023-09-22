@@ -7,19 +7,24 @@ library("boot")
 
 # simulation settings
 # data_type <- "lognormal"
-data_type <- "dirichlet"
+# data_type <- "dirichlet"
+data_type <- "multinom"
 N_sim <- 100
 # n <- 50
-p <- 50
+# p <- 50
+# create a list of different n and p values
+np_list <- list(c(500, 200), c(50, 50), c(500, 500))
+
 sigma <- 0.5
 rho <- 0.5
 tau <- 0.5
 
+
 # model settings
 model_list <- list()
 model_list[["eic"]] <- c(TRUE, TRUE)
-# model_list[["coda"]] <- c(TRUE, FALSE)
-# model_list[["coco"]] <- c(FALSE, TRUE)
+model_list[["coda"]] <- c(TRUE, FALSE)
+model_list[["coco"]] <- c(FALSE, TRUE)
 # --------------------------
 file_name <- "results/results_table.csv"
 file_name_sum <- "results/results_sum.csv"
@@ -32,15 +37,22 @@ colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "sum", "p 
 write.table(colname,
     file = file_name_sum, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
 )
-for (n in c(50)) {
+for (np in np_list) {
+    n <- np[1]
+    p <- np[2]
+    beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
+    theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
 
         constrain <- model[1]
         proj <- model[2]
-        subdir <- paste0("results/", model_name, "/")
-        subdir_name <- paste0(subdir, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
+        subdir <- "results/"
+        subdir_name <- paste0(subdir, model_name,"+",data_type ,"_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
+        if(data_type == "multinom"){
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK=1000000 %/% p)
+        }
 
         # --------------------------
         # run lasso code
@@ -53,9 +65,14 @@ for (n in c(50)) {
                 print(paste("Round", i))
             }
             # generate data
-            beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
-            theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
-            data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
+
+            if (data_type == "multinom") {
+                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
+                data$Sig_B <- Sig_B_estimated
+                print(paste("estimated tau^2 is",Sig_B_estimated[6,6]))
+            } else {
+                data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
+            }
 
             # record time
             fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = proj, constrain = constrain)
@@ -83,7 +100,7 @@ for (n in c(50)) {
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
 
-        if (model_name == "coco") {
+        if (model_name == "coco" && data_type == "dirichlet") {
             tmp <- results_df$sum_beta
             save(tmp, file = paste0(subdir_name, ".RData"))
         }
