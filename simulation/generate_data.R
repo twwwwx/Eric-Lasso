@@ -34,6 +34,8 @@ generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type
             X[i, ] <- rdirichlet(1, alpha = rep(1 / p, p))
             X[i, ][X[i, ] < 1e-10] <- 1e-10
         }
+    } else {
+        stop("type must be either lognormal or dirichlet")
     }
     Z <- X * exp(B)
     Z <- Z / rowSums(Z)
@@ -46,7 +48,7 @@ generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type
     return(list(X = X, Z = Z, y = y, Sig_B = Sig_B))
 }
 
-generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA) {
+generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type = "multinom") {
     # n: number of rows
     # p: number of columns
     # beta_star: true beta
@@ -56,16 +58,28 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA) {
     # theta: mean of W
 
     if (anyNA(theta)) theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
-    W <-  AR(n,p,rho) + rep(theta,each=n)
+    W <- AR(n, p, rho) + rep(theta, each = n)
     X <- exp(W) / rowSums(exp(W))
 
     ## Count matrix simulated from community compositions
-    for(i in 1:nrow(W)){
-        nSeq <- rnbinom(1, mu = 10000, size = 25)
-        W[i, ] <- rmultinom(1, nSeq, prob=X[i, ])[, 1]
+    if (type == "multinom") {
+        for (i in 1:nrow(W)) {
+            # nSeq <- rnbinom(1, mu = 10000, size = 25)
+            nSeq <- rnbinom(1, prob = 0.01, size = 300 / 0.99)
+            W[i, ] <- rmultinom(1, nSeq, prob = X[i, ])[, 1]
         }
-    W=W+0.5   ## recommendated by 2023 BKA paper
-    Z=W / rowSums(W)
+    } else if (type == "dirmult") {
+        for (i in 1:nrow(W)) {
+            Q <- rdirichlet(1, alpha = 1e+04 * X[i, ])
+            nSeq <- rnbinom(1, prob = 0.01, size = 300 / 0.99)
+            W[i, ] <- rmultinom(1, nSeq, prob = Q)[, 1]
+        }
+    } else {
+        stop("type must be either multinom or dirmult")
+    }
+
+    W <- W + 0.5 ## recommendated by 2023 BKA paper
+    Z <- W / rowSums(W)
 
     Z <- log(Z)
     X <- log(X)
@@ -76,15 +90,15 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA) {
 
 # Estimate the Sig_B through Monte-Carlo simulation
 
-MC_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK=10000 %/% p) {
+MC_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK = 10000 %/% p, type = "multinom") {
     varB <- matrix(NA, N_MK, p)
-    for(mk in 1:N_MK){
-        tmp_data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
+    for (mk in 1:N_MK) {
+        tmp_data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = type)
         B <- tmp_data$Z - tmp_data$X
-        for(i in 1:ncol(B)){
-            varB[mk,i]=var(B[,i])
-            }
-    }   
+        for (i in 1:ncol(B)) {
+            varB[mk, i] <- var(B[, i])
+        }
+    }
     varB <- colMeans(varB)
     varB[1:5] <- mean(varB[1:5])
     varB[6:p] <- mean(varB[6:p])

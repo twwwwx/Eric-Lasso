@@ -8,12 +8,13 @@ library("boot")
 # simulation settings
 # data_type <- "lognormal"
 # data_type <- "dirichlet"
-data_type <- "multinom"
+# data_type <- "multinom"
+data_type <- "dirmult"
 N_sim <- 100
 # n <- 50
 # p <- 50
 # create a list of different n and p values
-np_list <- list(c(500, 200), c(50, 50), c(500, 500))
+np_list <- list(c(50, 100), c(100, 200), c(50, 50))
 
 sigma <- 0.5
 rho <- 0.5
@@ -41,7 +42,7 @@ for (np in np_list) {
     n <- np[1]
     p <- np[2]
     beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
-    theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
+    theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
@@ -49,9 +50,10 @@ for (np in np_list) {
         constrain <- model[1]
         proj <- model[2]
         subdir <- "results/"
-        subdir_name <- paste0(subdir, model_name,"+",data_type ,"_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
-        if(data_type == "multinom"){
-            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK=1000000 %/% p)
+        subdir_name <- paste0(subdir, model_name, "+", data_type, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
+        if (data_type == "multinom" || data_type == "dirmult") {
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p)
+            print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
 
         # --------------------------
@@ -66,10 +68,9 @@ for (np in np_list) {
             }
             # generate data
 
-            if (data_type == "multinom") {
+            if (data_type == "multinom" || data_type == "dirmult") {
                 data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
                 data$Sig_B <- Sig_B_estimated
-                print(paste("estimated tau^2 is",Sig_B_estimated[6,6]))
             } else {
                 data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
             }
