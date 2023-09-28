@@ -14,7 +14,7 @@ N_sim <- 100
 # n <- 50
 # p <- 50
 # create a list of different n and p values
-np_list <- list(c(50, 100), c(100, 200), c(50, 50))
+np_list <- list(c(100, 200), c(500, 200), c(500, 500))
 
 sigma <- 0.5
 rho <- 0.5
@@ -50,11 +50,12 @@ for (np in np_list) {
         constrain <- model[1]
         proj <- model[2]
         subdir <- "results/"
-        subdir_name <- paste0(subdir, model_name, "+", data_type, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
         if (data_type == "multinom" || data_type == "dirmult") {
             Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p)
+            tau <- sqrt(Sig_B_estimated[6, 6])
             print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
+        subdir_name <- paste0(subdir, model_name, "+", data_type, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
 
         # --------------------------
         # run lasso code

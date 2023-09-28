@@ -64,13 +64,12 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type
     ## Count matrix simulated from community compositions
     if (type == "multinom") {
         for (i in 1:nrow(W)) {
-            # nSeq <- rnbinom(1, mu = 10000, size = 25)
-            nSeq <- rnbinom(1, prob = 0.01, size = 300 / 0.99)
+            nSeq <- rnbinom(1, mu = 10000, size = 25)
             W[i, ] <- rmultinom(1, nSeq, prob = X[i, ])[, 1]
         }
     } else if (type == "dirmult") {
         for (i in 1:nrow(W)) {
-            Q <- rdirichlet(1, alpha = 1e+04 * X[i, ])
+            Q <- rdirichlet(1, alpha = 5e+03 * X[i, ])
             nSeq <- rnbinom(1, prob = 0.01, size = 300 / 0.99)
             W[i, ] <- rmultinom(1, nSeq, prob = Q)[, 1]
         }

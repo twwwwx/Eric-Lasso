@@ -34,6 +34,7 @@ install.packages("MASS","boot","rlist","emdbook")
 - `constrain=F, proj=F`: vanilla lasso
 
 2. data parameters:
+-`data_type`: choose from "lognormal" "dirichlet" "multinom"
 - `n`: sample size
 - `p`: dimension
 - `rho`: correlation
@@ -47,6 +48,7 @@ install.packages("MASS","boot","rlist","emdbook")
   
 ### Outputs
 Files will be automatedly saved in `results/results_table.csv`.
+
 If you are running it on linux, run the bash script
 ```
 bash action.sh
