@@ -7,19 +7,15 @@ library("boot")
 
 # simulation settings
 # data_type <- "lognormal"
-# data_type <- "dirichlet"
+data_type <- "dirichlet"
 # data_type <- "multinom"
-data_type <- "dirmult"
-N_sim <- 100
-# n <- 50
-# p <- 50
-# create a list of different n and p values
-np_list <- list(c(50, 100), c(100, 200), c(50, 50))
+# data_type <- "dirmult"
+N_sim <- 500
+np_list <- list(c(500, 200))
 
 sigma <- 0.5
 rho <- 0.5
 tau <- 0.5
-
 
 # model settings
 model_list <- list()

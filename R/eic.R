@@ -319,7 +319,7 @@ eic <- function(Z,
     }
 
     ## Early stopping
-    if (abs(error - error_old) < optTol) {
+    if (abs(error - error_old) < optTol && i > 10) {
       print(paste("Early Stopping because of convergence of the error at", i, "iteration"))
       earlyStopping <- i
       break
