@@ -14,7 +14,7 @@ N_sim <- 100
 # n <- 50
 # p <- 50
 # create a list of different n and p values
-np_list <- list(c(100, 200), c(500, 200), c(500, 500))
+np_list <- list(c(100, 100), c(50, 100),c(50,50))
 
 sigma <- 0.5
 rho <- 0.5
@@ -51,7 +51,7 @@ for (np in np_list) {
         proj <- model[2]
         subdir <- "results/"
         if (data_type == "multinom" || data_type == "dirmult") {
-            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p)
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p,type=data_type,overdispersion=3e+3)
             tau <- sqrt(Sig_B_estimated[6, 6])
             print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
@@ -70,7 +70,7 @@ for (np in np_list) {
             # generate data
 
             if (data_type == "multinom" || data_type == "dirmult") {
-                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
+                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta,type=data_type,overdispersion=3e+3)
                 data$Sig_B <- Sig_B_estimated
             } else {
                 data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)

@@ -1,0 +1,134 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "estimated tau is 0.253628146821582"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+dirmult_n50_p50_tau0.253628146821582_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf        FPR
+bootstrap_mean     0.091838909 0.99832263 0.30219321 0.53883505 0.30500000
+bootstrap_mean_std 0.005311317 0.06625839 0.02116426 0.01866636 0.01108793
+                           FNR      sum_beta
+bootstrap_mean     0.040000000 -2.048142e-08
+bootstrap_mean_std 0.009511054  2.090584e-08
+Time difference of 8.973942 mins
+[1] "estimated tau is 0.253402429386529"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+dirmult_n50_p50_tau0.253402429386529_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf        FPR
+bootstrap_mean     0.070242607 1.08344657 0.32136950 0.53755793 0.39681818
+bootstrap_mean_std 0.005572764 0.07077078 0.02179657 0.01885874 0.01445875
+                           FNR      sum_beta
+bootstrap_mean     0.033333333 -3.564154e-08
+bootstrap_mean_std 0.009767212  2.264856e-08
+Time difference of 10.42389 mins
+[1] "estimated tau is 0.253402429386529"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+dirmult_n50_p50_tau0.253402429386529_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE        PE       linf         FPR
+bootstrap_mean     0.085476195 1.08433714 0.2908489 0.57161017 0.299772727
+bootstrap_mean_std 0.003186386 0.06261544 0.0119491 0.01710031 0.009498963
+                           FNR   sum_beta
+bootstrap_mean     0.033333333 -0.4338272
+bootstrap_mean_std 0.007856742  0.0628524
+Time difference of 1.971982 mins
+[1] "estimated tau is 0.373671271774052"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+dirmult_n50_p100_tau0.373671271774052_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE        PE      linf         FPR
+bootstrap_mean     0.20701115 2.6745822 0.7066046 0.8877586 0.140744681
+bootstrap_mean_std 0.01043032 0.1086488 0.0425282 0.0177218 0.005775314
+                          FNR      sum_beta
+bootstrap_mean     0.21333333 -3.851621e-08
+bootstrap_mean_std 0.01642587  3.150981e-08
+Time difference of 31.90901 mins
+[1] "estimated tau is 0.373491847691297"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+dirmult_n50_p100_tau0.373491847691297_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE         PE       linf         FPR
+bootstrap_mean     0.14081584 2.6258388 0.67593469 0.84780372 0.221914894
+bootstrap_mean_std 0.01192312 0.1161914 0.04517836 0.02111042 0.009968169
+                          FNR     sum_beta
+bootstrap_mean     0.15833333 2.005743e-08
+bootstrap_mean_std 0.01647618 2.719960e-08
+Time difference of 54.59201 mins
+[1] "estimated tau is 0.373491847691297"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+dirmult_n50_p100_tau0.373491847691297_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE         PE       linf         FPR
+bootstrap_mean     0.20436775 2.8801698 0.71965298 0.92892209 0.141595745
+bootstrap_mean_std 0.01015975 0.1154632 0.04467721 0.01912644 0.005315268
+                          FNR   sum_beta
+bootstrap_mean     0.25666667 -0.6872038
+bootstrap_mean_std 0.01648385  0.0631123
+Time difference of 6.732488 mins
+[1] "estimated tau is 0.373548155691273"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+dirmult_n100_p100_tau0.373548155691273_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE      linf        FPR
+bootstrap_mean     0.124305632 0.90438094 0.33686328 0.5393998 0.15872340
+bootstrap_mean_std 0.002495446 0.04216369 0.01249361 0.0136020 0.00544275
+                           FNR     sum_beta
+bootstrap_mean     0.013333333 3.588744e-08
+bootstrap_mean_std 0.004544332 2.883425e-08
+Time difference of 26.38528 mins
+[1] "estimated tau is 0.373501681327007"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+dirmult_n100_p100_tau0.373501681327007_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE        PE       linf         FPR
+bootstrap_mean     0.084421802 0.97046520 0.3780155 0.53470077 0.268191489
+bootstrap_mean_std 0.002678269 0.03555996 0.0111383 0.01256209 0.009104188
+                           FNR     sum_beta
+bootstrap_mean     0.001666667 6.913854e-09
+bootstrap_mean_std 0.001666667 2.676773e-08
+Time difference of 29.87868 mins
+[1] "estimated tau is 0.373501681327007"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+dirmult_n100_p100_tau0.373501681327007_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.120629663 0.98735984 0.35085130 0.55575823 0.164680851
+bootstrap_mean_std 0.002418359 0.04895292 0.01400506 0.01298599 0.005219308
+                           FNR    sum_beta
+bootstrap_mean     0.013333333 -0.49990901
+bootstrap_mean_std 0.004544332  0.05367442
+Time difference of 5.933242 mins

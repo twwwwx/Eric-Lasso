@@ -48,7 +48,7 @@ generate_data <- function(n, p, beta_star, sigma, tau, rho, theta = NA, cov_type
     return(list(X = X, Z = Z, y = y, Sig_B = Sig_B))
 }
 
-generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type = "multinom") {
+generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type = "multinom",overdispersion=5e+3 ) {
     # n: number of rows
     # p: number of columns
     # beta_star: true beta
@@ -69,7 +69,7 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type
         }
     } else if (type == "dirmult") {
         for (i in 1:nrow(W)) {
-            Q <- rdirichlet(1, alpha = 5e+03 * X[i, ])
+            Q <- rdirichlet(1, alpha = overdispersion * X[i, ])
             nSeq <- rnbinom(1, prob = 0.01, size = 300 / 0.99)
             W[i, ] <- rmultinom(1, nSeq, prob = Q)[, 1]
         }
@@ -89,10 +89,10 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type
 
 # Estimate the Sig_B through Monte-Carlo simulation
 
-MC_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK = 10000 %/% p, type = "multinom") {
+MC_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK = 10000 %/% p, type = "multinom",overdispersion=5e+3) {
     varB <- matrix(NA, N_MK, p)
     for (mk in 1:N_MK) {
-        tmp_data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = type)
+        tmp_data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = type,overdispersion=overdispersion)
         B <- tmp_data$Z - tmp_data$X
         for (i in 1:ncol(B)) {
             varB[mk, i] <- var(B[, i])

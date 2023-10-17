@@ -19,7 +19,7 @@ For the simulation, we only need to run `eval.R`.
 
 required R package:
 ```
-install.packages("MASS","boot","rlist","emdbook")
+install.packages("MASS","boot","rlist","emdbook","rdirmult")
 ```
 ### Parameters in `eval.R`
 
@@ -34,7 +34,7 @@ install.packages("MASS","boot","rlist","emdbook")
 - `constrain=F, proj=F`: vanilla lasso
 
 2. data parameters:
--`data_type`: choose from "lognormal" "dirichlet" "multinom"
+- `data_type`: choose from "lognormal" "dirichlet" "multinom" "dirmult"
 - `n`: sample size
 - `p`: dimension
 - `rho`: correlation

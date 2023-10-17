@@ -1,6 +1,6 @@
 source("simulation/generate_data.R")
-n <- 100
-p <- 200
+n <- 50
+p <- 100
 beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
 theta <- c(rep(log(0.5 * p), 5), rep(0, p - 5))
 sigma <- 0.5
@@ -17,18 +17,14 @@ rho <- 0.5
 
 
 MC_gen_varB <- function(n, p, beta_star, sigma, rho, theta = NA, N_MK = 10000 %/% p) {
-    varB <- matrix(NA, N_MK, p)
+    varB <- array(NA, c(N_MK, p, p))
     for (mk in 1:N_MK) {
         tmp_data <- generate_dirmult_data(n, p, beta_star, sigma, rho, theta = theta)
         B <- tmp_data$Z - tmp_data$X
-        for (i in 1:ncol(B)) {
-            varB[mk, i] <- var(B[, i])
-        }
+        varB[mk,,] <- var(B)
     }
-    varB <- colMeans(varB)
-    varB[1:5] <- mean(varB[1:5])
-    varB[6:p] <- mean(varB[6:p])
-    Sig_B <- diag(varB)
+    Sig_B <- apply(varB, c(2, 3), mean)
+
     return(Sig_B)
 }
 
@@ -36,7 +32,7 @@ generate_dirmult_data <- function(n, p, beta_star, sigma, rho, theta = theta) {
     W <- AR(n, p, rho) + rep(theta, each = n)
     X <- exp(W) / rowSums(exp(W))
     for (i in 1:n) {
-        Q <- rdirichlet(1, alpha = 1e+04 * X[i, ])
+        Q <- rdirichlet(1, alpha = 5e+03 * X[i, ])
         nSeq <- rnbinom(n, prob = 0.01, size = 300 / 0.99)
         W[i, ] <- rmultinom(1, nSeq, prob = Q)[, 1]
     }
@@ -48,6 +44,6 @@ generate_dirmult_data <- function(n, p, beta_star, sigma, rho, theta = theta) {
     return(list(X = X, Z = Z, y = y))
 }
 
-# data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
-sig <- MC_gen_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p)
-sqrt(sig[c(1, 6), c(1, 6)])
+data <- generate_dirmult_data(n, p, beta_star, sigma, rho, theta = theta)
+sig <- MC_gen_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 10000 %/% p)
+sqrt(abs(sig[1:6,1:6]))

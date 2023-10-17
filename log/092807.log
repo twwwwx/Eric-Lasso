@@ -1,0 +1,86 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+lognormal_n500_p200_tau0.5_rho0.5_sigma0.5_Nsim100"
+                         lambda        SE          PE        linf         FPR
+bootstrap_mean     0.1058258918 0.3323290 0.164105279 0.336382676 0.094536082
+bootstrap_mean_std 0.0009499353 0.0124625 0.005015706 0.008133524 0.003645042
+                   FNR     sum_beta
+bootstrap_mean       0 6.012223e-09
+bootstrap_mean_std   0 2.898618e-08
+Time difference of 3.528771 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+lognormal_n500_p200_tau0.5_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE          PE       linf         FPR FNR
+bootstrap_mean     0.08820031 1.36039015 0.657721818 0.60542816 0.152164948   0
+bootstrap_mean_std 0.00125215 0.01661919 0.007701471 0.00529175 0.005659671   0
+                        sum_beta
+bootstrap_mean     -1.003528e-09
+bootstrap_mean_std  2.744413e-08
+Time difference of 3.046109 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+lognormal_n500_p200_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.104278511 0.32608422 0.169755729 0.354608745 0.100103093
+bootstrap_mean_std 0.001009606 0.01197275 0.005027242 0.008641889 0.003907964
+                   FNR   sum_beta
+bootstrap_mean       0 0.22567066
+bootstrap_mean_std   0 0.03760687
+Time difference of 18.53152 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.138000347 0.58652561 0.263668641 0.452784231 0.031133603
+bootstrap_mean_std 0.001119078 0.01472206 0.005799817 0.008157996 0.001384583
+                   FNR      sum_beta
+bootstrap_mean       0 -1.590334e-08
+bootstrap_mean_std   0  3.269573e-08
+Time difference of 11.01138 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.110927910 1.54427025 0.721768252 0.648938995 0.072348178
+bootstrap_mean_std 0.001304266 0.01635209 0.007220094 0.005279187 0.002675276
+                           FNR      sum_beta
+bootstrap_mean     0.001666667 -1.134438e-08
+bootstrap_mean_std 0.001666667  2.606312e-08
+Time difference of 12.26896 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim100"
+                      lambda         SE          PE        linf         FPR FNR
+bootstrap_mean     0.1349576 0.57010683 0.258782743 0.456705153 0.033238866   0
+bootstrap_mean_std 0.0011790 0.01421963 0.005621977 0.008223048 0.001565151   0
+                     sum_beta
+bootstrap_mean     0.06878108
+bootstrap_mean_std 0.03050915
+Time difference of 4.428179 hours
