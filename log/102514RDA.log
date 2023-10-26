@@ -1,0 +1,21 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "using (y2, otu1) to inference (y2, otu2)"
+[1] "centering and scaling X and Z"
+[1] "var(Z)-var(X) for Sig_B"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Eric"
+                       lambda       SE        PE      linf        FPR
+bootstrap_mean     0.48462075 9.282126 1.0656463 1.3426773 0.16370968
+bootstrap_mean_std 0.05573338 5.774659 0.3396309 0.3476855 0.02202428
+                          FNR      sum_beta
+bootstrap_mean     0.80000000 -8.242009e-08
+bootstrap_mean_std 0.09176629  4.394516e-08
+[1] "Round 10"

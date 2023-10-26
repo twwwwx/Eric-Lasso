@@ -1,0 +1,56 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Eric"
+                       lambda         SE        PE       linf         FPR
+bootstrap_mean     1.06912025 0.49082749 1.0305320 0.35877024 0.091896552
+bootstrap_mean_std 0.08864194 0.07306582 0.1327865 0.02581132 0.009432597
+                          FNR     sum_beta
+bootstrap_mean     0.76666667 7.900484e-06
+bootstrap_mean_std 0.02965324 3.457457e-06
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "CoDA"
+                       lambda         SE        PE       linf        FPR
+bootstrap_mean     0.52922812 0.77447207 2.1540906 0.42708949 0.13534483
+bootstrap_mean_std 0.09250931 0.08162482 0.2266811 0.02543406 0.01170987
+                          FNR     sum_beta
+bootstrap_mean     0.64222222 4.531496e-06
+bootstrap_mean_std 0.03147343 2.913098e-06
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "CoCo"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     1.03719093 0.9383578 3.8378618 0.53145199 0.08724138
+bootstrap_mean_std 0.07177407 0.1750628 0.8682433 0.05058083 0.00805927
+                          FNR  sum_beta
+bootstrap_mean     0.78222222 1.2807036
+bootstrap_mean_std 0.02498879 0.2253466
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Vani"
+                       lambda         SE        PE       linf        FPR
+bootstrap_mean     0.51171339 0.82186297 2.1403100 0.51498297 0.12379310
+bootstrap_mean_std 0.09928198 0.08123412 0.2544521 0.03600692 0.01000121
+                         FNR  sum_beta
+bootstrap_mean     0.6288889 0.8231312
+bootstrap_mean_std 0.0312033 0.1029100

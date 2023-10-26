@@ -81,7 +81,9 @@ generate_multinom_data <- function(n, p, beta_star, sigma, rho, theta = NA, type
     Z <- W / rowSums(W)
 
     Z <- log(Z)
+    # Z <- apply(Z, 2, function(x) x/sd(x))
     X <- log(X)
+    # X <- apply(X, 2, function(x) x/sd(x))
     y <- X %*% beta_star + rnorm(n, sd = sigma)
 
     return(list(X = X, Z = Z, y = y))
