@@ -1,0 +1,60 @@
+
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" [1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE      linf        FPR
+bootstrap_mean     0.171069569 1.05531148 0.43361131 0.5944482 0.04835025
+bootstrap_mean_std 0.002431082 0.03396568 0.01268183 0.0123198 0.00209586
+                           FNR      sum_beta
+bootstrap_mean     0.026666667 -2.239468e-08
+bootstrap_mean_std 0.006581953  3.177561e-08
+Time difference of 7.502293 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda        SE         PE        linf         FPR
+bootstrap_mean     0.141513926 1.9485239 0.82881292 0.727270816 0.086700508
+bootstrap_mean_std 0.002767163 0.0283557 0.01389144 0.006828783 0.003645981
+                          FNR      sum_beta
+bootstrap_mean     0.03000000 -3.015742e-08
+bootstrap_mean_std 0.00725517  2.431302e-08
+Time difference of 7.347168 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.162802898 1.03252218 0.41997282 0.58740312 0.055888325
+bootstrap_mean_std 0.002519149 0.03784329 0.01259344 0.01272561 0.002624776
+                           FNR    sum_beta
+bootstrap_mean     0.021666667 -0.04199111
+bootstrap_mean_std 0.006554186  0.04773666
+Time difference of 2.478683 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE        PE        linf         FPR
+bootstrap_mean     0.127298264 1.92068240 0.7835049 0.716085092 0.108426396
+bootstrap_mean_std 0.003156492 0.03270803 0.0152580 0.007184696 0.004781763
+                          FNR    sum_beta
+bootstrap_mean     0.03000000 -0.12538724
+bootstrap_mean_std 0.00725517  0.03921643
+Time difference of 12.6479 mins

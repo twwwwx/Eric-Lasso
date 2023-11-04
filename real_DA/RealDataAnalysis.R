@@ -1,7 +1,7 @@
 source("R/eic.R")
 source("simulation/generate_data.R")
-N_sim <- 100
-
+N_sim <- 10
+sink("real_DA/real_DA_results.txt")
 ##### read data #####
 ymat <- read.csv("real_DA/responses.csv", header = T)
 otu1 <- read.csv("real_DA/pouchmat.csv", header = T)
@@ -40,14 +40,14 @@ for (i in 1:nrow(otu2)) {
 #####  Using (y1,otu2) to inference (y1,otu1)
 ## or using (y2, otu1) to inference (y2, otu2)
 regressionlist <- c("y1~otu2", "y2~otu1")
-for(i in 1:2){
+for (i in 1:2) {
     print(regressionlist[i])
-    if(i==1){
+    if (i == 1) {
         print("Using (y1,otu2) to inference (y1,otu1)")
         y <- as.matrix(y1)
         X <- as.matrix(log(otu1))
         Z <- as.matrix(log(otu2))
-    }else{
+    } else {
         print("Using (y2, otu1) to inference (y2, otu2)")
         y <- as.matrix(y2)
         X <- as.matrix(log(otu2))
@@ -55,13 +55,13 @@ for(i in 1:2){
     }
 
     print("apply scale to X")
-    X <- apply(X, 2, function(x) (x-mean(x))/sd(x))
+    X <- apply(X, 2, function(x) (x - mean(x)) / sd(x))
     p <- ncol(X)
     print("apply scale to Z")
-    Z <- apply(Z, 2, function(x) (x-mean(x))/sd(x))
+    Z <- apply(Z, 2, function(x) (x - mean(x)) / sd(x))
     B <- Z - X
-    print("compute Sig_B by -var(B)")
-    Sig_B <- -t(B) %*% B / nrow(B)
+    print("compute Sig_B by var(B)")
+    Sig_B <- t(B) %*% B / nrow(B)
 
 
     # pad the matrix for 5-fold CV
@@ -84,8 +84,8 @@ for(i in 1:2){
     for (model_name in names(model_list)) {
         set.seed(123456)
         for (i in 1:N_sim) {
-            if(i%%10==0) print(paste("Round", i))  
-            ## bootstrapd
+            if (i %% 10 == 0) print(paste("Round", i))
+            ## bootstrap
             bs_ind <- sample(1:nrow(X), nrow(X) - nrow(X) %% 5, replace = TRUE)
             X. <- X[bs_ind, ]
             Z. <- Z[bs_ind, ]
@@ -112,3 +112,4 @@ for(i in 1:2){
         print(evals)
     }
 }
+sink()
