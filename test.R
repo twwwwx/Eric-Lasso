@@ -47,3 +47,16 @@ generate_dirmult_data <- function(n, p, beta_star, sigma, rho, theta = theta) {
 data <- generate_dirmult_data(n, p, beta_star, sigma, rho, theta = theta)
 sig <- MC_gen_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 10000 %/% p)
 sqrt(abs(sig[1:6,1:6]))
+
+
+N_MK <- 10000
+data <- generate_data(n, p, beta_star,0.5, 0.5, 0.5, theta = theta, type = "lognormal")
+varB <- array(NA, c(N_MK, p, p))
+varB2 <- array(NA, c(N_MK, p, p))
+for (mk in 1:N_MK) {
+    tmp_data <- generate_dirmult_data(n, p, beta_star, sigma, rho, theta = theta)
+    varB[mk,,] <- cov(tmp_data$Z) - cov(tmp_data$X)
+    varB2[mk,,] <- cov(tmp_data$Z - tmp_data$X)
+}
+Sig_B <- apply(varB, c(2, 3), mean)
+Sig_B2 <- apply(varB2, c(2, 3), mean)

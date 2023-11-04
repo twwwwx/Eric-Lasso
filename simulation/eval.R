@@ -9,13 +9,13 @@ library("boot")
 # data_type <- "lognormal"
 # data_type <- "dirichlet"
 # data_type <- "multinom"
-data_type <- "dirmult"
+# data_type <- "dirmult"
 N_sim <- 100
-# n <- 50
-# p <- 50
+n <- 500
+p <- 500
 # create a list of different n and p values
-np_list <- list(c(100, 100), c(50, 100),c(50,50))
-
+# np_list <- list(c(100, 200))
+data_list <- c("lognormal", "dirichlet")
 sigma <- 0.5
 rho <- 0.5
 tau <- 0.5
@@ -23,9 +23,10 @@ tau <- 0.5
 
 # model settings
 model_list <- list()
-model_list[["eic"]] <- c(TRUE, TRUE)
-model_list[["coda"]] <- c(TRUE, FALSE)
-model_list[["coco"]] <- c(FALSE, TRUE)
+# model_list[["Eric"]] <- c(TRUE, TRUE)
+# model_list[["CoDA"]] <- c(TRUE, FALSE)
+# model_list[["CoCo"]] <- c(FALSE, TRUE)
+model_list[["Vani"]] <- c(FALSE, FALSE)
 # --------------------------
 file_name <- "results/results_table.csv"
 file_name_sum <- "results/results_sum.csv"
@@ -38,9 +39,9 @@ colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "sum", "p 
 write.table(colname,
     file = file_name_sum, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
 )
-for (np in np_list) {
-    n <- np[1]
-    p <- np[2]
+for (data_type in data_list) {
+    # n <- np[1]
+    # p <- np[2]
     beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
     theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
     for (i in seq_along(model_list)) {
@@ -51,7 +52,7 @@ for (np in np_list) {
         proj <- model[2]
         subdir <- "results/"
         if (data_type == "multinom" || data_type == "dirmult") {
-            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p,type=data_type,overdispersion=3e+3)
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p,type=data_type,overdispersion=5e+3)
             tau <- sqrt(Sig_B_estimated[6, 6])
             print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
@@ -70,7 +71,7 @@ for (np in np_list) {
             # generate data
 
             if (data_type == "multinom" || data_type == "dirmult") {
-                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta,type=data_type,overdispersion=3e+3)
+                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta,type=data_type,overdispersion=5e+3)
                 data$Sig_B <- Sig_B_estimated
             } else {
                 data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
@@ -113,13 +114,13 @@ for (np in np_list) {
 
 
         lam_value <- round(bootstrap_mean[1], 2)
-        SE_value <- paste0(round(bootstrap_mean[2], 4), "(", round(bootstrap_mean_std[2], 4), ")")
-        PE_value <- paste0(round(bootstrap_mean[3], 4), "(", round(bootstrap_mean_std[3], 4), ")")
-        l_inf_value <- paste0(round(bootstrap_mean[4], 4), "(", round(bootstrap_mean_std[4], 4), ")")
-        FPR_value <- paste0(round(bootstrap_mean[5], 4), "(", round(bootstrap_mean_std[5], 4), ")")
-        FNR_value <- paste0(round(bootstrap_mean[6], 4), "(", round(bootstrap_mean_std[6], 4), ")")
+        SE_value <- paste0(round(bootstrap_mean[2], 3), "(", round(bootstrap_mean_std[2], 3), ")")
+        PE_value <- paste0(round(bootstrap_mean[3], 3), "(", round(bootstrap_mean_std[3], 3), ")")
+        l_inf_value <- paste0(round(bootstrap_mean[4], 3), "(", round(bootstrap_mean_std[4], 3), ")")
+        FPR_value <- paste0(round(bootstrap_mean[5], 3), "(", round(bootstrap_mean_std[5], 3), ")")
+        FNR_value <- paste0(round(bootstrap_mean[6], 3), "(", round(bootstrap_mean_std[6], 3), ")")
         values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value)))
-        sum_value <- paste0(round(bootstrap_mean[7], 10), "(", round(bootstrap_mean_std[7], 10), ")")
+        sum_value <- paste0(bootstrap_mean[7], "(", bootstrap_mean_std[7], ")")
         sum_values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, sum_value, p_value)))
 
         write.table(values,

@@ -1,0 +1,28 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "y1~otu2"
+[1] "Using (y1,otu2) to inference (y1,otu1)"
+[1] "apply scale to X"
+[1] "apply scale to Z"
+[1] "compute Sig_B by var(B)"
+  model   lambda       SE       PE     linf         FPR       FNR      sum_beta
+1  Eric 1.099092 2.811451 5.441013 0.896361 0.005593536 0.9333333 -3.079766e-07
+Time difference of 2.933134 hours
+  model   lambda       SE       PE     linf         FPR       FNR      sum_beta
+1  Eric 1.099092 2.811451 5.441013 0.896361 0.005593536 0.9333333 -3.079766e-07
+[1] "y2~otu1"
+[1] "Using (y2, otu1) to inference (y2, otu2)"
+[1] "apply scale to X"
+[1] "apply scale to Z"
+[1] "compute Sig_B by var(B)"
+  model    lambda         SE         PE     linf          FPR FNR     sum_beta
+1  Eric 0.9126151 0.01728872 0.02512046 0.108912 0.0006116208   1 6.621446e-06
+Time difference of 2.476972 hours
+  model    lambda         SE         PE     linf          FPR FNR     sum_beta
+1  Eric 0.9126151 0.01728872 0.02512046 0.108912 0.0006116208   1 6.621446e-06

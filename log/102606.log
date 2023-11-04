@@ -1,0 +1,60 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+dirichlet_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE         PE        linf         FPR
+bootstrap_mean     0.450260137 0.054515026 0.31906146 0.127041136 0.093959391
+bootstrap_mean_std 0.009763019 0.007733536 0.01170126 0.009575729 0.005277746
+                   FNR      sum_beta
+bootstrap_mean       0 -4.951079e-07
+bootstrap_mean_std   0  4.452242e-07
+Time difference of 4.128812 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+dirichlet_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE         PE      linf         FPR FNR
+bootstrap_mean     0.429231334 0.089807333 0.48113102 0.1739683 0.105837563   0
+bootstrap_mean_std 0.008951379 0.008591479 0.01130097 0.0103945 0.004997272   0
+                       sum_beta
+bootstrap_mean     6.763233e-08
+bootstrap_mean_std 3.466804e-07
+Time difference of 1.211231 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+dirichlet_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE         PE       linf         FPR
+bootstrap_mean     0.409319537 0.057724492 0.34017071 0.12672686 0.112005076
+bootstrap_mean_std 0.009902625 0.008442832 0.01313963 0.01034788 0.005928497
+                   FNR     sum_beta
+bootstrap_mean       0 -0.007880501
+bootstrap_mean_std   0  0.017315151
+Time difference of 2.698281 hours
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+dirichlet_n250_p400_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE         PE       linf         FPR
+bootstrap_mean     0.385835566 0.093227178 0.49234495 0.17230429 0.126878173
+bootstrap_mean_std 0.009141745 0.009515523 0.01210664 0.01121313 0.005804027
+                   FNR    sum_beta
+bootstrap_mean       0 -0.01176193
+bootstrap_mean_std   0  0.01769590
+Time difference of 5.313953 mins

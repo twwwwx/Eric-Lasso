@@ -1,0 +1,57 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+# the Sig_B is computed by cov(Z)-cov(X)
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Eric"
+                      lambda        SE        PE       linf         FPR
+bootstrap_mean     1.1002133 1.2809429 2.1296357 0.55301790 0.123716814
+bootstrap_mean_std 0.0313621 0.1098747 0.1198634 0.02689109 0.006252421
+                          FNR      sum_beta
+bootstrap_mean     0.60666667 -2.478790e-07
+bootstrap_mean_std 0.01283066  2.454329e-07
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "CoDA"
+                      lambda        SE        PE       linf         FPR
+bootstrap_mean     0.3597371 1.6310874 3.4583714 0.62987034 0.159823009
+bootstrap_mean_std 0.0726025 0.1167424 0.2377187 0.03069437 0.009284628
+                          FNR      sum_beta
+bootstrap_mean     0.53000000 -5.762478e-08
+bootstrap_mean_std 0.02086019  2.084170e-07
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "CoCo"
+                       lambda        SE        PE       linf         FPR
+bootstrap_mean     1.16320900 1.6609150 4.7506778 0.60266609 0.131504425
+bootstrap_mean_std 0.03937844 0.2051298 0.8278707 0.03463807 0.006979653
+                          FNR   sum_beta
+bootstrap_mean     0.61833333 -1.9023363
+bootstrap_mean_std 0.01369617  0.2060221
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Vani"
+                       lambda        SE        PE       linf         FPR
+bootstrap_mean     0.38267079 1.5586495 3.6039921 0.66065606 0.144247788
+bootstrap_mean_std 0.08009326 0.1079441 0.2660268 0.03554895 0.007810604
+                          FNR    sum_beta
+bootstrap_mean     0.53666667 0.004971109
+bootstrap_mean_std 0.02171241 0.122448878

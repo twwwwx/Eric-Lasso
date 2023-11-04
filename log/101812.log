@@ -1,0 +1,50 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "estimated tau is 0.769172480392073"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+dirmult_n200_p500_tau0.769172480392073_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE        linf         FPR
+bootstrap_mean     0.298750748 2.96062492 1.38781548 0.885492737 0.034838057
+bootstrap_mean_std 0.004174846 0.03972869 0.02296226 0.008871966 0.001505328
+                           FNR      sum_beta
+bootstrap_mean     0.203333333 -1.758753e-08
+bootstrap_mean_std 0.008061214  4.060896e-08
+Time difference of 10.3078 hours
+[1] "estimated tau is 0.769321248390641"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+dirmult_n200_p500_tau0.769321248390641_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE        linf         FPR
+bootstrap_mean     0.221756709 3.16068269 1.48857437 0.971781374 0.073623482
+bootstrap_mean_std 0.005711132 0.05366295 0.03132326 0.009806538 0.003704856
+                          FNR     sum_beta
+bootstrap_mean     0.14000000 2.235595e-08
+bootstrap_mean_std 0.01247219 3.657959e-08
+Time difference of 2.537604 hours
+[1] "estimated tau is 0.769321248390641"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+dirmult_n200_p500_tau0.769321248390641_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE        linf         FPR
+bootstrap_mean     0.287575283 3.16156996 1.38637647 0.911989723 0.040769231
+bootstrap_mean_std 0.004681037 0.04148337 0.02351746 0.009613848 0.001984857
+                           FNR    sum_beta
+bootstrap_mean     0.268333333 -0.64129385
+bootstrap_mean_std 0.009737002  0.03069936
+Time difference of 8.726028 hours
