@@ -142,3 +142,39 @@ bootstrap_mean     0.39666667 2.675261e-08 22.8172074 28.700000
 bootstrap_mean_std 0.01508632 1.246820e-07  0.3827743  1.174003
 [1] "CoCo"
 [1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 44.42508 mins
+[1] "CoCo"
+                       lambda       SE        PE      linf         FPR
+bootstrap_mean     1.45188563 6.546555 5.5760045 1.5637167 0.044354839
+bootstrap_mean_std 0.03490498 1.117954 0.4552585 0.1535653 0.003524573
+                          FNR  sum_beta        MSE   seleted
+bootstrap_mean     0.70444444 0.3659498 25.1897148 8.0700000
+bootstrap_mean_std 0.01121945 0.2349306  0.4263714 0.3426737
+[1] "Vani"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 18.72009 mins
+[1] "Vani"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.45328271 6.9868163 5.5675000 1.22232726 0.27919355
+bootstrap_mean_std 0.03673895 0.7409184 0.4135391 0.05834317 0.01519397
+                          FNR  sum_beta        MSE   seleted
+bootstrap_mean     0.39000000 0.8260204 23.0288391 28.290000
+bootstrap_mean_std 0.01686156 0.1147905  0.3317611  1.172349
