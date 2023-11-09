@@ -6,22 +6,27 @@ library("boot")
 # --------------------------
 
 # simulation settings
-# data_type <- "lognormal"
-data_type <- "dirichlet"
+data_type <- "lognormal"
+# data_type <- "dirichlet"
 # data_type <- "multinom"
 # data_type <- "dirmult"
-N_sim <- 500
-np_list <- list(c(500, 200))
+N_sim <- 100
+# n <- 50
+# p <- 50
+# create a list of different n and p values
+np_list <- list(c(100, 100))
 
 sigma <- 0.5
 rho <- 0.5
-tau <- 0.5
+tau <- 1.5
+
 
 # model settings
 model_list <- list()
-model_list[["eic"]] <- c(TRUE, TRUE)
-model_list[["coda"]] <- c(TRUE, FALSE)
-model_list[["coco"]] <- c(FALSE, TRUE)
+model_list[["Eric"]] <- c(TRUE, TRUE)
+# model_list[["CoDA"]] <- c(TRUE, FALSE)
+# model_list[["CoCo"]] <- c(FALSE, TRUE)
+# model_list[["Vani"]] <- c(FALSE, FALSE)
 # --------------------------
 file_name <- "results/results_table.csv"
 file_name_sum <- "results/results_sum.csv"
@@ -46,11 +51,12 @@ for (np in np_list) {
         constrain <- model[1]
         proj <- model[2]
         subdir <- "results/"
-        subdir_name <- paste0(subdir, model_name, "+", data_type, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
         if (data_type == "multinom" || data_type == "dirmult") {
-            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p)
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p, type = data_type, overdispersion = 5e+3)
+            tau <- sqrt(Sig_B_estimated[6, 6])
             print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
+        subdir_name <- paste0(subdir, model_name, "+", data_type, "_n", n, "_p", p, "_tau", tau, "_rho", rho, "_sigma", sigma, "_Nsim", N_sim)
 
         # --------------------------
         # run lasso code
@@ -65,7 +71,7 @@ for (np in np_list) {
             # generate data
 
             if (data_type == "multinom" || data_type == "dirmult") {
-                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta)
+                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = data_type, overdispersion = 5e+3)
                 data$Sig_B <- Sig_B_estimated
             } else {
                 data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
@@ -108,13 +114,13 @@ for (np in np_list) {
 
 
         lam_value <- round(bootstrap_mean[1], 2)
-        SE_value <- paste0(round(bootstrap_mean[2], 4), "(", round(bootstrap_mean_std[2], 4), ")")
-        PE_value <- paste0(round(bootstrap_mean[3], 4), "(", round(bootstrap_mean_std[3], 4), ")")
-        l_inf_value <- paste0(round(bootstrap_mean[4], 4), "(", round(bootstrap_mean_std[4], 4), ")")
-        FPR_value <- paste0(round(bootstrap_mean[5], 4), "(", round(bootstrap_mean_std[5], 4), ")")
-        FNR_value <- paste0(round(bootstrap_mean[6], 4), "(", round(bootstrap_mean_std[6], 4), ")")
+        SE_value <- paste0(round(bootstrap_mean[2], 3), "(", round(bootstrap_mean_std[2], 3), ")")
+        PE_value <- paste0(round(bootstrap_mean[3], 3), "(", round(bootstrap_mean_std[3], 3), ")")
+        l_inf_value <- paste0(round(bootstrap_mean[4], 3), "(", round(bootstrap_mean_std[4], 3), ")")
+        FPR_value <- paste0(round(bootstrap_mean[5], 3), "(", round(bootstrap_mean_std[5], 3), ")")
+        FNR_value <- paste0(round(bootstrap_mean[6], 3), "(", round(bootstrap_mean_std[6], 3), ")")
         values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value)))
-        sum_value <- paste0(round(bootstrap_mean[7], 10), "(", round(bootstrap_mean_std[7], 10), ")")
+        sum_value <- paste0(round(bootstrap_mean[7], 3), "(", round(bootstrap_mean_std[7], 3), ")")
         sum_values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, sum_value, p_value)))
 
         write.table(values,
