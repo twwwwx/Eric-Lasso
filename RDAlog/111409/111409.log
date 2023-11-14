@@ -1,0 +1,32 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.083174 hours
+[1] "Eric"
+                          lam       MSE        MAE  selected     sum_beta
+bootstrap_mean     1.74842173 23.916903 3.46761385 6.2100000 2.599516e-06
+bootstrap_mean_std 0.05785654  0.244933 0.01780147 0.3352355 7.165093e-07
+[1] "CoDA"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"

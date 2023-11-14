@@ -1,0 +1,92 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "Eric"
+[1] "Round 10"
+Time difference of 4.858053 mins
+[1] "Eric"
+                         lam       MSE  MSEout       MAE   MAEout selected
+bootstrap_mean     2.3656403 26.935257 33.0443 3.8045078 4.306048 7.600000
+bootstrap_mean_std 0.2335882  2.178148  0.0000 0.2137708 0.000000 1.284091
+                        sum_beta
+bootstrap_mean     -2.680932e-06
+bootstrap_mean_std  1.194795e-06
+[1] "CoDA"
+[1] "Round 10"
+Time difference of 5.797556 mins
+[1] "CoDA"
+                         lam       MSE   MSEout      MAE   MAEout  selected
+bootstrap_mean     1.2650129 20.719976 38.83199 3.395116 4.667351 15.400000
+bootstrap_mean_std 0.4177657  1.848541  0.00000 0.166810 0.000000  3.159465
+                        sum_beta
+bootstrap_mean     -5.232090e-07
+bootstrap_mean_std  2.670266e-06
+[1] "CoCo"
+[1] "Round 10"
+Time difference of 2.03972 mins
+[1] "CoCo"
+                         lam       MSE   MSEout       MAE   MAEout  selected
+bootstrap_mean     3.1558907 32.733134 37.18133 4.1202702 4.516095 4.8000000
+bootstrap_mean_std 0.4051574  3.416041  0.00000 0.2625021 0.000000 0.9285592
+                     sum_beta
+bootstrap_mean     -1.4292563
+bootstrap_mean_std  0.8129593
+[1] "Vani"
+[1] "Round 10"
+Time difference of 1.475178 mins
+[1] "Vani"
+                         lam       MSE   MSEout       MAE   MAEout  selected
+bootstrap_mean     1.0937464 20.587919 39.16434 3.3186704 4.597336 15.000000
+bootstrap_mean_std 0.3131909  1.295978  0.00000 0.1142929 0.000000  2.748737
+                     sum_beta
+bootstrap_mean     -1.2392438
+bootstrap_mean_std  0.5416841
+[1] "(y1,X,Z)"
+[1] "Using (y1, Z) to inference (y1, X)"
+[1] "Eric"
+[1] "Round 10"
+Time difference of 4.601071 mins
+[1] "Eric"
+                        lam       MSE  MSEout       MAE   MAEout selected
+bootstrap_mean     2.189805 24.084252 32.6386 3.5563170 4.291008 7.600000
+bootstrap_mean_std 0.190912  2.239728  0.0000 0.2241098 0.000000 1.343296
+                        sum_beta
+bootstrap_mean     -1.132228e-06
+bootstrap_mean_std  2.026223e-06
+[1] "CoDA"
+[1] "Round 10"
+Time difference of 6.674001 mins
+[1] "CoDA"
+                         lam       MSE   MSEout       MAE   MAEout  selected
+bootstrap_mean     1.0225043 17.871027 34.70903 3.1496855 4.380067 18.100000
+bootstrap_mean_std 0.3734637  1.512093  0.00000 0.1440426 0.000000  3.603856
+                       sum_beta
+bootstrap_mean     1.149952e-06
+bootstrap_mean_std 1.891487e-06
+[1] "CoCo"
+[1] "Round 10"
+Time difference of 2.373332 mins
+[1] "CoCo"
+                         lam       MSE   MSEout      MAE   MAEout selected
+bootstrap_mean     2.7223458 28.661112 32.50758 3.816713 4.151648 6.000000
+bootstrap_mean_std 0.4778648  3.215757  0.00000 0.260987 0.000000 1.256096
+                     sum_beta
+bootstrap_mean     -1.8093888
+bootstrap_mean_std  0.7654451
+[1] "Vani"
+[1] "Round 10"
+Time difference of 1.847103 mins
+[1] "Vani"
+                         lam       MSE  MSEout       MAE   MAEout  selected
+bootstrap_mean     0.9586409 18.518146 36.4276 3.1320539 4.485568 17.300000
+bootstrap_mean_std 0.3521386  1.317501  0.0000 0.1377309 0.000000  3.069745
+                     sum_beta
+bootstrap_mean     -1.6211559
+bootstrap_mean_std  0.7440542

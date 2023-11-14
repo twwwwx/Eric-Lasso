@@ -1,0 +1,43 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "N_sim= 100 K= 5"
+[1] 96  3
+[1] 96
+[1] 96 80
+[1]     0 11890
+[1] "perturb Z, 0.05~20"
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "compute Sig_B by var(B)"
+[1] "range of Sig_B"
+[1] "Use Sig_B for approximation"
+[1] 0.1511294
+[1] "No approximation"
+[1] 0.2019572
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.089553 hours
+[1] "Eric"
+                          MSE     MSEout weightedMSE       MAE     MAEout
+bootstrap_mean     22.4680218 33.0998674    29.47033 3.5383203 4.34315800
+bootstrap_mean_std  0.9114194  0.6720568     0.00000 0.0764246 0.04784097
+                   weightedMAE   selected     sum_beta
+bootstrap_mean        4.113612 10.3900000 5.955220e-08
+bootstrap_mean_std    0.000000  0.3923241 1.117577e-07
+[1] "CoDA"
+[1] "Round 10"

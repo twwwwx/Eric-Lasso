@@ -1,0 +1,58 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "Eric"
+[1] "get normed X"
+[1] "Round 10"
+Time difference of 9.026638 mins
+[1] "Eric"
+                         lam      MSE   MSEout      MAE   MAEout  selected
+bootstrap_mean     2.5182850 8538.041 36879.39 32.15323 56.40136 11.000000
+bootstrap_mean_std 0.2061689 8268.786     0.00 22.14896  0.00000  2.909754
+                        sum_beta
+bootstrap_mean     -6.143485e-06
+bootstrap_mean_std  6.818792e-06
+[1] "CoDA"
+[1] "get normed X"
+[1] "Round 10"
+Time difference of 7.431576 mins
+[1] "CoDA"
+                         lam       MSE   MSEout       MAE  MAEout  selected
+bootstrap_mean     0.9477575 23.904677 39.31794 3.6928534 4.62618 16.700000
+bootstrap_mean_std 0.3864094  2.210858  0.00000 0.1886605 0.00000  3.412559
+                        sum_beta
+bootstrap_mean     -5.850894e-07
+bootstrap_mean_std  6.574593e-07
+[1] "CoCo"
+[1] "get normed X"
+[1] "Round 10"
+Time difference of 3.88628 mins
+[1] "CoCo"
+                         lam      MSE   MSEout      MAE   MAEout selected
+bootstrap_mean     3.0840196 43605781 46688316 2565.177 2588.395 6.700000
+bootstrap_mean_std 0.2365234 41205949        0 2006.547    0.000 1.660321
+                    sum_beta
+bootstrap_mean     -452.0059
+bootstrap_mean_std  352.8633
+[1] "Vani"
+[1] "get normed X"
+[1] "Round 10"
+Time difference of 1.531369 mins
+[1] "Vani"
+                         lam      MSE   MSEout       MAE   MAEout  selected
+bootstrap_mean     0.9414146 326.5774 319.8926 14.056889 14.45053 17.100000
+bootstrap_mean_std 0.4236842 109.9406   0.0000  3.471072  0.00000  3.331499
+                     sum_beta
+bootstrap_mean     -2.1922162
+bootstrap_mean_std  0.8827874
+[1] "(y1,X,Z)"
+[1] "Using (y1, Z) to inference (y1, X)"
+[1] "Eric"
+[1] "get normed X"

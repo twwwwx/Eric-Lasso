@@ -1,0 +1,140 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.051002 hours
+[1] "Eric"
+                          lam        MSE       MAE  selected     sum_beta
+bootstrap_mean     1.76067051 23.9272736 3.4688398 6.1800000 2.047850e-06
+bootstrap_mean_std 0.06096117  0.2507275 0.0181415 0.3406411 5.946504e-07
+[1] "CoDA"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 21.77636 mins
+[1] "CoDA"
+                          lam        MSE        MAE   selected     sum_beta
+bootstrap_mean     1.31625513 22.7754746 3.38205856 11.6800000 2.356368e-06
+bootstrap_mean_std 0.06429552  0.2653161 0.01938848  0.7542312 6.991961e-07
+[1] "CoCo"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 28.25302 mins
+[1] "CoCo"
+                         lam        MSE        MAE  selected   sum_beta
+bootstrap_mean     2.1963358 25.3360987 3.61875144 3.3800000 0.45516440
+bootstrap_mean_std 0.0695164  0.2378402 0.01576017 0.2703458 0.07345099
+[1] "Vani"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 2.227922 mins
+[1] "Vani"
+                          lam       MSE        MAE   selected   sum_beta
+bootstrap_mean     1.46923255 23.130196 3.43436780 10.1100000 0.26169993
+bootstrap_mean_std 0.08363156  0.293707 0.02178079  0.7800408 0.04496744
+[1] "(y1,X,Z)"
+[1] "Using (y1, Z) to inference (y1, X)"
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.016791 hours
+[1] "Eric"
+                          lam        MSE        MAE  selected     sum_beta
+bootstrap_mean     1.82559883 23.1970946 3.45707553 5.6900000 2.971539e-06
+bootstrap_mean_std 0.05927804  0.2186712 0.01545688 0.3603295 7.243176e-07
+[1] "CoDA"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 20.79746 mins
+[1] "CoDA"
+                          lam        MSE        MAE   selected     sum_beta
+bootstrap_mean     1.39758294 22.0231868 3.36820370 10.5800000 2.999525e-06
+bootstrap_mean_std 0.07067925  0.2645078 0.01900477  0.7646456 8.065420e-07
+[1] "CoCo"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 28.08096 mins
+[1] "CoCo"
+                          lam        MSE        MAE  selected   sum_beta
+bootstrap_mean     2.11240808 24.1659744 3.55451873 3.2700000 0.25132576
+bootstrap_mean_std 0.05886108  0.1973048 0.01395004 0.3021322 0.06544669
+[1] "Vani"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 2.153208 mins
+[1] "Vani"
+                         lam        MSE        MAE  selected   sum_beta
+bootstrap_mean     1.5748694 22.5217091 3.42017170 8.6500000 0.12085731
+bootstrap_mean_std 0.0821966  0.2788368 0.02046215 0.7868073 0.04363952

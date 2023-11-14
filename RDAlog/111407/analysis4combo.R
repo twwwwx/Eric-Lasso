@@ -76,7 +76,7 @@ for (m in 1:2) {
         bs_inds <- matrix(NA, nrow = N_sim, ncol = N_bs - N_bs %% K)
         for (i in 1:N_sim) {
             if (i %% 10 == 0) print(paste("Round", i))
-            data <- get_data(X = X, y = y, y1 = y1, y_mode = m, min_perturb = 0.25, max_perturb = 4, K = K)
+            data <- get_data(X = X, y = y, y1 = y1, y_mode = m, min_perturb = 0.05, max_perturb = 20, K = K)
             # data <- get_norm_data(X = X, y = y, y1 = y1, y_mode = m, min_perturb = 0.1, max_perturb = 10, K = K)
             ## bootstrap
             bs_ind <- sample(1:N_bs, N_bs - N_bs %% K, replace = TRUE)

@@ -7,14 +7,14 @@ library("boot")
 
 # simulation settings
 # data_type <- "lognormal"
-# data_type <- "dirichlet"
+data_type <- "dirichlet"
 # data_type <- "multinom"
-data_type <- "dirmult"
+# data_type <- "dirmult"
 N_sim <- 100
-# n <- 50
-# p <- 50
+n <- 100
+p <- 100
 # create a list of different n and p values
-np_list <- list(c(500,500))
+# np_list <- list(c(100,200),c(250,400),c(500,500))
 
 sigma <- 0.5
 rho <- 0.5
@@ -24,8 +24,8 @@ tau <- 0.5
 # model settings
 model_list <- list()
 model_list[["Eric"]] <- c(TRUE, TRUE)
-model_list[["CoDA"]] <- c(TRUE, FALSE)
-model_list[["CoCo"]] <- c(FALSE, TRUE)
+model_list[["Coda"]] <- c(TRUE, FALSE)
+# model_list[["CoCo"]] <- c(FALSE, TRUE)
 model_list[["Vani"]] <- c(FALSE, FALSE)
 # --------------------------
 file_name <- "results/results_table.csv"
@@ -50,7 +50,7 @@ for (np in np_list) {
 
         constrain <- model[1]
         proj <- model[2]
-        subdir <- "results/"
+        subdir <- "data/"
         if (data_type == "multinom" || data_type == "dirmult") {
             Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p, type = data_type, overdispersion = 5e+3)
             tau <- sqrt(Sig_B_estimated[6, 6])
@@ -103,7 +103,7 @@ for (np in np_list) {
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
 
-        if (model_name == "coco" && data_type == "dirichlet") {
+        if (data_type == "dirichlet") {
             tmp <- results_df$sum_beta
             save(tmp, file = paste0(subdir_name, ".RData"))
         }
@@ -120,7 +120,7 @@ for (np in np_list) {
         FPR_value <- paste0(round(bootstrap_mean[5], 3), "(", round(bootstrap_mean_std[5], 3), ")")
         FNR_value <- paste0(round(bootstrap_mean[6], 3), "(", round(bootstrap_mean_std[6], 3), ")")
         values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value)))
-        sum_value <- paste0(round(bootstrap_mean[7], 3), "(", round(bootstrap_mean_std[7], 3), ")")
+        sum_value <- paste0(bootstrap_mean[7], "(", bootstrap_mean_std[7], ")")
         sum_values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, sum_value, p_value)))
 
         write.table(values,

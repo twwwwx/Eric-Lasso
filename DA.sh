@@ -1,3 +1,6 @@
 log_name=$(date +"%m%d%H")
-# Rscript real_DA/RealDataAnalysis.R > log/${log_name}RDA.log 2>&1 &
-Rscript real_DA/analysis4combo.R > RDAlog/${log_name}.log 2>&1 &
+mkdir -p RDAlog/${log_name}
+# file_name = "real_DA/analysis4combo.R"
+file_name="real_DA/analysis4combo_whole.R"
+cp ${file_name} RDAlog/${log_name}
+Rscript ${file_name} > RDAlog/${log_name}/${log_name}.log 2>&1 &
