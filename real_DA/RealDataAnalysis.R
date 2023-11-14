@@ -64,7 +64,6 @@ for(i in 1:2){
     Sig_B <- t(B) %*% B / nrow(B)
 
 
-
     # pad the matrix for 5-fold CV
     ind <- sample(1:nrow(X), 5 - nrow(X) %% 5)
     X.p <- rbind(X, X[ind, ])

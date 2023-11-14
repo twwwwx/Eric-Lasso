@@ -1,0 +1,50 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "estimated tau is 0.253533822583336"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/eic+dirmult_n100_p50_tau0.253533822583336_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.067375746 0.29983349 0.134595424 0.303451911 0.284772727
+bootstrap_mean_std 0.001437902 0.01547102 0.005068761 0.009615656 0.009725632
+                   FNR     sum_beta
+bootstrap_mean       0 7.524222e-08
+bootstrap_mean_std   0 3.538869e-08
+Time difference of 4.473787 mins
+[1] "estimated tau is 0.253683716776344"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coda+dirmult_n100_p50_tau0.253683716776344_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf        FPR
+bootstrap_mean     0.055989610 0.40102967 0.177057302 0.348231769 0.36727273
+bootstrap_mean_std 0.001710254 0.01704676 0.005619054 0.008632599 0.01310855
+                   FNR      sum_beta
+bootstrap_mean       0 -6.103903e-08
+bootstrap_mean_std   0  3.390483e-08
+Time difference of 4.466368 mins
+[1] "estimated tau is 0.253683716776344"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/coco+dirmult_n100_p50_tau0.253683716776344_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.066105070 0.31658403 0.139712740 0.312354466 0.287727273
+bootstrap_mean_std 0.001431347 0.01672983 0.005314053 0.009559537 0.009724372
+                   FNR    sum_beta
+bootstrap_mean       0 -0.19334148
+bootstrap_mean_std   0  0.03612217
+Time difference of 1.179086 mins

@@ -1,0 +1,111 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "y1~otu2"
+[1] "Using (y1,otu2) to inference (y1,otu1)"
+[1] "apply scale to X"
+[1] "apply scale to Z"
+[1] "compute Sig_B by -var(B)"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+[1] "Eric"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.15932947 5.0948878 2.7607627 0.89544656 0.40370690
+bootstrap_mean_std 0.02795394 0.3522183 0.1646314 0.03377176 0.01499671
+                          FNR      sum_beta
+bootstrap_mean     0.35222222 -3.073557e-09
+bootstrap_mean_std 0.01991721  1.345289e-08
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+[1] "CoDA"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.17959346 5.5962689 3.5610660 1.13139941 0.18913793
+bootstrap_mean_std 0.03038039 0.2639797 0.2497429 0.03511447 0.00668185
+                          FNR      sum_beta
+bootstrap_mean     0.66222222 -2.004274e-09
+bootstrap_mean_std 0.01339306  9.320563e-09
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+[1] "CoCo"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.16726223 4.0750309 2.3536369 0.85851985 0.36431034
+bootstrap_mean_std 0.02238329 0.2763975 0.1464767 0.02989735 0.01332282
+                          FNR   sum_beta
+bootstrap_mean     0.37222222 -0.3571657
+bootstrap_mean_std 0.02024756  0.1239662
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+[1] "Vani"
+                       lambda       SE        PE       linf         FPR
+bootstrap_mean     0.21816318 4.947333 3.4241694 1.10645104 0.162068966
+bootstrap_mean_std 0.02405626 0.236429 0.2648289 0.03587862 0.005739284
+                          FNR  sum_beta
+bootstrap_mean     0.69555556 0.9527726
+bootstrap_mean_std 0.01219413 0.1671340
+[1] "y2~otu1"
+[1] "Using (y2, otu1) to inference (y2, otu2)"
+[1] "apply scale to X"
+[1] "apply scale to Z"
+[1] "compute Sig_B by -var(B)"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+[1] "Eric"
+                       lambda        SE       PE       linf        FPR FNR
+bootstrap_mean     0.38943921 1.9594514 2.018785 0.50974498 0.30208000 NaN
+bootstrap_mean_std 0.04882882 0.2043927 0.200738 0.04072841 0.02323386  NA
+                      sum_beta
+bootstrap_mean     2.68225e-06
+bootstrap_mean_std 6.82949e-07
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"

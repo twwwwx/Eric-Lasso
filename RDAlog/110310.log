@@ -1,0 +1,114 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] 96  3
+[1] 96
+[1] 96 80
+[1]     0 11890
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "compute Sig_B by var(B)"
+[1] "range of Sig_B"
+[1] "Use Sig_B for approximation"
+[1] 0.1357121
+[1] "No approximation"
+[1] 0.2078588
+[1] "Eric"
+[1] "Round 100"
+Time difference of 1.362879 hours
+[1] "Eric"
+                       lambda       SE        PE      linf         FPR
+bootstrap_mean     1.33729425 4.277917 4.6829235 1.1814450 0.082812500
+bootstrap_mean_std 0.05054006 0.379297 0.1884465 0.0648884 0.004554078
+                          FNR      sum_beta        MSE    selected
+bootstrap_mean     0.64125000 -1.319357e-06 24.9455547 11.0400000
+bootstrap_mean_std 0.01503941  1.038606e-06  0.2445482  0.4403672
+[1] "CoDA"
+
+Time difference of 1.183603 hours
+[1] "CoDA"
+                       lambda        SE        PE       linf       FPR
+bootstrap_mean     0.47610834 8.5737315 7.0975783 1.28292842 0.3487500
+bootstrap_mean_std 0.05602109 0.8449657 0.4852012 0.04955681 0.0182378
+                          FNR      sum_beta        MSE   selected
+bootstrap_mean     0.35937500 -1.062433e-06 23.9606829 32.570000
+bootstrap_mean_std 0.01838609  8.768631e-07  0.4135145  1.385222
+[1] "CoCo"
+
+[1] "Round 100"
+Time difference of 39.0956 mins
+[1] "CoCo"
+                       lambda       SE        PE       linf         FPR
+bootstrap_mean     1.71731722 3.545128 5.3327202 1.05485483 0.058125000
+bootstrap_mean_std 0.07282283 0.367944 0.2296293 0.05507626 0.004578811
+                          FNR   sum_beta        MSE   selected
+bootstrap_mean     0.71312500 -0.4288603 26.4333418 8.3100000
+bootstrap_mean_std 0.01604167  0.1340123  0.2562849 0.4724095
+[1] "Vani"
+
+[1] "Round 100"
+Time difference of 22.62748 mins
+[1] "Vani"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.49452687 8.0018020 6.9892448 1.26068322 0.32765625
+bootstrap_mean_std 0.05666383 0.8057179 0.4752649 0.04961356 0.01695777
+                          FNR    sum_beta       MSE   selected
+bootstrap_mean     0.37375000 -0.49047554 24.044673 30.990000
+bootstrap_mean_std 0.01831309  0.08951601  0.390326  1.305195
+[1] "(y1,X,Z)"
+[1] "Using (y1, Z) to inference (y1, X)"
+[1] "compute Sig_B by var(B)"
+[1] "range of Sig_B"
+[1] "Use Sig_B for approximation"
+[1] 0.1357121
+[1] "No approximation"
+[1] 0.2078588
+[1] "Eric"
+
+[1] "Round 100"
+Time difference of 1.375007 hours
+[1] "Eric"
+                       lambda        SE        PE       linf         FPR
+bootstrap_mean     1.23086113 4.2147042 4.4144680 1.14099610 0.083548387
+bootstrap_mean_std 0.04674149 0.5028479 0.1905367 0.08076151 0.004552638
+                         FNR     sum_beta        MSE   selected
+bootstrap_mean     0.6361111 1.678151e-08 23.6981932 11.730000
+bootstrap_mean_std 0.0150108 3.477086e-07  0.2241176  0.428494
+[1] "CoDA"
+
+[1] "Round 100"
+Time difference of 1.230664 hours
+[1] "CoDA"
+                       lambda       SE        PE       linf        FPR
+bootstrap_mean     0.42741827 8.056806 6.5297213 1.17491937 0.33677419
+bootstrap_mean_std 0.04092906 0.921232 0.5126578 0.05029406 0.01764656
+                          FNR      sum_beta        MSE   selected
+bootstrap_mean     0.35777778 -2.114715e-07 22.8706758 32.440000
+bootstrap_mean_std 0.01683084  2.013990e-07  0.4164556  1.306651
+[1] "CoCo"
+
+[1] "Round 100"
+Time difference of 39.16303 mins
+[1] "CoCo"
+                      lambda        SE        PE       linf         FPR
+bootstrap_mean     1.5637080 3.0301392 4.8678620 0.97944416 0.057903226
+bootstrap_mean_std 0.0607895 0.2476574 0.2179741 0.04795902 0.003971322
+                          FNR   sum_beta        MSE   selected
+bootstrap_mean     0.70611111 -0.8139805 24.8622173 8.8800000
+bootstrap_mean_std 0.01467304  0.1320322  0.1994346 0.4269412
+[1] "Vani"
+
+[1] "Round 100"
+Time difference of 21.41803 mins
+[1] "Vani"
+                       lambda        SE        PE       linf        FPR
+bootstrap_mean     0.42946471 6.9714802 6.3098855 1.17421838 0.31854839
+bootstrap_mean_std 0.04009306 0.7352896 0.4524209 0.04405033 0.01539956
+                          FNR    sum_beta        MSE   selected
+bootstrap_mean     0.37277778 -0.87364867 22.7964847 31.040000
+bootstrap_mean_std 0.01630347  0.08599424  0.3802813  1.154081

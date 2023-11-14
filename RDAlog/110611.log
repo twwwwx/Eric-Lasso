@@ -1,0 +1,206 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "N_sim= 100 K= 5"
+[1] 96  3
+[1] 96
+[1] 96 80
+[1]     0 11890
+[1] "perturb Z, 0.2~5"
+[1] "(y,X,Z)"
+[1] "Using (y,Z) to inference (y,X)"
+[1] "compute Sig_B by var(B)"
+[1] "range of Sig_B"
+[1] "Use Sig_B for approximation"
+[1] 0.1181376
+[1] "No approximation"
+[1] 0.1525978
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 59.26542 mins
+[1] "Eric"
+                      lambda        SE        PE      linf         FPR
+bootstrap_mean     1.5982422 14.960723 8.3543370 2.1306178 0.088939394
+bootstrap_mean_std 0.1012143  2.600592 0.3890482 0.1970529 0.004691832
+                          FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.69285714 31.2315066 10.1700000 -0.02208749 4.12163734
+bootstrap_mean_std 0.01415889  0.4784641  0.4109745  0.01565830 0.04241704
+                       sum_beta
+bootstrap_mean     3.098580e-07
+bootstrap_mean_std 1.053951e-07
+[1] "CoDA"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.080661 hours
+[1] "CoDA"
+                      lambda         SE         PE       linf         FPR
+bootstrap_mean     0.7097879 10.9869825 12.9846010 1.66452976 0.206060606
+bootstrap_mean_std 0.1048149  0.7197624  0.7686501 0.07118938 0.009760087
+                          FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.50857143 33.8719175 20.4800000 -0.10849802 4.25518698
+bootstrap_mean_std 0.01900103  0.7637302  0.8485853  0.02499396 0.04865438
+                       sum_beta
+bootstrap_mean     1.445990e-07
+bootstrap_mean_std 1.125604e-07
+[1] "CoCo"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 22.21464 mins
+[1] "CoCo"
+                      lambda        SE        PE      linf         FPR
+bootstrap_mean     1.8215063 14.203554 11.077792 2.1593975 0.067727273
+bootstrap_mean_std 0.0773581  3.506139  1.301146 0.2447491 0.004336355
+                          FNR       MSE selected          R2        MAE
+bootstrap_mean     0.73857143 33.826731     8.13 -0.10701925 4.29739340
+bootstrap_mean_std 0.01236012  1.300014     0.37  0.04254446 0.07538199
+                    sum_beta
+bootstrap_mean     1.2778741
+bootstrap_mean_std 0.4086004
+[1] "Vani"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 13.87558 mins
+[1] "Vani"
+                       lambda        SE         PE       linf         FPR
+bootstrap_mean     0.74881935 9.5058943 11.6626199 1.56823690 0.182878788
+bootstrap_mean_std 0.09323058 0.6633329  0.6403499 0.07095396 0.008874725
+                         FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.5450000 32.6264806 18.4400000 -0.06773965 4.18335091
+bootstrap_mean_std 0.0170081  0.6051389  0.7642677  0.01980388 0.04301383
+                    sum_beta
+bootstrap_mean     0.4835075
+bootstrap_mean_std 0.1587445
+[1] "(y1,X,Z)"
+[1] "Using (y1, Z) to inference (y1, X)"
+[1] "compute Sig_B by var(B)"
+[1] "range of Sig_B"
+[1] "Use Sig_B for approximation"
+[1] 0.122218
+[1] "No approximation"
+[1] 0.1525978
+[1] "Eric"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.055617 hours
+[1] "Eric"
+                       lambda       SE        PE      linf         FPR
+bootstrap_mean     1.27861238 9.191885 6.2722226 1.8144156 0.104705882
+bootstrap_mean_std 0.06139997 1.147887 0.2757847 0.1335828 0.004464823
+                          FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.68583333 27.0744438 10.8900000 -0.02926384 3.90553244
+bootstrap_mean_std 0.01135187  0.3298712  0.3431568  0.01254040 0.03005923
+                        sum_beta
+bootstrap_mean     -3.232791e-08
+bootstrap_mean_std  2.261804e-07
+[1] "CoDA"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 1.047698 hours
+[1] "CoDA"
+                       lambda        SE         PE       linf        FPR
+bootstrap_mean     0.65800333 8.0212682 10.3178781 1.41604445 0.20397059
+bootstrap_mean_std 0.08670803 0.5610632  0.6608945 0.06227019 0.01004528
+                          FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.52583333 29.6403248 19.5600000 -0.12680854 4.02441336
+bootstrap_mean_std 0.01605332  0.6510228  0.7926837  0.02474932 0.04238443
+                       sum_beta
+bootstrap_mean     3.275792e-09
+bootstrap_mean_std 2.471457e-07
+[1] "CoCo"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 21.06733 mins
+[1] "CoCo"
+                       lambda       SE        PE      linf         FPR
+bootstrap_mean     1.56637356 9.031422 7.7450063 1.8687601 0.080000000
+bootstrap_mean_std 0.06447644 1.550115 0.7305414 0.1765747 0.004300539
+                          FNR        MSE  selected          R2        MAE
+bootstrap_mean     0.71416667 28.7080641 8.8700000 -0.09136765 4.03506278
+bootstrap_mean_std 0.01020655  0.7428512 0.3060518  0.02824028 0.05176589
+                    sum_beta
+bootstrap_mean     0.6694627
+bootstrap_mean_std 0.3347263
+[1] "Vani"
+[1] "Round 10"
+[1] "Round 20"
+[1] "Round 30"
+[1] "Round 40"
+[1] "Round 50"
+[1] "Round 60"
+[1] "Round 70"
+[1] "Round 80"
+[1] "Round 90"
+[1] "Round 100"
+Time difference of 12.536 mins
+[1] "Vani"
+                       lambda       SE        PE      linf         FPR
+bootstrap_mean     0.67666305 7.446282 9.8005203 1.4061612 0.190147059
+bootstrap_mean_std 0.07778781 0.541374 0.5885587 0.0676707 0.008739586
+                         FNR        MSE   selected          R2        MAE
+bootstrap_mean     0.5316667 29.1093247 18.5500000 -0.10662200 3.99232237
+bootstrap_mean_std 0.0173989  0.5474021  0.7310398  0.02081007 0.03999592
+                    sum_beta
+bootstrap_mean     0.1552762
+bootstrap_mean_std 0.1513539
