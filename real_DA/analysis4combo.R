@@ -1,9 +1,10 @@
 source("simulation/generate_data.R")
 source("R/eic.R")
-
+set.seed(123456)
 cov <- read.csv("real_DA/COV.csv", header = T)
 N_sim <- 100
 K <- 5
+print(paste("N_sim=", N_sim, "K=", K))
 dim(cov)
 ltn <- function(X) {
     return(matrix(as.numeric(unlist(X)), nrow = nrow(X), ncol = ncol(X)))
@@ -37,8 +38,9 @@ perturb <- function(a, b) {
 Z <- X
 n <- nrow(Z)
 p <- ncol(Z)
+print("perturb Z, 0.2~5")
 for (i in 1:n) {
-    U <- runif(p, min = 0.1, max = 10) ## measurement error factors
+    U <- runif(p, min = 0.2, max = 5) ## measurement error factors
     ## OR U=runif(p,min=0.01,max=100)
     Z[i, ] <- perturb(X[i, ], U)
 }
@@ -69,7 +71,6 @@ for (m in 1:2) {
     # print("apply scale to Z")
     # logZ <- apply(log(Z), 2, function(x) (x - mean(x)) / sd(x))
     logZ <- log(Z)
-    set.seed(123456)
     ind <- sample(1:nrow(X), K - nrow(X) %% K)
     X.p <- rbind(logX, logX[ind, ])
     Z.p <- rbind(logZ, logZ[ind, ])
@@ -106,7 +107,10 @@ for (m in 1:2) {
     model_list[["CoDA"]] <- c(TRUE, FALSE)
     model_list[["CoCo"]] <- c(FALSE, TRUE)
     model_list[["Vani"]] <- c(FALSE, FALSE)
-    results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim), sum_beta = numeric(N_sim), MSE = numeric(N_sim))
+    results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim), MSE = numeric(N_sim), selected=numeric(N_sim),R2=numeric(N_sim) ,MAE=numeric(N_sim),sum_beta = numeric(N_sim))
+    write.table(t(c("Model",colnames(results_df),"p value")),
+        file = "RDAlog/RDAresults.csv", quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+    )
     for (model_name in names(model_list)) {
         print(model_name)
         start_time <- Sys.time()
@@ -114,7 +118,8 @@ for (m in 1:2) {
         for (i in 1:N_sim) {
             if (i %% 10 == 0) print(paste("Round", i))
             ## bootstrapd
-            bs_ind <- sample(1:nrow(X), nrow(X) - nrow(X) %% K, replace = TRUE)
+            N_bs <- nrow(X) / 2
+            bs_ind <- sample(1:N_bs, N_bs - N_bs %% K, replace = TRUE)
             X. <- logX[bs_ind, ]
             Z. <- logZ[bs_ind, ]
             y. <- as.matrix(y[bs_ind, ])
@@ -122,7 +127,6 @@ for (m in 1:2) {
             fit <- eic(Z = Z., y = y., n = n., p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = K, mu = K, earlyStopping_max = 30, Sig_B = Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = model_list[[model_name]][2], constrain = model_list[[model_name]][1])
             centered_X <- X.p - rep(fit$mean.Z, each = n.p)
             measures <- eval_results(fit$beta.opt, centered_X, beta_star)
-            # results_df$model[i] <- model_name
             results_df$lambda[i] <- fit$lambda.opt
             results_df$SE[i] <- measures$SE
             results_df$PE[i] <- measures$PE
@@ -131,16 +135,28 @@ for (m in 1:2) {
             results_df$linf[i] <- measures$l_inf
 
             intercept <- fit$mean.y - fit$mean.Z %*% fit$beta.opt
-            y_pred <- X.p %*% fit$beta.opt + rep(intercept, each = n.p)
+            y_pred <- X. %*% fit$beta.opt + rep(intercept, each = n.p)
             results_df$sum_beta[i] <- sum(fit$beta.opt)
-            results_df$seleted[i] <- sum(fit$beta.opt != 0)
+            results_df$selected[i] <- sum(fit$beta.opt != 0)
             results_df$MSE[i] <- mean((y_pred - y.p)^2)
+            results_df$MAE[i] <- mean(abs(y_pred - y.))
+            results_df$R2[i] <- 1 - sum((y.p - y_pred)^2) / sum((y.p - mean(y.p))^2)
         }
         print(Sys.time() - start_time)
+        p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
         bootstrap_mean <- apply(results_df, 2, mean)
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         evals <- rbind(bootstrap_mean, bootstrap_mean_std)
         print(model_name)
         print(evals)
+        # save results
+        l <- length(colnames(results_df))
+        values <- sapply(c(1:ncol(evals))[-l], function(i) paste0(round(evals[1, i], 3), "(", round(evals[2, i], 3), ")"))
+        sum_value <- paste0(bootstrap_mean[l], "(", bootstrap_mean_std[l], ")")
+        values <- t(c(model_name,values, sum_value, p_value))
+        write.table(values,
+            file = "RDAlog/RDAresults.csv", quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+        )
     }
+    cat("\n", file = "RDAlog/RDAresults.csv", append = TRUE)
 }

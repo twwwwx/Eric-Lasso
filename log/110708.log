@@ -1,0 +1,372 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau0.1_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.051142912 0.22294129 0.091282961 0.252003269 0.236170213
+bootstrap_mean_std 0.001226018 0.01057311 0.003031076 0.006918926 0.007619051
+                   FNR TPR     sum_beta
+bootstrap_mean       0   1 2.806585e-08
+bootstrap_mean_std   0   0 2.636073e-08
+Time difference of 27.81409 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau0.1_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.051014028 0.26867061 0.103222515 0.277532223 0.243085106
+bootstrap_mean_std 0.001227087 0.01170229 0.003183454 0.006935243 0.007451221
+                   FNR TPR     sum_beta
+bootstrap_mean       0   1 2.190371e-08
+bootstrap_mean_std   0   0 2.248852e-08
+Time difference of 27.36712 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau0.1_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.048439351 0.23723227 0.095519434 0.261642467 0.246170213
+bootstrap_mean_std 0.001347693 0.01155248 0.003147969 0.007593384 0.008466223
+                   FNR TPR    sum_beta
+bootstrap_mean       0   1 -0.13323678
+bootstrap_mean_std   0   0  0.03520509
+Time difference of 4.093635 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau0.1_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.048403812 0.28394954 0.106557683 0.286274880 0.255212766
+bootstrap_mean_std 0.001341181 0.01258506 0.003225106 0.007454571 0.008151815
+                   FNR TPR    sum_beta
+bootstrap_mean       0   1 -0.15413234
+bootstrap_mean_std   0   0  0.03567677
+Time difference of 2.958539 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau0.3_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE       linf         FPR
+bootstrap_mean     0.101254970 0.65194793 0.245860527 0.44819897 0.186382979
+bootstrap_mean_std 0.002394466 0.03172092 0.008248069 0.01380778 0.006355122
+                           FNR         TPR      sum_beta
+bootstrap_mean     0.010000000 0.990000000 -1.720089e-08
+bootstrap_mean_std 0.003978054 0.003978054  2.651354e-08
+Time difference of 23.38513 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau0.3_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE        PE       linf         FPR
+bootstrap_mean     0.095884470 1.13152989 0.3888830 0.56188482 0.231382979
+bootstrap_mean_std 0.003242307 0.04044052 0.0114173 0.01258707 0.009170596
+                           FNR         TPR     sum_beta
+bootstrap_mean     0.013333333 0.986666667 5.047635e-10
+bootstrap_mean_std 0.004544332 0.004544332 3.015956e-08
+Time difference of 23.32171 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau0.3_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE       linf         FPR
+bootstrap_mean     0.094485251 0.65633075 0.247102434 0.44906133 0.202659574
+bootstrap_mean_std 0.002372884 0.03138429 0.007615136 0.01315501 0.007192036
+                           FNR        TPR    sum_beta
+bootstrap_mean     0.006666667 0.99333333 -0.10856002
+bootstrap_mean_std 0.003282440 0.00328244  0.05515054
+Time difference of 4.252908 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau0.3_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE          PE       linf         FPR
+bootstrap_mean     0.08942023 1.13689389 0.376465111 0.56442501 0.238510638
+bootstrap_mean_std 0.00279445 0.03836884 0.009172116 0.01126079 0.008454278
+                           FNR         TPR    sum_beta
+bootstrap_mean     0.008333333 0.991666667 -0.20603986
+bootstrap_mean_std 0.003650715 0.003650715  0.05302398
+Time difference of 2.729072 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.202590724 1.77852349 0.65504980 0.73730977 0.116914894
+bootstrap_mean_std 0.004317749 0.06375658 0.02212453 0.01473365 0.005122063
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.12833333 0.87166667 -1.829925e-08
+bootstrap_mean_std 0.01204532 0.01204532  4.687368e-08
+Time difference of 16.21499 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.170004813 2.54190987 0.97565632 0.82524593 0.184893617
+bootstrap_mean_std 0.005173032 0.05553054 0.02266367 0.01141995 0.008919601
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.11000000 0.89000000 -9.779253e-09
+bootstrap_mean_std 0.01065214 0.01065214  3.387689e-08
+Time difference of 13.73626 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE      linf         FPR
+bootstrap_mean     0.193015610 1.80981963 0.65267656 0.7509779 0.120744681
+bootstrap_mean_std 0.003899885 0.06782425 0.02032672 0.0151207 0.004981492
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.13500000 0.86500000 -0.13710824
+bootstrap_mean_std 0.01200799 0.01200799  0.07201619
+Time difference of 5.936244 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.158194958 2.56353291 0.94802564 0.82843447 0.197553191
+bootstrap_mean_std 0.005264565 0.06063378 0.02265294 0.01202533 0.009463689
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.12166667 0.87833333 -0.25353939
+bootstrap_mean_std 0.01181009 0.01181009  0.05546342
+Time difference of 2.166509 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.315585843 2.83390866 1.15585421 0.92237909 0.086170213
+bootstrap_mean_std 0.005490552 0.07964058 0.03254653 0.01581135 0.004030432
+                          FNR        TPR     sum_beta
+bootstrap_mean     0.25833333 0.74166667 6.672854e-08
+bootstrap_mean_std 0.01347879 0.01347879 6.544153e-08
+Time difference of 13.45872 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf       FPR
+bootstrap_mean     0.240989069 3.75739963 1.65588963 1.02091200 0.1667021
+bootstrap_mean_std 0.006871012 0.06131657 0.03444306 0.01369299 0.0084865
+                          FNR        TPR     sum_beta
+bootstrap_mean     0.19000000 0.81000000 3.123042e-08
+bootstrap_mean_std 0.01136577 0.01136577 5.511858e-08
+Time difference of 10.48155 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.308789341 2.97568999 1.21112164 0.95385047 0.089148936
+bootstrap_mean_std 0.006608483 0.09915082 0.04115013 0.01778364 0.004605662
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.28000000 0.72000000 -0.26053250
+bootstrap_mean_std 0.01457979 0.01457979  0.07486134
+Time difference of 5.066736 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE       linf         FPR
+bootstrap_mean     0.228306111 3.82958694 1.63632235 1.03441530 0.176276596
+bootstrap_mean_std 0.007218175 0.07285255 0.03582847 0.01470829 0.008970051
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.21000000 0.79000000 -0.30877552
+bootstrap_mean_std 0.01433525 0.01433525  0.05102206
+Time difference of 1.63412 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau0.9_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE         PE       linf         FPR
+bootstrap_mean     0.45062559 3.8862166 1.79165224 1.10725025 0.064893617
+bootstrap_mean_std 0.00729069 0.1054806 0.05239106 0.01950323 0.003293727
+                          FNR        TPR     sum_beta
+bootstrap_mean     0.35166667 0.64833333 8.327294e-08
+bootstrap_mean_std 0.01477383 0.01477383 6.764035e-08
+Time difference of 12.83881 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau0.9_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf         FPR
+bootstrap_mean     0.32161155 4.84299613 2.39714527 1.17613781 0.158404255
+bootstrap_mean_std 0.01099497 0.07658098 0.05190668 0.01415792 0.009672345
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.25833333 0.74166667 -1.944552e-07
+bootstrap_mean_std 0.01664561 0.01664561  1.135394e-07
+Time difference of 9.348282 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau0.9_rho0.5_sigma0.5_Nsim100"
+                        lambda       SE         PE       linf         FPR
+bootstrap_mean     0.459043331 4.133861 1.94919726 1.13810863 0.054468085
+bootstrap_mean_std 0.009304199 0.119819 0.06271271 0.02016212 0.003607717
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.43166667 0.56833333 -0.41333457
+bootstrap_mean_std 0.01851608 0.01851608  0.07397586
+Time difference of 7.640196 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau0.9_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf        FPR
+bootstrap_mean     0.32218596 4.93814859 2.42472384 1.18465379 0.15702128
+bootstrap_mean_std 0.01264782 0.08237496 0.05648273 0.01436807 0.01024317
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.31666667 0.68333333 -0.31190938
+bootstrap_mean_std 0.01931777 0.01931777  0.04435296
+Time difference of 1.171266 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau1.1_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE         PE      linf         FPR
+bootstrap_mean     0.60934175 4.8468731 2.52860773 1.2360352 0.049893617
+bootstrap_mean_std 0.01797376 0.1130831 0.07921824 0.0183938 0.002992565
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.44833333 0.55166667 -3.654240e-07
+bootstrap_mean_std 0.01547871 0.01547871  1.491775e-07
+Time difference of 15.3236 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau1.1_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf         FPR
+bootstrap_mean     0.39701128 5.62245824 3.03180439 1.26704696 0.153617021
+bootstrap_mean_std 0.01341537 0.06855084 0.05935859 0.01193802 0.009864764
+                         FNR       TPR      sum_beta
+bootstrap_mean     0.3133333 0.6866667 -5.623882e-07
+bootstrap_mean_std 0.0164600 0.0164600  1.660208e-07
+Time difference of 7.834778 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau1.1_rho0.5_sigma0.5_Nsim100"
+                      lambda        SE         PE       linf         FPR
+bootstrap_mean     0.6488763 5.1465501 2.82970693 1.27420879 0.034893617
+bootstrap_mean_std 0.0154692 0.1174556 0.08173321 0.01658628 0.002726244
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.55666667 0.44333333 -0.46848008
+bootstrap_mean_std 0.01913095 0.01913095  0.06360954
+Time difference of 10.38114 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau1.1_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf        FPR
+bootstrap_mean     0.40603666 5.69870809 3.09846081 1.27335937 0.14478723
+bootstrap_mean_std 0.01555127 0.07291603 0.06268767 0.01158157 0.01050518
+                         FNR       TPR    sum_beta
+bootstrap_mean     0.3666667 0.6333333 -0.26998783
+bootstrap_mean_std 0.0183494 0.0183494  0.03978717
+Time difference of 47.99776 secs
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Eric+lognormal_n100_p100_tau1.3_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE        PE       linf         FPR
+bootstrap_mean     0.78433826 5.7400052 3.2952126 1.32929770 0.040425532
+bootstrap_mean_std 0.02398085 0.1187842 0.1008082 0.01542271 0.002784001
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.56000000 0.44000000 -7.766981e-07
+bootstrap_mean_std 0.01873077 0.01873077  2.417337e-07
+Time difference of 15.35556 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoDA+lognormal_n100_p100_tau1.3_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf         FPR
+bootstrap_mean     0.53332697 6.28962641 3.68144832 1.33555599 0.134787234
+bootstrap_mean_std 0.02960967 0.07224764 0.08440492 0.01069489 0.009937197
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.40833333 0.59166667 -2.009614e-06
+bootstrap_mean_std 0.02201609 0.02201609  4.601506e-07
+Time difference of 5.701218 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+lognormal_n100_p100_tau1.3_rho0.5_sigma0.5_Nsim100"
+                       lambda        SE         PE       linf         FPR
+bootstrap_mean     0.81178964 5.8729652 3.59515220 1.34803833 0.027765957
+bootstrap_mean_std 0.01773394 0.1105479 0.09398426 0.01442673 0.002341964
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.65166667 0.34833333 -0.42299759
+bootstrap_mean_std 0.02011401 0.02011401  0.05338316
+Time difference of 10.72063 mins
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/Vani+lognormal_n100_p100_tau1.3_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf       FPR
+bootstrap_mean     0.52466476 6.31625750 3.73475081 1.33748771 0.1269149
+bootstrap_mean_std 0.02150203 0.06992409 0.07998401 0.01009143 0.0105284
+                          FNR        TPR    sum_beta
+bootstrap_mean     0.45833333 0.54166667 -0.20847729
+bootstrap_mean_std 0.02289083 0.02289083  0.03440039
+Time difference of 1.132267 mins

@@ -1,0 +1,21 @@
+During startup - Warning messages:
+1: Setting LC_CTYPE failed, using "C" 
+2: Setting LC_COLLATE failed, using "C" 
+3: Setting LC_TIME failed, using "C" 
+4: Setting LC_MESSAGES failed, using "C" 
+5: Setting LC_MONETARY failed, using "C" 
+6: Setting LC_PAPER failed, using "C" 
+7: Setting LC_MEASUREMENT failed, using "C" 
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"
+[1] "Round 100"
+[1] "results/CoCo+dirichlet_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda           SE          PE        linf         FPR
+bootstrap_mean     0.346399872 0.0252754399 0.165409882 0.092583828 0.055728745
+bootstrap_mean_std 0.004907866 0.0008763839 0.004478139 0.002636953 0.003160795
+                   FNR TPR    sum_beta
+bootstrap_mean       0   1 0.004055993
+bootstrap_mean_std   0   0 0.010298668
+Time difference of 3.05287 hours
