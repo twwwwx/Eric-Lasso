@@ -11,26 +11,26 @@ data_type <- "lognormal"
 # data_type <- "multinom"
 # data_type <- "dirmult"
 N_sim <- 100
-# n <- 50
-# p <- 50
+# n <- 100
+# p <- 100
 # create a list of different n and p values
-np_list <- list(c(100, 100))
+np_list <- list(c(100,200),c(500,500))
 
 sigma <- 0.5
 rho <- 0.5
-tau <- 1.5
-
+tau <- 0.5
+# tau_list <- c(10.5,11.5,12.5)
 
 # model settings
 model_list <- list()
 model_list[["Eric"]] <- c(TRUE, TRUE)
-# model_list[["CoDA"]] <- c(TRUE, FALSE)
-# model_list[["CoCo"]] <- c(FALSE, TRUE)
-# model_list[["Vani"]] <- c(FALSE, FALSE)
+model_list[["Coda"]] <- c(TRUE, FALSE)
+model_list[["CoCo"]] <- c(FALSE, TRUE)
+model_list[["Vani"]] <- c(FALSE, FALSE)
 # --------------------------
 file_name <- "results/results_table.csv"
 file_name_sum <- "results/results_sum.csv"
-colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR"))
+colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR","TPR"))
 write.table(colname,
     file = file_name, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
 )
@@ -50,7 +50,7 @@ for (np in np_list) {
 
         constrain <- model[1]
         proj <- model[2]
-        subdir <- "results/"
+        subdir <- "data/"
         if (data_type == "multinom" || data_type == "dirmult") {
             Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 1000000 %/% p, type = data_type, overdispersion = 5e+3)
             tau <- sqrt(Sig_B_estimated[6, 6])
@@ -63,7 +63,7 @@ for (np in np_list) {
         start_time <- Sys.time()
         set.seed(1234567)
 
-        results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim), FNR = numeric(N_sim), sum_beta = numeric(N_sim))
+        results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim),FNR = numeric(N_sim), TPR = numeric(N_sim), sum_beta = numeric(N_sim))
         for (i in 1:N_sim) {
             if (i %% 20 == 0) {
                 print(paste("Round", i))
@@ -87,10 +87,9 @@ for (np in np_list) {
             measures <- eval_results(fit_additive$beta.opt, centered_X, beta_star)
             results_df$SE[i] <- measures$SE
             results_df$PE[i] <- measures$PE
-            # results_df$FN[i] <- measures$FN
-            # results_df$FP[i] <- measures$FP
             results_df$FPR[i] <- measures$FPR
             results_df$FNR[i] <- measures$FNR
+            results_df$TPR[i] <- 1 - measures$FNR
             results_df$linf[i] <- measures$l_inf
             results_df$sum_beta[i] <- sum(fit_additive$beta.opt)
         }
@@ -103,10 +102,10 @@ for (np in np_list) {
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
 
-        if (model_name == "coco" && data_type == "dirichlet") {
-            tmp <- results_df$sum_beta
-            save(tmp, file = paste0(subdir_name, ".RData"))
-        }
+        # if (model_name == "CoCo" && data_type == "dirichlet") {
+        #     tmp <- results_df$sum_beta
+        #     save(tmp, file = paste0(subdir_name, ".RData"))
+        # }
 
 
         #--------------------------
@@ -119,8 +118,9 @@ for (np in np_list) {
         l_inf_value <- paste0(round(bootstrap_mean[4], 3), "(", round(bootstrap_mean_std[4], 3), ")")
         FPR_value <- paste0(round(bootstrap_mean[5], 3), "(", round(bootstrap_mean_std[5], 3), ")")
         FNR_value <- paste0(round(bootstrap_mean[6], 3), "(", round(bootstrap_mean_std[6], 3), ")")
-        values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value)))
-        sum_value <- paste0(round(bootstrap_mean[7], 3), "(", round(bootstrap_mean_std[7], 3), ")")
+        TPR_value <- paste0(round(bootstrap_mean[7], 3), "(", round(bootstrap_mean_std[7], 3), ")")
+        values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, lam_value, SE_value, PE_value, l_inf_value, FPR_value, FNR_value,TPR_value)))
+        sum_value <- bootstrap_mean[8]
         sum_values <- t(as.matrix(c(model_name, data_type, n, p, N_sim, tau, rho, sum_value, p_value)))
 
         write.table(values,

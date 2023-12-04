@@ -177,3 +177,40 @@ eval_results <- function(beta, X, beta_star) {
     Fa <- Falsility(beta, beta_star)
     list(PE = PE(beta, X, beta_star), SE = SE(beta, beta_star), FN = Fa$FN, FP = Fa$FP, l_inf = l_inf(beta, beta_star), FPR = Fa$FPR, FNR = Fa$FNR)
 }
+
+leave_one_out_MSE <- function(X, y,sample_inds,betas,intercepts){
+    MSE_loo <- 0
+    for(i in 1:nrow(X)){
+        size <- 0
+        error <- 0
+        for(j in 1:nrow(sample_inds)){
+            if(!(i %in% sample_inds[j,])){
+                y_pred <- X[i,] %*% betas[j,] + intercepts[j]
+                error <- error + (y_pred - y[i])^2
+                size <- size + 1
+            }
+        }
+        MSE_loo <- MSE_loo + ifelse(size==0, 0,error / size)
+    }
+    MSE_loo <- MSE_loo / nrow(X)
+    return(MSE_loo)
+}
+
+leave_one_out_MAE <- function(X, y,sample_inds,betas,intercepts){
+    MAE_loo <- 0
+    for(i in 1:nrow(X)){
+        size <- 0
+        error <- 0
+        for(j in 1:nrow(sample_inds)){
+            if(!(i %in% sample_inds[j,])){
+                y_pred <- X[i,] %*% betas[j,] + intercepts[j]
+                error <- error + abs(y_pred - y[i])
+                size <- size + 1
+            }
+        }
+        MAE_loo <- MAE_loo + ifelse(size==0, 0,error / size)
+        
+    }
+    MAE_loo <- MAE_loo / nrow(X)
+    return(MAE_loo)
+}
