@@ -6,7 +6,7 @@
 ├── simulation
 │   ├── eval.R # simulation
 │   ├── gereate_data.R # data function
-│   ├── analysis4combo.R # 
+│   ├── analysis4combo.R # real data analysis
 ├── R
 │   ├── eic.R # main function
 │   ├── ADMM_proj.R # ADMM projection
