@@ -1,0 +1,10 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "Round 1"
+[1] "data is generated"
+[1] -2.060662e-05
+Error in eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE,  : 
+  Test is completed
+Execution halted

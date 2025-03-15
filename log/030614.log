@@ -1,0 +1,28 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8296 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.1972 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7654 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.2076 
+
+[1] "data/Debi+lognormal_n600_p800_tau0.5_rho0.5_sigma0.5_Nsim2"
+                        lambda      SE        PE     linf        FPR        FNR
+bootstrap_mean     0.073038737 8.95052 3.5393404 0.920381 0.06423174 0.25000000
+bootstrap_mean_std 0.005125884 2.55607 0.6010119 0.197438 0.01385390 0.08333333
+                          TPR     sum_beta
+bootstrap_mean     0.75000000 1.328148e-18
+bootstrap_mean_std 0.08333333 1.436568e-18
+Time difference of 2.662102 mins
+[1] "data/Eric+lognormal_n600_p800_tau0.5_rho0.5_sigma0.5_Nsim2"
+                        lambda         SE         PE       linf         FPR FNR
+bootstrap_mean     0.140949821 0.53281181 0.25870932 0.40449526 0.015743073   0
+bootstrap_mean_std 0.006089061 0.08071829 0.04340482 0.02571196 0.003148615   0
+                   TPR      sum_beta
+bootstrap_mean       1 -1.649050e-07
+bootstrap_mean_std   0  2.721636e-08
+Time difference of 1.613549 hours

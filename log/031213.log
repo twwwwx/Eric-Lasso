@@ -1,0 +1,9 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "estimated tau is 0.850746130853045"
+[1] "Round 20"
+[1] "Round 40"
+[1] "Round 60"
+[1] "Round 80"

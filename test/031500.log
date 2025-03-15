@@ -1,0 +1,16 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "Round 1"
+[1] "data is generated"
+[1] "Round 2"
+[1] "data is generated"
+[1] "data/Eric+lognormal_n50_p100_tau0.5_rho0.5_sigma0.5_Nsim2"
+                       lambda        SE        PE      linf        FPR
+bootstrap_mean     0.25009725 5.0290070 1.3613142 1.1502235 0.18085106
+bootstrap_mean_std 0.09984464 0.4392244 0.1235663 0.2497765 0.08510638
+                          FNR        TPR     sum_beta
+bootstrap_mean     0.41666667 0.58333333 4.073584e-07
+bootstrap_mean_std 0.08333333 0.08333333 4.631053e-07
+Time difference of 13.32495 secs

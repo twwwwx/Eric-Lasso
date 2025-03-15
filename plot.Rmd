@@ -1,0 +1,218 @@
+# Fig 1
+
+```{r warning=FALSE}
+# Load necessary libraries
+library(ggplot2)
+library(tidyr)
+library(reshape2)
+library(patchwork)
+count_values <- function(x) {
+    c('positive' = sum(x > 0), 'negative' = sum(x < 0))
+}
+load("data/RDA2_betas.RData")
+plots <- list()
+for(model_name in names(support)){
+data <- as.data.frame(support[[model_name]])
+
+freq_df <- as.data.frame(apply(data, 2, count_values)) / nrow(data)
+colnames(freq_df) <- 1:ncol(data)
+freq_df <- freq_df %>% t  %>% melt 
+
+
+plots[[model_name]] <- ggplot(freq_df, aes(x = Var1, y = value, fill = Var2)) +
+  geom_bar(stat = "identity") +
+  # geom_hline(yintercept = 0.5, linetype="dashed", color = "black") +
+  coord_cartesian(ylim=c(0,1.0)) +
+  scale_y_continuous(breaks = seq(0, 1, 0.1)) +
+  scale_fill_manual(values = c("positive" = "#FC8D62", "negative" = "#66C2A5"),name="Sign") +
+  # scale_fill_brewer(palette = "Set2", name = "Sign of Beta",breaks=c("positive","negative"),labels=c("Positive","Negative")) +
+  labs(title = ifelse(model_name=='CoDA','Coda',model_name), y = "Selection Frequency",x="genus") 
+if (model_name %in% c("CoDA","Vani")) 
+  plots[[model_name]] <- plots[[model_name]] + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),axis.title.y = element_blank())
+}
+plots[[1]] + plots[[2]] + plots[[3]] + plots[[4]] + plot_layout(guides = "collect")
+# Save the plot
+# ggsave(filename = "pic/Freq_plot y1.png", plot = plots[[1]] + plots[[2]] + plots[[3]] + plots[[4]] + plot_layout(guides = "collect"), width = 10, height = 5)
+```
+
+# Fig 2
+
+```{r warning=FALSE}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggsci)
+library("ggrepel")   
+# Read the CSV file
+data <- read.csv("data/ROC_S2.csv")
+
+# Extract mean and standard deviation values
+data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
+data$FPR_std <- str_extract(data$FPR, "\\((.*?)\\)")
+data$FPR_std <- as.numeric(gsub("\\(|\\)", "", data$FPR_std))
+data$TPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$TPR))
+data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
+data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
+data$tau <- as.numeric(data$tau)
+
+# Create ROC plot
+p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+    geom_line() +
+    geom_point() +
+    scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
+    guides(fill=FALSE,color = guide_legend(order = 1), size = guide_legend(order = 2)) + # Change the order of the legends
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 2") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0., 1)) +
+    theme(legend.title = element_text(size = 14)) +
+    geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1),color="#252525",linetype="dashed") 
+
+p1 + guides(fill=FALSE,color=FALSE)
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggsci)
+library("ggrepel")  
+
+data <- read.csv("data/ROC_S2.csv")
+data <- data %>% filter(tau!='NA')
+
+# Extract mean and standard deviation values
+data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
+data$FPR_std <- str_extract(data$FPR, "\\((.*?)\\)")
+data$FPR_std <- as.numeric(gsub("\\(|\\)", "", data$FPR_std))
+data$TPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$TPR))
+data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
+data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
+data$tau <- as.numeric(data$tau)
+
+
+p2 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+    geom_line() +
+    geom_point(aes(size=tau)) +
+   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau)) +
+    geom_text_repel(aes(label = tau), vjust = 1) +
+    # geom_ribbon(aes(xmin = FPR_mean - FPR_std, xmax = FPR_mean + FPR_std,fill=model), alpha = 0.2,linetype = "blank") +
+    guides(fill=FALSE) + # Change the order of the legends
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 2") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0.3, 1)) +
+    scale_x_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0, 0.3)) +
+    theme(legend.title = element_text(size = 14)) +
+    scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
+    scale_fill_npg()
+
+
+# p1 + guides(fill=FALSE,color=FALSE)
+p2
+```
+
+# Figure S1
+
+```{r warning=FALSE}
+library(openxlsx)
+library(tidyr)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(gridExtra)
+
+data <- read.xlsx("data/sum_of_betas.xlsx")
+data <- as.data.frame(data) %>% select(contains("CoCo"), contains("Vani")) 
+
+col_names <- colnames(data)
+
+data_long <- data %>% pivot_longer(everything(), names_to = "Variable", values_to = "Value")
+# Transform the data
+data_long <- data_long %>%
+  # Split the Variable column
+  separate(Variable, into = c("Type", "n", "p"), sep = "_") %>%
+  mutate(n = as.numeric(n), p = as.numeric(p)) %>%
+  mutate("(n,p)" = paste0("(n,p)=(", n, ",", p, ")")) %>%
+  select(-c(n, p))
+
+ggplot(data_long, aes(x = Value, fill = ifelse(grepl("CoCo", Type), "#E64B35FF", "#3C5488FF"))) + 
+  geom_histogram(aes(y=after_stat(count/100)),bins = 20, color = "white") + 
+  # facet_wrap(~ Variable, scales = "fixed", ncol = 2, nrow = 3,dir="v") +
+  geom_vline(aes(xintercept=0), linetype="dashed", color = "black") + 
+  facet_grid(vars(`(n,p)`), vars(Type), scales = "free") +
+  labs(x = "Sum of the Regression Coefficients", y = "Frequency ") +
+  scale_x_continuous(breaks = seq(-.8, .8, 0.2)) +
+  scale_fill_identity()
+```
+
+# Figure S2
+
+```{r warning=FALSE}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggsci)
+library("ggrepel")   
+# Read the CSV file
+data <- read.csv("data/ROC_S2.csv")
+
+# Extract mean and standard deviation values
+data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
+data$FPR_std <- str_extract(data$FPR, "\\((.*?)\\)")
+data$FPR_std <- as.numeric(gsub("\\(|\\)", "", data$FPR_std))
+data$TPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$TPR))
+data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
+data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
+data$tau <- as.numeric(data$tau)
+
+# Create ROC plot
+p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+    geom_line() +
+    geom_point() +
+    scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
+    guides(fill=FALSE,color = guide_legend(order = 1), size = guide_legend(order = 2)) + # Change the order of the legends
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 2") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0., 1)) +
+    theme(legend.title = element_text(size = 14)) +
+    geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1),color="#252525",linetype="dashed") 
+
+p1 + guides(fill=FALSE,color=FALSE)
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggsci)
+library("ggrepel")  
+
+data <- read.csv("data/ROC_S2.csv")
+data <- data %>% filter(tau!='NA')
+
+# Extract mean and standard deviation values
+data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
+data$FPR_std <- str_extract(data$FPR, "\\((.*?)\\)")
+data$FPR_std <- as.numeric(gsub("\\(|\\)", "", data$FPR_std))
+data$TPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$TPR))
+data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
+data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
+data$tau <- as.numeric(data$tau)
+
+
+p2 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+    geom_line() +
+    geom_point(aes(size=tau)) +
+   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau)) +
+    geom_text_repel(aes(label = tau), vjust = 1) +
+    # geom_ribbon(aes(xmin = FPR_mean - FPR_std, xmax = FPR_mean + FPR_std,fill=model), alpha = 0.2,linetype = "blank") +
+    guides(fill=FALSE) + # Change the order of the legends
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 2") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0.3, 1)) +
+    scale_x_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0, 0.3)) +
+    theme(legend.title = element_text(size = 14)) +
+    scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
+    scale_fill_npg()
+
+
+# p1 + guides(fill=FALSE,color=FALSE)
+p2
+```
