@@ -1,0 +1,62 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "Round 2"
+[1] "Round 4"
+[1] "Round 6"
+[1] "Round 8"
+[1] "Round 10"
+[1] "Round 12"
+[1] "Round 14"
+[1] "Round 16"
+[1] "Round 18"
+[1] "Round 20"
+[1] "Round 22"
+[1] "Round 24"
+[1] "Round 26"
+[1] "Round 28"
+[1] "Round 30"
+[1] "Round 32"
+[1] "Round 34"
+[1] "Round 36"
+[1] "Round 38"
+[1] "Round 40"
+[1] "Round 42"
+[1] "Round 44"
+[1] "Round 46"
+[1] "Round 48"
+[1] "Round 50"
+[1] "Round 52"
+[1] "Round 54"
+[1] "Round 56"
+[1] "Round 58"
+[1] "Round 60"
+[1] "Round 62"
+[1] "Round 64"
+[1] "Round 66"
+[1] "Round 68"
+[1] "Round 70"
+[1] "Round 72"
+[1] "Round 74"
+[1] "Round 76"
+[1] "Round 78"
+[1] "Round 80"
+[1] "Round 82"
+[1] "Round 84"
+[1] "Round 86"
+[1] "Round 88"
+[1] "Round 90"
+[1] "Round 92"
+[1] "Round 94"
+[1] "Round 96"
+[1] "Round 98"
+[1] "Round 100"
+[1] "data/CoCo+lognormal_n550_p700_tau0.5_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE          PE        linf         FPR
+bootstrap_mean     0.126322115 0.91888059 0.409387204 0.539031120 0.033832853
+bootstrap_mean_std 0.001262598 0.01681934 0.006840447 0.007199841 0.001585144
+                   FNR TPR    sum_beta
+bootstrap_mean       0   1 -0.04570103
+bootstrap_mean_std   0   0  0.02324728
+Time difference of 1.782091 hours

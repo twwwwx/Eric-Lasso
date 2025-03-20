@@ -13,7 +13,7 @@ data_type <- "lognormal"
 # data_type <- "dirmult"
 N_sim <- 2
 # create a list of different n and p values
-np_list <- list(c(50,100))
+np_list <- list(c(500,500))
 
 sigma <- 0.5
 rho <- 0.5
@@ -23,7 +23,9 @@ tau <- 0.5
 # model settings
 model_list <- list()
 # model_list[["Debi"]] <- c(FALSE)
-model_list[["Eric"]] <- c(TRUE, TRUE)
+model_list[["LassoII"]] <- c(TRUE)
+
+# model_list[["Eric"]] <- c(TRUE, TRUE)
 # model_list[["Coda"]] <- c(TRUE, FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
 # model_list[["Vani"]] <- c(FALSE, FALSE)
@@ -92,6 +94,9 @@ for (np in np_list) {
                 fit_additive <- fn_proposed(VV = Zp,y = data$y, alpha_real=beta_star, W = exp(data$Z),mu_u = mu_u, Sigma_u = data$Sig_B,EstimateSigma = T, Noestimate.data = supp_data)
                 # print(fit_additive$beta.opt[1:10])
                 # print(beta_star[1:10])
+                if(model){
+                    fit_additive$beta.opt = fit_additive$beta.lasso
+                }
             }   
             # naive evaluation
             results_df$lambda[i] <- fit_additive$lambda.opt
@@ -120,8 +125,9 @@ for (np in np_list) {
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
-        # print(average_bias)
-        # print(average_bias_std)
+        print(average_bias)
+        print(average_bias_std)
+        print(beta_star[c(1:10),p])
         # if (model_name == "CoCo" && data_type == "dirichlet") {
         #     tmp <- results_df$sum_beta
         #     save(tmp, file = paste0(subdir_name, ".RData"))

@@ -11,44 +11,43 @@ data_type <- "lognormal"
 # data_type <- "dirichlet"
 # data_type <- "multinom"
 # data_type <- "dirmult"
-# data_type_list <- c("dirichlet", "dirmult")
-# data_type_list <- c("dirmult")
-N_sim <- 2
+N_sim <- 100
 # create a list of different n and p values
-np_list <- list(c(500,500))
-
+np_list <- list(c(100,100))
+# fpr_list <- seq(0.02, 0.26, 0.02)
+fpr_list <- seq(0.26, 0.4, 0.02)
 sigma <- 0.5
 rho <- 0.5
-tau <- 0.5
-tau_list <- seq(0.1, 1.9, 0.2)
-overdispersion = 1e+2
+tau <- 1
+# tau_list <- c(10.5,11.5,12.5)
+
 # model settings
 model_list <- list()
 model_list[["Debi"]] <- c(FALSE)
+# model_list[["LassoII"]] <- c(TRUE)
+
 # model_list[["Eric"]] <- c(TRUE, TRUE)
 # model_list[["Coda"]] <- c(TRUE, FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
 # model_list[["Vani"]] <- c(FALSE, FALSE)
 # -------------------------- 
-file_name <- "results/results_table.csv"
+file_name <- "results/ROC_S1.csv"
 file_name_sum <- "results/results_sum.csv"
 colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR","TPR"))
-write.table(colname,
-    file = file_name, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
-)
+# write.table(colname,
+#     file = file_name, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+# )
 
 colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "sum", "p value"))
-write.table(colname,
-    file = file_name_sum, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
-)
-for (np in np_list) {
-# for (tau in tau_list) {
-# for (data_type in data_type_list) {
-    # np = c(100,100)
-    n <- np[1]
-    p <- np[2]
-    beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
-    theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
+# write.table(colname,
+#     file = file_name_sum, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+# )
+# for (fpr in fpr_list) {
+n <- 100
+p <- 100
+beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
+theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
+for( fpr in fpr_list){
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
@@ -58,10 +57,7 @@ for (np in np_list) {
         }
         subdir <- "data/"
         if (data_type == "multinom" || data_type == "dirmult") {
-
-            ### !!! modify the overdispersion
-            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 100000 %/% p, type = data_type, overdispersion = overdispersion)
-            # Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 100000 %/% p, type = data_type, overdispersion = 5e+3)
+            Sig_B_estimated <- MC_varB(n, p, beta_star, sigma, rho, theta = theta, N_MK = 100000 %/% p, type = data_type, overdispersion = 5e+3)
             tau <- sqrt(Sig_B_estimated[6, 6])
             print(paste("estimated tau is", sqrt(Sig_B_estimated[6, 6])))
         }
@@ -75,32 +71,34 @@ for (np in np_list) {
         results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim),FNR = numeric(N_sim), TPR = numeric(N_sim), sum_beta = numeric(N_sim))
         results_bias <- matrix(NA, nrow = N_sim, ncol = 11)
         for (i in 1:N_sim) {
-            if (i %% 2 == 0) {
+            if (i %% 1 == 0) {
                 print(paste("Round", i))
             }
             # generate data
 
             if (data_type == "multinom" || data_type == "dirmult") {
-                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = data_type, overdispersion = overdispersion)
+                data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = data_type, overdispersion = 5e+3)
                 data$Sig_B <- Sig_B_estimated
             } else {
                 data <- generate_data(n, p, beta_star, sigma, tau, rho, theta, type = data_type)
+                print("data is generated")
             }
 
             # record time
             if(length(model)== 2){
-                # Note: if p > 700, step is set to be 50
-                fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = proj, constrain = constrain)
+                fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 50, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = proj, constrain = constrain)
             }else {
                 Zp <- ref_transform(data$Z)
                 mu_u = rep(0,p)
                 Sigma_x_lat = AR_covariance_matrix(p, rho)
                 Sigma_w_lat = Sigma_x_lat+data$Sig_B
                 supp_data = list(mu_x = theta, Sigma_x = Sigma_x_lat, Sigma_w = Sigma_w_lat, mu_w = theta)
-                fit_additive <- fn_proposed(VV = Zp,y = data$y, alpha_real=beta_star, W = exp(data$Z),mu_u = mu_u, Sigma_u = data$Sig_B,EstimateSigma = T, Noestimate.data = supp_data)
-                # fit_additive$beta.opt <- fit_additive$beta.test
+                fit_additive <- fn_proposed(VV = Zp,y = data$y, alpha_real=beta_star, W = exp(data$Z),mu_u = mu_u, Sigma_u = data$Sig_B,EstimateSigma = T, Noestimate.data = supp_data, p_val = fpr)
                 # print(fit_additive$beta.opt[1:10])
                 # print(beta_star[1:10])
+                if(model){
+                    fit_additive$beta.opt = fit_additive$beta.lasso
+                }
             }   
             # naive evaluation
             results_df$lambda[i] <- fit_additive$lambda.opt
@@ -129,8 +127,7 @@ for (np in np_list) {
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
-        # print(average_bias)
-        # print(average_bias_std)
+
         # if (model_name == "CoCo" && data_type == "dirichlet") {
         #     tmp <- results_df$sum_beta
         #     save(tmp, file = paste0(subdir_name, ".RData"))
@@ -155,9 +152,9 @@ for (np in np_list) {
         write.table(values,
             file = file_name, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
         )
-        write.table(sum_values,
-            file = file_name_sum, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
-        )
+        # write.table(sum_values,
+        #     file = file_name_sum, quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
+        # )
 
         # print results
         evals <- rbind(bootstrap_mean, bootstrap_mean_std)
@@ -167,6 +164,5 @@ for (np in np_list) {
 
         print(runtime)
     }
-    cat("\n", file = file_name, append = TRUE)
-    cat("\n", file = file_name_sum, append = TRUE)
 }
+

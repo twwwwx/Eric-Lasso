@@ -1,0 +1,52 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "Round 1"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7711 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.1931 
+
+[1] "Round 2"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8802 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.2193 
+
+ [1]  1.09044758 -0.42305456  0.42319602  0.06383720  0.11554982 -1.55176884
+ [7] -0.98792109  1.09078380  0.31978070 -0.10600858 -0.02328787
+ [1] 0.01775426 0.01277662 0.06304841 0.03158122 0.13628030 0.13927784
+ [7] 0.09977433 0.07719139 0.06834210 0.03334190 0.15787238
+[1] "data/Debi+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim2"
+                        lambda       SE       PE       linf         FPR FNR TPR
+bootstrap_mean     0.085609266 7.440390 3.495341 0.39209946 0.055668016   0   1
+bootstrap_mean_std 0.006179385 2.693808 1.693766 0.02357155 0.001012146   0   0
+                       sum_beta
+bootstrap_mean     1.707618e-18
+bootstrap_mean_std 5.285486e-18
+Time difference of 1.246185 mins
+[1] "Round 1"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7711 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.1931 
+
+[1] "Round 2"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8802 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.2193 
+
+ [1]  0.85467021 -0.23011553  0.30602051  0.00000000  0.00000000 -1.25690436
+ [7] -0.70831208  0.84015110  0.05483762  0.00000000 -0.04567949
+ [1] 0.01568804 0.09118901 0.06850698 0.00000000 0.00000000 0.03873012
+ [7] 0.04599597 0.02007973 0.02317006 0.00000000 0.03142790
+[1] "data/LassoII+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim2"
+                        lambda        SE         PE       linf         FPR FNR
+bootstrap_mean     0.085609266 1.0956471 1.07224129 0.60042133 0.055668016   0
+bootstrap_mean_std 0.006179385 0.1568959 0.05771174 0.06065215 0.001012146   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.084202e-18
+bootstrap_mean_std   0 1.734723e-18
+Time difference of 1.947705 mins

@@ -32,7 +32,7 @@ fn_cov <- function(X){
   return(out)
 }
 ## function for the proposed method
-fn_proposed <- function(VV,y, alpha_real, W, mu_u, Sigma_u, EstimateSigma=T,Shrinkage=T, Noestimate.data=NA){
+fn_proposed <- function(VV,y, alpha_real, W, mu_u, Sigma_u, EstimateSigma=T,Shrinkage=T, Noestimate.data=NA, p_val = 0.05){
   n = dim(VV)[1]
   p = dim(VV)[2] + 1
   mean.Z = rep(0, p)
@@ -96,14 +96,17 @@ fn_proposed <- function(VV,y, alpha_real, W, mu_u, Sigma_u, EstimateSigma=T,Shri
   # rownames(result) = paste0("alpha_",1:(p-1))
   beta.opt=c(alpha_drclasso, -sum(alpha_drclasso))
   alpha_test = alpha_drclasso
-  alpha_test[p_drclasso >= 0.05] = 0
+  alpha_test[p_drclasso >= p_val] = 0
   tmp = -sum(alpha_test)
   alpha_test = c(alpha_test, tmp)
   result <- list(
     lambda.opt = rclasso_model$lambda.min,
     beta.opt = beta.opt,
+    beta.lasso = c(alpha_rclasso, -sum(alpha_rclasso)),
     beta.test = alpha_test,
-    mean.Z = mean.Z
+    p.beta = p_drclasso,
+    mean.Z = mean.Z,
+    mean.y = mean(y)
   )
   return(result)
 }

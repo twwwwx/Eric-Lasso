@@ -1,5 +1,6 @@
 source("R/eic.R")
 source("simulation/generate_data.R")
+source("simulation/functions.R")
 set.seed(123456)
 
 
@@ -45,7 +46,7 @@ get_data <- function(X, y, y1, y_mode, min_perturb, max_perturb, K = 5) {
 }
 
 
-cov <- read.csv("real_DA/COV.csv", header = T)
+cov <- read.csv("data/COV.csv", header = T)
 N_sim <- 100
 K <- 5
 print(paste("N_sim=", N_sim, "K=", K))
@@ -57,7 +58,7 @@ y <- cov[, 1] ## BMI
 fit <- lm(y ~ cov[, 2:3])
 y1 <- fit$residuals ## cov-adjusted BMI
 
-otu <- read.csv("real_DA/OTU.csv", header = T)
+otu <- read.csv("data/OTU.csv", header = T)
 otu <- otu + 0.5 ## followed suggestion of BKA2022 paper
 X <- otu
 for (i in 1:nrow(X)) {
@@ -71,7 +72,7 @@ p <- ncol(X)
 #######  Eric-Lasso analysis
 ## either with (y,X,Z) or (y1,X,Z)
 regressionlist <- c("(y,X,Z)", "(y1,X,Z)")
-for (m in 1:2) {
+for (m in c(2)) {
     # data <- get_data(X = X, y = y, y1 = y1, y_mode = m, min_perturb = 0.05, max_perturb = 20, K = K)
     print(regressionlist[m])
     if (m == 1) {
@@ -84,10 +85,11 @@ for (m in 1:2) {
 
 
     model_list <- list()
-    model_list[["Eric"]] <- c(TRUE, TRUE)
-    model_list[["CoDA"]] <- c(TRUE, FALSE)
-    model_list[["CoCo"]] <- c(FALSE, TRUE)
-    model_list[["Vani"]] <- c(FALSE, FALSE)
+    # model_list[["Eric"]] <- c(TRUE, TRUE)
+    # model_list[["CoDA"]] <- c(TRUE, FALSE)
+    # model_list[["CoCo"]] <- c(FALSE, TRUE)
+    # model_list[["Vani"]] <- c(FALSE, FALSE)
+    model_list[["Debi"]] <- c(FALSE)
     results_df <- data.frame(lam = numeric(N_sim), MSEout = numeric(N_sim), MAEout = numeric(N_sim), selected = numeric(N_sim), sum_beta = numeric(N_sim))
     support <- list()
     write.table(t(c("Model", colnames(results_df), "p_value")),
@@ -98,6 +100,7 @@ for (m in 1:2) {
         start_time <- Sys.time()
         set.seed(123456)
         betas <- matrix(NA, nrow = N_sim, ncol = p)
+        betas_for_supp <- matrix(NA, nrow = N_sim, ncol = p)
         intercepts <- matrix(NA, nrow = N_sim, ncol = 1)
         N_bs <- nrow(X) / 2
         bs_inds <- matrix(NA, nrow = N_sim, ncol = N_bs - N_bs %% K)
@@ -116,9 +119,19 @@ for (m in 1:2) {
             cen_X <- normalize(X., scale = FALSE)
             B <- cen_Z - cen_X
             Sig_B <- t(B) %*% B / nrow(Z.)
-            fit <- eic(Z = Z., y = y., n = n., p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = K, mu = 10, earlyStopping_max = 30, Sig_B = Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = model_list[[model_name]][2], constrain = model_list[[model_name]][1])
+            if(length(model_list[[model_name]])== 2){
+                fit <- eic(Z = Z., y = y., n = n., p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 30, Sig_B = Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = model_list[[model_name]][2], constrain = model_list[[model_name]][1])
+            }else {
+                Zp <- ref_transform(Z.)
+                mu_u = apply(Z.-X., 2, mean)
+                fit <- fn_proposed(VV = Zp,y = y., alpha_real=NA, W = exp(Z.),mu_u = mu_u, Sigma_u = Sig_B,EstimateSigma = T)
+                betas_for_supp[i, ] <- fit$beta.test
+                # print(fit_additive$beta.opt[1:10])
+                # print(beta_star[1:10])
+            }   
+            # fit <- eic(Z = Z., y = y., n = n., p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = K, mu = 10, earlyStopping_max = 30, Sig_B = Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = model_list[[model_name]][2], constrain = model_list[[model_name]][1])
             betas[i, ] <- fit$beta.opt
-
+            
             intercept <- fit$mean.y - fit$mean.Z %*% fit$beta.opt
             intercepts[i, ] <- intercept
             y_pred <- X. %*% fit$beta.opt + rep(intercept, each = n.)
@@ -135,7 +148,8 @@ for (m in 1:2) {
 
 
         # save results
-        support[[model_name]] <- betas
+        # support[[model_name]] <- betas
+        support[[model_name]] <- betas_for_supp
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
         bootstrap_mean <- apply(results_df, 2, mean)
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
@@ -151,6 +165,6 @@ for (m in 1:2) {
             file = "results/RDAresults.csv", quote = FALSE, sep = ",", row.names = FALSE, col.names = FALSE, append = TRUE
         )
     }
-    # save(support, file = paste0("data/", "RDA", m, "_betas.RData"))
+    if(length(model_list[[model_name]]) == 1) save(support, file = paste0("data/", "RDA", m, "_betas_for_debi.RData"))
     cat("\n", file = "results/RDAresults.csv", append = TRUE)
 }

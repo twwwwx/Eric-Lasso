@@ -7,3 +7,14 @@ Loaded lars 1.3
 [1] "Round 40"
 [1] "Round 60"
 [1] "Round 80"
+[1] "Round 100"
+[1] "data/Eric+dirmult_n550_p700_tau0.850746130853045_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE        linf         FPR
+bootstrap_mean     0.23819402 2.06511048 1.03791948 0.758021276 0.017262248
+bootstrap_mean_std 0.00391479 0.03515094 0.01912322 0.006134071 0.001248964
+                           FNR         TPR     sum_beta
+bootstrap_mean     0.093333333 0.906666667 3.085100e-08
+bootstrap_mean_std 0.008964326 0.008964326 6.352985e-08
+Time difference of 2.934576 days
+Error: unexpected '}' in "}"
+Execution halted

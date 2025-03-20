@@ -1,0 +1,1042 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "estimated tau is 1.09828463455981"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6027 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.678 
+
+[1] "Round 2"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6243 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7078 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5493 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7173 
+
+[1] "Round 4"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5623 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.769 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5592 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7164 
+
+[1] "Round 6"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.604 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5968 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5953 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.649 
+
+[1] "Round 8"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6269 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7266 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6618 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5716 
+
+[1] "Round 10"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6218 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5135 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6722 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6378 
+
+[1] "Round 12"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6342 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6499 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6883 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.759 
+
+[1] "Round 14"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6388 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7589 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6763 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6482 
+
+[1] "Round 16"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.594 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5341 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6674 
+
+[1] "Round 18"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6869 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.633 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6068 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6974 
+
+[1] "Round 20"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6168 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7284 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6004 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6831 
+
+[1] "Round 22"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6642 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7294 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.583 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6503 
+
+[1] "Round 24"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6956 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6232 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6667 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6431 
+
+[1] "Round 26"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7249 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5898 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6011 
+
+[1] "Round 28"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6208 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6623 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6487 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7044 
+
+[1] "Round 30"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6102 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.662 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6634 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6307 
+
+[1] "Round 32"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5532 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6537 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5455 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6858 
+
+[1] "Round 34"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5511 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6916 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.562 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6169 
+
+[1] "Round 36"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6421 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7355 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5924 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7068 
+
+[1] "Round 38"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6423 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7042 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6455 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6705 
+
+[1] "Round 40"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5486 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7291 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5718 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7003 
+
+[1] "Round 42"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6552 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6957 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5611 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5929 
+
+[1] "Round 44"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6823 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6795 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6559 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6707 
+
+[1] "Round 46"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5829 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6032 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5852 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6911 
+
+[1] "Round 48"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6332 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7232 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6223 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6547 
+
+[1] "Round 50"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5788 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6961 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7266 
+
+[1] "Round 52"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5369 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.68 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6228 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6875 
+
+[1] "Round 54"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.53 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.61 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5955 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.676 
+
+[1] "Round 56"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5765 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6567 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5974 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5906 
+
+[1] "Round 58"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5546 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6893 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5855 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7241 
+
+[1] "Round 60"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6049 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6747 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5628 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6563 
+
+[1] "Round 62"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5895 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7391 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6243 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7284 
+
+[1] "Round 64"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7247 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6259 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6532 
+
+[1] "Round 66"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6007 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6973 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6517 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6704 
+
+[1] "Round 68"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5925 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6563 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6061 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7007 
+
+[1] "Round 70"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6332 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6542 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6602 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5602 
+
+[1] "Round 72"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5618 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6791 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5654 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6361 
+
+[1] "Round 74"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5876 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6488 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6375 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6864 
+
+[1] "Round 76"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7307 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7182 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5815 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7471 
+
+[1] "Round 78"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5744 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7016 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6268 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6586 
+
+[1] "Round 80"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5591 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6312 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7434 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7675 
+
+[1] "Round 82"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5723 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7085 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5811 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7304 
+
+[1] "Round 84"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.598 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5914 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.652 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6926 
+
+[1] "Round 86"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.588 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6531 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6281 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6822 
+
+[1] "Round 88"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5722 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6751 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5917 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6341 
+
+[1] "Round 90"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6069 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6778 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5477 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6446 
+
+[1] "Round 92"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6163 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.683 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6493 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6271 
+
+[1] "Round 94"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6308 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6084 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6037 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5942 
+
+[1] "Round 96"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.5874 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5721 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6182 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7582 
+
+[1] "Round 98"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6031 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6152 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6307 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7179 
+
+[1] "Round 100"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.6763 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.7666 
+
+[1] "data/Debi+dirmult_n100_p200_tau1.09828463455981_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE        PE       linf         FPR
+bootstrap_mean     0.139886686 4.73761515 5.8417945 0.95103537 0.066752577
+bootstrap_mean_std 0.005973675 0.09827606 0.3356483 0.01606282 0.001347705
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.21833333 0.78166667 -1.940722e-19
+bootstrap_mean_std 0.01415304 0.01415304  6.989144e-19
+Time difference of 2.651254 mins
+[1] "estimated tau is 1.09852089332012"
+[1] "Round 2"
+[1] "Round 4"
+[1] "Round 6"
+[1] "Round 8"
+[1] "Round 10"
+[1] "Round 12"
+[1] "Round 14"
+[1] "Round 16"
+[1] "Round 18"
+[1] "Round 20"
+[1] "Round 22"
+[1] "Round 24"
+[1] "Round 26"
+[1] "Round 28"
+[1] "Round 30"
+[1] "Round 32"
+[1] "Round 34"
+[1] "Round 36"
+[1] "Round 38"
+[1] "Round 40"
+[1] "Round 42"
+[1] "Round 44"
+[1] "Round 46"
+[1] "Round 48"
+[1] "Round 50"
+[1] "Round 52"
+[1] "Round 54"
+[1] "Round 56"
+[1] "Round 58"
+[1] "Round 60"
+[1] "Round 62"
+[1] "Round 64"
+[1] "Round 66"
+[1] "Round 68"
+[1] "Round 70"
+[1] "Round 72"
+[1] "Round 74"
+[1] "Round 76"
+[1] "Round 78"
+[1] "Round 80"
+[1] "Round 82"
+[1] "Round 84"
+[1] "Round 86"
+[1] "Round 88"
+[1] "Round 90"
+[1] "Round 92"
+[1] "Round 94"
+[1] "Round 96"
+[1] "Round 98"
+[1] "Round 100"
+[1] "data/Eric+dirmult_n100_p200_tau1.09852089332012_rho0.5_sigma0.5_Nsim100"
+                       lambda         SE         PE       linf         FPR
+bootstrap_mean     0.49595515 4.70024362 2.50188486 1.15434563 0.062319588
+bootstrap_mean_std 0.01140518 0.07519228 0.05128268 0.01445966 0.003072843
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.35333333 0.64666667 -2.052525e-07
+bootstrap_mean_std 0.01366589 0.01366589  1.149161e-07
+Time difference of 4.752935 mins
+[1] "estimated tau is 1.30700231550141"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3648 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6073 
+
+[1] "Round 2"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.367 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6027 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3591 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5022 
+
+[1] "Round 4"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3592 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5415 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3492 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5942 
+
+[1] "Round 6"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3662 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5008 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3723 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5562 
+
+[1] "Round 8"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3738 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5545 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3801 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6103 
+
+[1] "Round 10"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3541 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6094 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3748 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5026 
+
+[1] "Round 12"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6058 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3714 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.537 
+
+[1] "Round 14"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3753 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6496 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3727 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5693 
+
+[1] "Round 16"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3733 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.525 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3549 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6046 
+
+[1] "Round 18"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3711 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6135 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3773 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6288 
+
+[1] "Round 20"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3688 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6225 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3632 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6267 
+
+[1] "Round 22"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.366 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.543 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3651 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6117 
+
+[1] "Round 24"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3786 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6067 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3448 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5114 
+
+[1] "Round 26"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3638 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5384 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3923 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5682 
+
+[1] "Round 28"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.372 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.555 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3469 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5359 
+
+[1] "Round 30"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3698 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6181 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3761 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6396 
+
+[1] "Round 32"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3584 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.51 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3686 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5471 
+
+[1] "Round 34"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3589 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5335 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.36 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5522 
+
+[1] "Round 36"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3393 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5427 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3498 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5083 
+
+[1] "Round 38"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3742 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.65 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3623 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5647 
+
+[1] "Round 40"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3569 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5693 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3462 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5658 
+
+[1] "Round 42"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3687 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6136 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3748 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5499 
+
+[1] "Round 44"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3877 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5892 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3869 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5923 
+
+[1] "Round 46"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3876 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6494 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3793 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5232 
+
+[1] "Round 48"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3615 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6316 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3577 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5678 
+
+[1] "Round 50"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3848 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5983 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3643 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6119 
+
+[1] "Round 52"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3537 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.597 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3734 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5191 
+
+[1] "Round 54"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3642 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5556 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3592 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5727 
+
+[1] "Round 56"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3569 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5739 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.349 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5811 
+
+[1] "Round 58"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3856 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5774 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3596 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.4998 
+
+[1] "Round 60"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3389 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5676 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3463 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5833 
+
+[1] "Round 62"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3779 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5348 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3699 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6901 
+
+[1] "Round 64"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3511 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.4959 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3802 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5946 
+
+[1] "Round 66"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3537 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.4907 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3639 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5732 
+
+[1] "Round 68"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3714 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6304 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3683 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5891 
+
+[1] "Round 70"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3541 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.597 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3405 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5295 
+
+[1] "Round 72"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5868 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3532 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5617 
+
+[1] "Round 74"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3692 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5399 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3739 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6608 
+
+[1] "Round 76"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3759 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5682 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3533 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.584 
+
+[1] "Round 78"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3564 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6481 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3491 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6309 
+
+[1] "Round 80"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3524 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5733 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3564 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5337 
+
+[1] "Round 82"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3599 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6003 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3529 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.4712 
+
+[1] "Round 84"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3586 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5207 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3639 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5478 
+
+[1] "Round 86"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3414 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5877 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3751 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5116 
+
+[1] "Round 88"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3712 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5813 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3721 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5995 
+
+[1] "Round 90"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3604 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5463 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3763 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6044 
+
+[1] "Round 92"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3694 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5446 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6472 
+
+[1] "Round 94"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3536 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5785 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3742 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5985 
+
+[1] "Round 96"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3611 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5762 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3664 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5035 
+
+[1] "Round 98"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3418 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.5837 
+
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3693 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.6166 
+
+[1] "Round 100"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.3666 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.4823 
+
+[1] "data/Debi+dirmult_n250_p400_tau1.30700231550141_rho0.5_sigma0.5_Nsim100"
+                        lambda        SE       PE     linf         FPR
+bootstrap_mean     0.100368035 1223.2996 515.6093 2.943874 0.059949239
+bootstrap_mean_std 0.002464934  550.4261 220.0913 0.798198 0.007934584
+                          FNR        TPR     sum_beta
+bootstrap_mean     0.13833333 0.86166667 1.745037e-17
+bootstrap_mean_std 0.02145847 0.02145847 1.397946e-17
+Time difference of 15.5764 mins
+[1] "estimated tau is 1.30758796347114"
+[1] "Round 2"
+[1] "Round 4"
+[1] "Round 6"
+[1] "Round 8"
+[1] "Round 10"
+[1] "Round 12"
+[1] "Round 14"
+[1] "Round 16"
+[1] "Round 18"
+[1] "Round 20"
+[1] "Round 22"
+[1] "Round 24"
+[1] "Round 26"
+[1] "Round 28"
+[1] "Round 30"
+[1] "Round 32"
+[1] "Round 34"
+[1] "Round 36"
+[1] "Round 38"
+[1] "Round 40"
+[1] "Round 42"
+[1] "Round 44"
+[1] "Round 46"
+[1] "Round 48"
+[1] "Round 50"
+[1] "Round 52"
+[1] "Round 54"
+[1] "Round 56"
+[1] "Round 58"
+[1] "Round 60"
+[1] "Round 62"
+[1] "Round 64"
+[1] "Round 66"
+[1] "Round 68"
+[1] "Round 70"
+[1] "Round 72"
+[1] "Round 74"
+[1] "Round 76"
+[1] "Round 78"
+[1] "Round 80"
+[1] "Round 82"
+[1] "Round 84"
+[1] "Round 86"
+[1] "Round 88"
+[1] "Round 90"
+[1] "Round 92"
+[1] "Round 94"
+[1] "Round 96"
+[1] "Round 98"
+[1] "Round 100"
+[1] "data/Eric+dirmult_n250_p400_tau1.30758796347114_rho0.5_sigma0.5_Nsim100"
+                        lambda         SE         PE        linf         FPR
+bootstrap_mean     0.422399679 4.29470125 2.54945329 1.108344765 0.038578680
+bootstrap_mean_std 0.005556031 0.03755808 0.03406611 0.009983851 0.001883148
+                          FNR        TPR      sum_beta
+bootstrap_mean     0.27666667 0.72333333 -1.907701e-07
+bootstrap_mean_std 0.00828098 0.00828098  1.262774e-07
+Time difference of 26.57291 mins
+Error: unexpected ',' in "sum,"
+Execution halted
