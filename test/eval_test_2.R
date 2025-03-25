@@ -11,14 +11,28 @@ data_type <- "lognormal"
 # data_type <- "dirichlet"
 # data_type <- "multinom"
 # data_type <- "dirmult"
+file_name <- "data/ROC_S1.csv"
 N_sim <- 100
 # create a list of different n and p values
-np_list <- list(c(100,100))
-# fpr_list <- seq(0.02, 0.26, 0.02)
-fpr_list <- seq(0.26, 0.4, 0.02)
+# np_list <- list(c(100,100))
+fpr_list <- seq(0.4, 0.7, 0.05)    
+# fpr_list <- c(seq(0, 0.002, 0.0005), seq(0.6, 0.8, 0.05))
+
+library(dplyr)
+
+# Read the CSV file
+# dat <- read.csv("/storage/home/wkt5100/work/Eric-Lasso/data/ROC_S2.csv")
+# dat$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", dat$FPR))
+# Filter rows where model is "Eric" and select tau and FPR columns
+# result <- dat %>%
+#   filter(model == "Eric") %>%
+#   select(tau, FPR_mean)  %>%
+#   na.omit()
+# tau_fpr_list <- apply(result, 1, function(row) list(tau = row["tau"], FPR = row["FPR_mean"]))
+# print(tau_fpr_list)
 sigma <- 0.5
 rho <- 0.5
-tau <- 1
+tau <- 1.5
 # tau_list <- c(10.5,11.5,12.5)
 
 # model settings
@@ -31,7 +45,6 @@ model_list[["Debi"]] <- c(FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
 # model_list[["Vani"]] <- c(FALSE, FALSE)
 # -------------------------- 
-file_name <- "results/ROC_S1.csv"
 file_name_sum <- "results/results_sum.csv"
 colname <- t(c("model", "data_type", "n", "p", "N_sim", "tau", "rho", "lam", "SE", "PE", "l_inf", "FPR", "FNR","TPR"))
 # write.table(colname,
@@ -48,6 +61,8 @@ p <- 100
 beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
 theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
 for( fpr in fpr_list){
+    # tau <- tf$tau
+    # fpr <- tf$FPR
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
@@ -71,7 +86,7 @@ for( fpr in fpr_list){
         results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim),FNR = numeric(N_sim), TPR = numeric(N_sim), sum_beta = numeric(N_sim))
         results_bias <- matrix(NA, nrow = N_sim, ncol = 11)
         for (i in 1:N_sim) {
-            if (i %% 1 == 0) {
+            if (i %% 10 == 0) {
                 print(paste("Round", i))
             }
             # generate data

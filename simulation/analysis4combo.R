@@ -124,7 +124,7 @@ for (m in c(2)) {
             }else {
                 Zp <- ref_transform(Z.)
                 mu_u = apply(Z.-X., 2, mean)
-                fit <- fn_proposed(VV = Zp,y = y., alpha_real=NA, W = exp(Z.),mu_u = mu_u, Sigma_u = Sig_B,EstimateSigma = T)
+                fit <- fn_proposed(VV = Zp,y = y., alpha_real=NA, W = exp(Z.),mu_u = mu_u, Sigma_u = Sig_B,EstimateSigma = T, p_val = 0.1)
                 betas_for_supp[i, ] <- fit$beta.test
                 # print(fit_additive$beta.opt[1:10])
                 # print(beta_star[1:10])

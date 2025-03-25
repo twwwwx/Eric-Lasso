@@ -12,10 +12,12 @@ Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8802
 Estimating optimal shrinkage intensity lambda (correlation matrix): 0.2193 
 
 [1] "data/Debi+lognormal_n500_p500_tau0.5_rho0.5_sigma0.5_Nsim2"
-                        lambda       SE       PE       linf         FPR FNR TPR
-bootstrap_mean     0.085609266 7.440390 3.495341 0.39209946 0.055668016   0   1
-bootstrap_mean_std 0.006179385 2.693808 1.693766 0.02357155 0.001012146   0   0
-                       sum_beta
-bootstrap_mean     1.707618e-18
-bootstrap_mean_std 5.285486e-18
-Time difference of 2.978406 mins
+                        lambda       SE       PE       linf          FPR FNR
+bootstrap_mean     0.085584548 7.343413 3.478403 0.39252375 0.0556902834   0
+bootstrap_mean_std 0.004373791 1.942053 1.229531 0.01691093 0.0007231971   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.887325e-18
+bootstrap_mean_std   0 3.714278e-18
+Time difference of 1.140306 mins
+[1] 10.134198  4.746583
+[1] 5.189107 1.801575

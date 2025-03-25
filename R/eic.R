@@ -375,3 +375,174 @@ eic <- function(Z,
   )
   return(fit)
 }
+
+
+eic_one_step <- function(Z,
+                y,
+                n,
+                p,
+                lambda,
+                center.Z = TRUE,
+                scale.Z = TRUE,
+                center.y = TRUE,
+                scale.y = TRUE,
+                lambda.factor = ifelse(dim(Z)[1] <= dim(Z)[2], 0.01, 0.001),
+                step = 100,
+                K = 4,
+                mu = 10,
+                Sig_B = NULL,
+                etol = 1e-4,
+                optTol = 1e-10,
+                earlyStopping_max = 10,
+                noise = c("additive", "missing"),
+                proj = TRUE,
+                penalty = c("lasso", "SCAD"),
+                constrain = TRUE,
+                mode = "ADMM") {
+  nrows <- nrow(Z)
+  ncols <- ncol(Z)
+  vnames <- colnames(Z)
+
+  if (!(is.matrix(Z))) {
+    stop("Z has to be a matrix")
+  }
+  if (!(is.matrix(y))) {
+    stop("y has to be a matrix")
+  }
+  if (n != nrows) {
+    stop(paste("Number of rows in Z (", nrows, ") different from n(", n, ")"), sep = "")
+  }
+  if (p != ncols) {
+    stop(paste("Number of columns in Z (", ncols, ") different from p (", p, ")"), sep = "")
+  }
+  if (nrows != dim(y)[1]) {
+    stop(paste("Number of rows in Z (", nrows, ") different from number of rows in y (", dim(y)[1], ") "), sep = "")
+  }
+  if (!is.numeric(y)) {
+    stop("The response y must be numeric. Factors must be converted to numeric")
+  }
+  if (any(is.na(y))) {
+    stop("The response contains NA values. Remove NA values before calling the function.")
+  }
+  if (lambda.factor >= 1) {
+    stop("lambda factor should be smaller than 1")
+  }
+  if (n %% K != 0) {
+    stop("K should be a divider of n")
+  }
+  if (mu > 500 || mu < 1) {
+    warning(paste("Mu value (", mu, ") is not in the usual range (10-500)"))
+  }
+  if (noise == "missing" && center.Z == FALSE) {
+    stop("When noise is equal to missing, it is required to center matrix Z. Use center.Z=TRUE.")
+  }
+  if (scale.Z == FALSE && noise == "missing") {
+    warning("When noise is equal to missing, it is recommended to use scale.Z equal to TRUE in order
+            to obtain trustworthy results.")
+  }
+  if (scale.Z == TRUE && noise == "additive") {
+    warning("When noise is equal to additive, it is recommended to use scale.Z equal to FALSE in order
+            to obtain trustworthy results. Otherwise, the scaling should be taken into account
+            when introducing the error parameter as a function parameter.")
+  }
+
+  ratio_matrix <- NULL
+  if (noise == "missing") {
+    ratio_matrix <- matrix(0, p, p)
+
+    for (i in 1:p) {
+      for (j in i:p) {
+        n_ij <- length(intersect(which(!is.na(Z[, i])), which(!is.na(Z[, j]))))
+        ratio_matrix[i, j] <- n_ij
+        ratio_matrix[j, i] <- n_ij
+      }
+    }
+    ratio_matrix <- ratio_matrix / n
+  }
+
+  mean.Z <- sapply(1:p, function(j) mean_without_NA(j, Z))
+  sd.Z <- sapply(1:p, function(j) sd_without_NA_block(j, Z))
+
+  if (center.Z == TRUE) {
+    if (scale.Z == TRUE) {
+      Z <- sapply(1:p, function(j) rescale_without_NA(j, Z))
+      Z <- sapply(1:p, function(j) change_NA_value(j, Z))
+      Z <- sapply(1:p, function(j) scale_manual_with_sd(j, Z, sd.Z))
+    } else {
+      Z <- sapply(1:p, function(j) rescale_without_NA(j, Z))
+      Z <- sapply(1:p, function(j) change_NA_value(j, Z))
+    }
+  } else {
+    if (scale.Z == TRUE) {
+      Z <- sapply(1:p, function(j) scale_manual_with_sd(j, Z, sd.Z))
+    }
+  }
+
+
+
+  mean.y <- mean(y)
+  sd.y <- stats::sd(y)
+
+  if (center.y == TRUE) {
+    if (scale.y == TRUE) {
+      y <- scale(y, center = TRUE, scale = TRUE)
+    } else {
+      y <- scale(y, center = TRUE, scale = FALSE)
+    }
+  } else {
+    if (scale.y == TRUE) {
+      y <- scale(y, center = FALSE, scale = TRUE)
+    }
+  }
+
+
+
+  # n_without_fold <- n - floor(n / K)
+  # n_one_fold <- floor(n / K)
+  earlyStopping <- step
+
+  # lambda_max <- lambda_max(Z = Z, y = y, n = n, ratio_matrix = ratio_matrix, noise = noise)
+  # lambda_min <- lambda.factor * lambda_max
+  # lambda_list <- emdbook::lseq(lambda_max, lambda_min, step)
+  beta_start <- rep(0, p)
+  best.lambda <- lambda_max
+  beta.opt <- beta_start
+  best.error <- 1000
+  error_list <- matrix(0, step, 4)
+  error <- 1000
+  earlyStopping_high <- 0
+
+  matrix_beta <- matrix(0, step, p)
+
+  ### Creating the K matrices we are going to use for cross validation
+  if (proj) {
+    output <- cv_covariance_matrices(K = K, mat = Z, y = y, p = p, mu = mu, Sig_B = Sig_B, ratio_matrix = ratio_matrix, etol = etol, noise = noise, mode = mode)
+  } else {
+    output <- cv_matrices_noproj(K = K, mat = Z, y = y, p = p, mu = mu, ratio_matrix = ratio_matrix, etol = etol, noise = noise, mode = mode)
+  }
+  # list_matrices_lasso <- output$list_matrices_lasso
+  # list_matrices_error <- output$list_matrices_error
+  # list_rho_lasso <- output$list_rho_lasso
+  # list_rho_error <- output$list_rho_error
+  ZZ <- output$sigma_global
+  Zy <- output$rho_global
+  
+  if (constrain) {
+    # coef_tot <- lasso_covariance_con(n = n, p = p, lambda = lambda_step, XX = ZZ, Xy = Zy, beta.start = beta_start, penalty = penalty)$coefficients
+    coef_tot <- lasso_covariance_con_cpp(n = n, p = p, lambda = lambda, XX = ZZ, Xy = Zy, beta_start = beta_start, penalty = penalty)$coefficients
+  } else {
+    coef_tot <- lasso_covariance(n = n, p = p, lambda = lambda, XX = ZZ, Xy = Zy, beta.start = beta_start, penalty = penalty)$coefficients
+  }
+  beta_start <- coef_tot
+  fit <- list(
+    lambda.opt = lambda,
+    beta.opt = coef_tot,
+    vnames = vnames,
+    mean.Z = mean.Z,
+    sd.Z = sd.Z,
+    mean.y = mean.y,
+    sd.y = sd.y
+  )
+  return(fit)
+}
+    

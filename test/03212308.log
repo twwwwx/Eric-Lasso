@@ -1,0 +1,3630 @@
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf         FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.214893617   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.009092509   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 2.600007 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf        FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.24787234   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.00949895   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 2.603467 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf         FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.271063830   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.009783496   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 2.576654 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf         FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.288404255   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.009901286   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 2.539752 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf         FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.906595745   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.003338816   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 1.678545 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf         FPR FNR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377 0.953297872   0
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722 0.002089137   0
+                   TPR     sum_beta
+bootstrap_mean       1 1.122827e-19
+bootstrap_mean_std   0 1.923889e-19
+Time difference of 1.691368 mins
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9668 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7922 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9699 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9942 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.957 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.971 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9977 
+
+[1] "Round 10"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9845 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9716 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9858 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9828 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8831 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.988 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8147 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.99 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9821 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9892 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9383 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9747 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9494 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9768 
+
+[1] "Round 20"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9358 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9605 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9655 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7072 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9927 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7775 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9933 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9364 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8252 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9945 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9511 
+
+[1] "Round 30"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.937 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9998 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9664 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9616 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8438 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9973 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8293 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8717 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9972 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9842 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9744 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9789 
+
+[1] "Round 40"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9714 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8338 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9609 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9835 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9883 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9401 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9751 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8938 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9565 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8169 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9845 
+
+[1] "Round 50"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8747 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9829 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9561 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9753 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9947 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8001 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9994 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8993 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9991 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.903 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9963 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9531 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9496 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.987 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9109 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9913 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9974 
+
+[1] "Round 60"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9862 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9823 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9896 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8769 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9832 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9872 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9262 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9951 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9771 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.881 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9894 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8006 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9513 
+
+[1] "Round 70"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.968 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9919 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9597 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8454 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9782 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9958 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8914 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9728 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9877 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9659 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.985 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9996 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9724 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9661 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7766 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.973 
+
+[1] "Round 80"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9717 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9571 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9628 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9815 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9582 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9563 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9695 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.983 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.902 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9992 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9649 
+
+[1] "Round 90"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8621 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9806 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9979 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.806 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9743 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9833 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9064 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9694 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.8391 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9889 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9803 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 1 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9767 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9776 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.9219 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.997 
+
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 1 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.9678 
+
+[1] "Round 100"
+[1] "data is generated"
+Estimating optimal shrinkage intensity lambda.var (variance vector): 0.7644 
+
+Estimating optimal shrinkage intensity lambda (correlation matrix): 0.95 
+
+[1] "data/Debi+dirichlet_n100_p100_tau0.7_rho0.5_sigma0.5_Nsim100"
+                        lambda          SE        PE       linf FPR FNR TPR
+bootstrap_mean     0.159746283 0.109305224 4.5574507 0.10435377   1   0   1
+bootstrap_mean_std 0.004290485 0.002185142 0.1065505 0.00216722   0   0   0
+                       sum_beta
+bootstrap_mean     1.122827e-19
+bootstrap_mean_std 1.923889e-19
+Time difference of 1.693386 mins

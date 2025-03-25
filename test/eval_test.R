@@ -11,7 +11,7 @@ data_type <- "lognormal"
 # data_type <- "dirichlet"
 # data_type <- "multinom"
 # data_type <- "dirmult"
-N_sim <- 2
+N_sim <- 100
 # create a list of different n and p values
 np_list <- list(c(500,500))
 
@@ -113,7 +113,7 @@ for (np in np_list) {
             results_df$linf[i] <- measures$l_inf
             results_df$sum_beta[i] <- sum(fit_additive$beta.opt)
 
-            results_bias[i,] <- fit_additive$beta.opt[c(1:10, p)]
+            results_bias[i,] <- fit_additive$beta.opt[c(1:10, p)] - beta_star[c(1:10, p)]
         }
         runtime <- Sys.time() - start_time
 
@@ -121,13 +121,14 @@ for (np in np_list) {
         # bootstrap and p value
 
         bootstrap_mean <- apply(results_df, 2, mean)
+        bootstrap_median <- apply(results_df, 2, median)
         average_bias <- apply(results_bias, 2, mean)
         bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
         print(average_bias)
-        print(average_bias_std)
-        print(beta_star[c(1:10),p])
+        print(bootstrap_median)
+        # print(beta_star[c(1:10),p])
         # if (model_name == "CoCo" && data_type == "dirichlet") {
         #     tmp <- results_df$sum_beta
         #     save(tmp, file = paste0(subdir_name, ".RData"))

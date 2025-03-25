@@ -13,19 +13,20 @@ data_type <- "lognormal"
 # data_type <- "dirmult"
 # data_type_list <- c("dirichlet", "dirmult")
 # data_type_list <- c("dirmult")
-N_sim <- 2
+N_sim <- 100
 # create a list of different n and p values
-np_list <- list(c(500,500))
+np_list <- list(c(100,200), c(500,500))
+# np_list <- list(c(500,500))
 
 sigma <- 0.5
 rho <- 0.5
-tau <- 0.5
+tau <- 0.7
 tau_list <- seq(0.1, 1.9, 0.2)
-overdispersion = 1e+2
+overdispersion = 5e+2
 # model settings
 model_list <- list()
 model_list[["Debi"]] <- c(FALSE)
-# model_list[["Eric"]] <- c(TRUE, TRUE)
+model_list[["Eric"]] <- c(TRUE, TRUE)
 # model_list[["Coda"]] <- c(TRUE, FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
 # model_list[["Vani"]] <- c(FALSE, FALSE)
@@ -79,7 +80,6 @@ for (np in np_list) {
                 print(paste("Round", i))
             }
             # generate data
-
             if (data_type == "multinom" || data_type == "dirmult") {
                 data <- generate_multinom_data(n, p, beta_star, sigma, rho, theta = theta, type = data_type, overdispersion = overdispersion)
                 data$Sig_B <- Sig_B_estimated
@@ -117,18 +117,35 @@ for (np in np_list) {
             results_df$linf[i] <- measures$l_inf
             results_df$sum_beta[i] <- sum(fit_additive$beta.opt)
 
-            results_bias[i,] <- fit_additive$beta.opt[c(1:10, p)]
+            results_bias[i,] <- fit_additive$beta.opt[c(1:10, p)] - beta_star[c(1:10, p)]
         }
         runtime <- Sys.time() - start_time
 
         #--------------------------
         # bootstrap and p value
+        
+        bootstrap_metric <- function(data, R = 500, N = nrow(data)) {
+            median_fn <- function(data, indices) median(data[indices])
+            
+            boot_results <- boot(data = data, statistic = median_fn, R = R)
+            
+            list(
+                bootstrap_median = mean(boot_results$t),
+                bootstrap_se = sd(boot_results$t)
+            )
+        }
 
-        bootstrap_mean <- apply(results_df, 2, mean)
-        average_bias <- apply(results_bias, 2, mean)
-        bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
-        average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
+        # Apply bootstrap function to each column
+        bootstrap_results <- lapply(results_df, bootstrap_metric)
+
+        bootstrap_mean = sapply(bootstrap_results, function(x) x$bootstrap_median) 
+        bootstrap_mean_std = sapply(bootstrap_results, function(x) x$bootstrap_se)
+        # bootstrap_mean <- apply(results_df, 2, mean)
+        # average_bias <- apply(results_bias, 2, mean)
+        # bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
+        # average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
+        # print(results_bias[c(15:20),])
         # print(average_bias)
         # print(average_bias_std)
         # if (model_name == "CoCo" && data_type == "dirichlet") {
@@ -166,6 +183,8 @@ for (np in np_list) {
         print(evals)
 
         print(runtime)
+        print(results_df$SE)
+        print(results_df$PE)
     }
     cat("\n", file = file_name, append = TRUE)
     cat("\n", file = file_name_sum, append = TRUE)
