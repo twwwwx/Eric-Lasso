@@ -550,3 +550,182 @@ Eric,lognormal,100,200,100,0.7,0.5,-8.05866356431712e-09,0.996760126175631
 Debi,lognormal,500,500,100,0.7,0.5,-1.24076096619241e-18,0.494822868162311
 Eric,lognormal,500,500,100,0.7,0.5,-8.11651677371595e-08,0.145844517075093
 
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.7,0.5,-1.80411241501588e-19,0.913999838992335
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.5,0.5,4.20805968195936e-19,0.574985999061587
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,100,0.5,0.5,2.67366966240357e-17,0.250876425826182
+
+Debi,lognormal,500,500,100,0.5,0.5,-1.28206906896411e-19,0.619910074833589
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.5,0.5,4.20805968195936e-19,0.574985999061587
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,100,0.5,0.5,-4.52030990763519e-18,0.558244321633636
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,20,0.5,0.5,-4.38288728227265e-18,0.134929064516439
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,3,0.5,0.5,-3.24357149935247e-18,0.643824492114165
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,3,0.5,0.5,2.89120579329468e-18,0.031423050277136
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,-0.227308122303661,0.594212841771662
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,35.8207648286213,0.300292442005664
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,0.358207648286213,0.300292442005664
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,660.944463013095,0.293196629311104
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,0.130899525982553,0.72103331882779
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,660.717154890792,0.293055746873521
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,-0.346717963177915,0.257402660146395
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,0.130899525982553,0.72103331882779
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,3,0.5,0.5,0.130899525982553,0.72103331882779
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.727260742639478,0.418431598665563
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.103315878726883,4.88419399455969e-05
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.103315878726883,4.88419399455969e-05
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.105530989555948,1.87360924229871e-15
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.75732335352614,0.162369064976708
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-1.18774330200995,0.0687502170536781
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.75732335352614,0.162369064976708
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.105530989555948,1.87360924229871e-15
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.75732335352614,0.162369064976708
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.105530989555948,1.87360924229871e-15
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,100,0.5,0.5,-0.209466781167388,1.31105106282193e-09
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,100,200,100,0.5,0.5,-0.208925710595994,2.75457201712777e-06
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.75732335352614,0.162369064976708
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.667791786946247,0.190426690634675
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.5,0.5,4.20805968195936e-19,0.574985999061587
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.5,0.5,-1.15603056641267e-19,0.880024684127114
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,250,400,100,0.5,0.5,-5.7706660630541e-19,0.303536981928058
+
+Vani,lognormal,500,500,100,0.5,0.5,-0.667126204612968,0.190424958412206
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.680626344633225,0.400790458274359
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-3.09423077398347,0.290553021780913
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,lognormal,500,500,100,0.5,0.5,-0.0366664571888001,0.57336991787445
+
+Debi,lognormal,500,500,100,0.5,0.5,2.67366966240357e-17,0.250876425826182
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,20,0.5,0.5,-1.89193279098721e-18,0.11853155071197
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,20,0.5,0.5,-4.38288728227265e-18,0.134929064516439
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,500,500,100,0.5,0.5,-4.22432271454665e-19,0.590285525677831
+
+Debi,lognormal,550,700,100,0.5,0.5,4.7664238007894e-19,0.372237072001385
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,lognormal,100,200,100,0.5,0.5,7.60432298727021e-19,0.387875386239091
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Debi,dirichlet,100,200,100,0.5,0.5,1.07742590890747e-19,0.616899206361284
+
+Debi,lognormal,250,400,100,0.5,0.5,1.41081807694676e-19,0.760186399203681
+
+Debi,dirichlet,250,400,100,0.5,0.5,-1.06624507400371e-19,0.518886771277503
+
+Debi,dirichlet,500,500,100,0.5,0.5,-1.44673227391035e-19,0.297955101799555
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Eric,dirmult,100,200,100,0.531021025640841,0.5,-14.5143028859937,0.0126676185915066
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Eric,dirmult,100,200,100,0.531764276208372,0.5,3.05308271878126e-08,0.408768104576968
+
+Debi,dirichlet,550,700,100,0.5,0.5,1.67746404874242e-19,0.155661357435034
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Eric,dirmult,100,200,100,0.531764276208372,0.5,3.05308271878126e-08,0.408768104576968
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Eric,dirichlet,100,200,100,0.5,0.5,1.52275132503522e-08,0.946143308876562
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,dirichlet,100,200,100,0.5,0.5,0.0183300660787872,0.342772306491271
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+CoCo,dirichlet,100,200,100,0.5,0.5,0.0169247625758016,0.392202849048084
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Vani,dirichlet,100,200,100,0.5,0.5,0.0183300660787872,0.342772306491271
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"
+Eric,dirichlet,100,200,100,0.5,0.5,1.52275132503522e-08,0.946143308876562
+
+"model","data_type","n","p","N_sim","tau","rho","sum","p value"

@@ -75,7 +75,7 @@ cross_validation_function <- function(k,
   sigma_test <- list_matrices_error[[k]]
   rho_test <- list_rho_error[[k]]
   error <- t(coef_lambda) %*% sigma_test %*% coef_lambda - 2 * t(rho_test) %*% coef_lambda
-
+  
   error
 }
 
@@ -157,7 +157,7 @@ eic <- function(Z,
   nrows <- nrow(Z)
   ncols <- ncol(Z)
   vnames <- colnames(Z)
-
+  
   if (!(is.matrix(Z))) {
     stop("Z has to be a matrix")
   }
@@ -200,11 +200,11 @@ eic <- function(Z,
             to obtain trustworthy results. Otherwise, the scaling should be taken into account
             when introducing the error parameter as a function parameter.")
   }
-
+  
   ratio_matrix <- NULL
   if (noise == "missing") {
     ratio_matrix <- matrix(0, p, p)
-
+    
     for (i in 1:p) {
       for (j in i:p) {
         n_ij <- length(intersect(which(!is.na(Z[, i])), which(!is.na(Z[, j]))))
@@ -214,10 +214,10 @@ eic <- function(Z,
     }
     ratio_matrix <- ratio_matrix / n
   }
-
+  
   mean.Z <- sapply(1:p, function(j) mean_without_NA(j, Z))
   sd.Z <- sapply(1:p, function(j) sd_without_NA_block(j, Z))
-
+  
   if (center.Z == TRUE) {
     if (scale.Z == TRUE) {
       Z <- sapply(1:p, function(j) rescale_without_NA(j, Z))
@@ -232,12 +232,12 @@ eic <- function(Z,
       Z <- sapply(1:p, function(j) scale_manual_with_sd(j, Z, sd.Z))
     }
   }
-
-
-
+  
+  
+  
   mean.y <- mean(y)
   sd.y <- stats::sd(y)
-
+  
   if (center.y == TRUE) {
     if (scale.y == TRUE) {
       y <- scale(y, center = TRUE, scale = TRUE)
@@ -249,13 +249,13 @@ eic <- function(Z,
       y <- scale(y, center = FALSE, scale = TRUE)
     }
   }
-
-
-
+  
+  
+  
   # n_without_fold <- n - floor(n / K)
   # n_one_fold <- floor(n / K)
   earlyStopping <- step
-
+  
   lambda_max <- lambda_max(Z = Z, y = y, n = n, ratio_matrix = ratio_matrix, noise = noise)
   lambda_min <- lambda.factor * lambda_max
   lambda_list <- emdbook::lseq(lambda_max, lambda_min, step)
@@ -266,9 +266,9 @@ eic <- function(Z,
   error_list <- matrix(0, step, 4)
   error <- 1000
   earlyStopping_high <- 0
-
+  
   matrix_beta <- matrix(0, step, p)
-
+  
   ### Creating the K matrices we are going to use for cross validation
   if (proj) {
     output <- cv_covariance_matrices(K = K, mat = Z, y = y, p = p, mu = mu, Sig_B = Sig_B, ratio_matrix = ratio_matrix, etol = etol, noise = noise, mode = mode)
@@ -286,24 +286,24 @@ eic <- function(Z,
     lambda_step <- lambda_list[i]
     error_old <- error
     error <- 0
-
+    
     out <- sapply(1:K, function(k) {
       cross_validation_function(k,
-        n,
-        p,
-        lambda_step,
-        list_matrices_lasso,
-        list_rho_lasso,
-        list_matrices_error,
-        list_rho_error,
-        beta_start,
-        penalty = penalty,
-        constrain = constrain
+                                n,
+                                p,
+                                lambda_step,
+                                list_matrices_lasso,
+                                list_rho_lasso,
+                                list_matrices_error,
+                                list_rho_error,
+                                beta_start,
+                                penalty = penalty,
+                                constrain = constrain
       )
     })
     
     # ...existing code...
-
+    
     error <- mean(out)
     sd_low <- stats::quantile(out, probs = c(0.1))
     sd_high <- stats::quantile(out, probs = c(0.9))
@@ -319,7 +319,7 @@ eic <- function(Z,
     }
     beta_start <- coef_tot
     matrix_beta[i, ] <- beta_start
-
+    
     ### Checking for optimal parameters
     if (error <= best.error) {
       best.error <- error
@@ -327,15 +327,15 @@ eic <- function(Z,
       beta.opt <- coef_tot
       # beta.opt[abs(beta.opt) < 1e-4] <- 0
     }
-
+    
     ## Early stopping
     if (abs(error - error_old) < optTol && i > 10) {
       print(paste("Early Stopping because of convergence of the error at", i, "iteration"))
       earlyStopping <- i
       break
     }
-
-
+    
+    
     if (error > best.error) {
       earlyStopping_high <- earlyStopping_high + 1
       if (earlyStopping_high >= earlyStopping_max) {
@@ -351,12 +351,12 @@ eic <- function(Z,
   # step.sd <- max(which(df[, "error"] > best.error + sd.best & df[, "lambda"] > df[step.min, "lambda"]))
   # lambda.sd <- df[step.sd, "lambda"]
   # beta.sd <- matrix_beta[step.sd, ]
-
+  
   data_intermediate <- data.frame(matrix_beta[1:earlyStopping, ])
   names(data_intermediate) <- sapply(1:p, function(i) paste0("beta", i))
-
+  
   data_beta <- data.frame(lambda = lambda_list[1:earlyStopping])
-
+  
   data_beta <- cbind(data_beta, data_intermediate)
   fit <- list(
     lambda.opt = best.lambda,
@@ -378,31 +378,31 @@ eic <- function(Z,
 
 
 eic_one_step <- function(Z,
-                y,
-                n,
-                p,
-                lambda,
-                center.Z = TRUE,
-                scale.Z = TRUE,
-                center.y = TRUE,
-                scale.y = TRUE,
-                lambda.factor = ifelse(dim(Z)[1] <= dim(Z)[2], 0.01, 0.001),
-                step = 100,
-                K = 4,
-                mu = 10,
-                Sig_B = NULL,
-                etol = 1e-4,
-                optTol = 1e-10,
-                earlyStopping_max = 10,
-                noise = c("additive", "missing"),
-                proj = TRUE,
-                penalty = c("lasso", "SCAD"),
-                constrain = TRUE,
-                mode = "ADMM") {
+                         y,
+                         n,
+                         p,
+                         lambda,
+                         center.Z = TRUE,
+                         scale.Z = TRUE,
+                         center.y = TRUE,
+                         scale.y = TRUE,
+                         lambda.factor = ifelse(dim(Z)[1] <= dim(Z)[2], 0.01, 0.001),
+                         step = 100,
+                         K = 4,
+                         mu = 10,
+                         Sig_B = NULL,
+                         etol = 1e-4,
+                         optTol = 1e-10,
+                         earlyStopping_max = 10,
+                         noise = c("additive", "missing"),
+                         proj = TRUE,
+                         penalty = c("lasso", "SCAD"),
+                         constrain = TRUE,
+                         mode = "ADMM") {
   nrows <- nrow(Z)
   ncols <- ncol(Z)
   vnames <- colnames(Z)
-
+  
   if (!(is.matrix(Z))) {
     stop("Z has to be a matrix")
   }
@@ -445,11 +445,11 @@ eic_one_step <- function(Z,
             to obtain trustworthy results. Otherwise, the scaling should be taken into account
             when introducing the error parameter as a function parameter.")
   }
-
+  
   ratio_matrix <- NULL
   if (noise == "missing") {
     ratio_matrix <- matrix(0, p, p)
-
+    
     for (i in 1:p) {
       for (j in i:p) {
         n_ij <- length(intersect(which(!is.na(Z[, i])), which(!is.na(Z[, j]))))
@@ -459,10 +459,10 @@ eic_one_step <- function(Z,
     }
     ratio_matrix <- ratio_matrix / n
   }
-
+  
   mean.Z <- sapply(1:p, function(j) mean_without_NA(j, Z))
   sd.Z <- sapply(1:p, function(j) sd_without_NA_block(j, Z))
-
+  
   if (center.Z == TRUE) {
     if (scale.Z == TRUE) {
       Z <- sapply(1:p, function(j) rescale_without_NA(j, Z))
@@ -477,12 +477,12 @@ eic_one_step <- function(Z,
       Z <- sapply(1:p, function(j) scale_manual_with_sd(j, Z, sd.Z))
     }
   }
-
-
-
+  
+  
+  
   mean.y <- mean(y)
   sd.y <- stats::sd(y)
-
+  
   if (center.y == TRUE) {
     if (scale.y == TRUE) {
       y <- scale(y, center = TRUE, scale = TRUE)
@@ -494,13 +494,13 @@ eic_one_step <- function(Z,
       y <- scale(y, center = FALSE, scale = TRUE)
     }
   }
-
-
-
+  
+  
+  
   # n_without_fold <- n - floor(n / K)
   # n_one_fold <- floor(n / K)
   earlyStopping <- step
-
+  
   # lambda_max <- lambda_max(Z = Z, y = y, n = n, ratio_matrix = ratio_matrix, noise = noise)
   # lambda_min <- lambda.factor * lambda_max
   # lambda_list <- emdbook::lseq(lambda_max, lambda_min, step)
@@ -511,9 +511,9 @@ eic_one_step <- function(Z,
   error_list <- matrix(0, step, 4)
   error <- 1000
   earlyStopping_high <- 0
-
+  
   matrix_beta <- matrix(0, step, p)
-
+  
   ### Creating the K matrices we are going to use for cross validation
   if (proj) {
     output <- cv_covariance_matrices(K = K, mat = Z, y = y, p = p, mu = mu, Sig_B = Sig_B, ratio_matrix = ratio_matrix, etol = etol, noise = noise, mode = mode)
@@ -545,4 +545,3 @@ eic_one_step <- function(Z,
   )
   return(fit)
 }
-    

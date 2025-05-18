@@ -1,0 +1,11 @@
+WARNING: ignoring environment value of R_HOME
+Loading required package: Matrix
+Loaded glmnet 4.1-8
+Loaded lars 1.3
+
+Error captured:
+No traceback available 
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called ‘coda’
+Calls: withCallingHandlers ... loadNamespace -> withRestarts -> withOneRestart -> doWithOneRestart
+Execution halted

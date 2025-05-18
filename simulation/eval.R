@@ -7,25 +7,25 @@ library("boot")
 # --------------------------
 
 # simulation settings
-data_type <- "lognormal"
-# data_type <- "dirichlet"
+# data_type <- "lognormal"
+data_type <- "dirichlet"
 # data_type <- "multinom"
 # data_type <- "dirmult"
 # data_type_list <- c("dirichlet", "dirmult")
 # data_type_list <- c("dirmult")
 N_sim <- 100
 # create a list of different n and p values
-np_list <- list(c(100,200), c(500,500))
-# np_list <- list(c(500,500))
+np_list <- list(c(100,200))
+# np_list <- list(c(100,200),c(250,400),c(500,500),c(550,700))
 
 sigma <- 0.5
 rho <- 0.5
-tau <- 0.7
+tau <- 0.5
 tau_list <- seq(0.1, 1.9, 0.2)
-overdispersion = 5e+2
+overdispersion = 5e+3
 # model settings
 model_list <- list()
-model_list[["Debi"]] <- c(FALSE)
+# model_list[["Debi"]] <- c(FALSE)
 model_list[["Eric"]] <- c(TRUE, TRUE)
 # model_list[["Coda"]] <- c(TRUE, FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
@@ -50,6 +50,7 @@ for (np in np_list) {
     p <- np[2]
     beta_star <- c(1.2, -0.8, 0.7, 0, 0, -1.5, -1, 1.4, rep(0, p - 8))
     theta <- c(rep(log(0.2 * p), 5), rep(0, p - 5))
+    # theta = rep(0, p)
     for (i in seq_along(model_list)) {
         model <- model_list[[i]]
         model_name <- names(model_list)[i]
@@ -74,8 +75,9 @@ for (np in np_list) {
         set.seed(1234567)
 
         results_df <- data.frame(lambda = numeric(N_sim), SE = numeric(N_sim), PE = numeric(N_sim), linf = numeric(N_sim), FPR = numeric(N_sim),FNR = numeric(N_sim), TPR = numeric(N_sim), sum_beta = numeric(N_sim))
-        results_bias <- matrix(NA, nrow = N_sim, ncol = 11)
+        results_bias <- matrix(NA, nrow = N_sim, ncol = p)
         for (i in 1:N_sim) {
+            # i = i + 20
             if (i %% 2 == 0) {
                 print(paste("Round", i))
             }
@@ -90,14 +92,20 @@ for (np in np_list) {
             # record time
             if(length(model)== 2){
                 # Note: if p > 700, step is set to be 50
-                fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, noise = "additive", penalty = "lasso", proj = proj, constrain = constrain)
+                fit_additive <- eic(Z = data$Z, y = data$y, n = n, p = p, scale.Z = FALSE, scale.y = FALSE, step = 100, K = 5, mu = 10, earlyStopping_max = 10, Sig_B = data$Sig_B, etol = 1e-4, 
+                                    noise = "additive",
+                                    penalty = "lasso",
+                                    proj = proj, 
+                                    constrain = constrain)
             }else {
                 Zp <- ref_transform(data$Z)
                 mu_u = rep(0,p)
                 Sigma_x_lat = AR_covariance_matrix(p, rho)
                 Sigma_w_lat = Sigma_x_lat+data$Sig_B
                 supp_data = list(mu_x = theta, Sigma_x = Sigma_x_lat, Sigma_w = Sigma_w_lat, mu_w = theta)
+                # fit_additive <- fn_proposed(VV = Zp,y = data$y, alpha_real=beta_star, W = exp(data$Z),mu_u = mu_u, Sigma_u = data$Sig_B,EstimateSigma = T, Noestimate.data = supp_data)
                 fit_additive <- fn_proposed(VV = Zp,y = data$y, alpha_real=beta_star, W = exp(data$Z),mu_u = mu_u, Sigma_u = data$Sig_B,EstimateSigma = T, Noestimate.data = supp_data)
+                
                 # fit_additive$beta.opt <- fit_additive$beta.test
                 # print(fit_additive$beta.opt[1:10])
                 # print(beta_star[1:10])
@@ -108,6 +116,7 @@ for (np in np_list) {
             centered_X <- data$X - rep(fit_additive$mean.Z, each = n)
             # centered_X_ref <- ref_transform(centered_X)
             # measures <- eval_results(fit_additive$beta.opt[1:(p-1)], centered_X_ref, beta_star[1:(p-1)], beta_test = fit_additive$beta.test[1:(p-1)])
+            # measures <- eval_results(fit_additive$beta.lasso, centered_X, beta_star)
             measures <- eval_results(fit_additive$beta.opt, centered_X, beta_star, beta_test = fit_additive$beta.test)
             results_df$SE[i] <- measures$SE
             results_df$PE[i] <- measures$PE
@@ -117,32 +126,32 @@ for (np in np_list) {
             results_df$linf[i] <- measures$l_inf
             results_df$sum_beta[i] <- sum(fit_additive$beta.opt)
 
-            results_bias[i,] <- fit_additive$beta.opt[c(1:10, p)] - beta_star[c(1:10, p)]
+            results_bias[i,] <- fit_additive$beta.opt - beta_star
         }
         runtime <- Sys.time() - start_time
 
         #--------------------------
         # bootstrap and p value
         
-        bootstrap_metric <- function(data, R = 500, N = nrow(data)) {
-            median_fn <- function(data, indices) median(data[indices])
-            
-            boot_results <- boot(data = data, statistic = median_fn, R = R)
-            
-            list(
-                bootstrap_median = mean(boot_results$t),
-                bootstrap_se = sd(boot_results$t)
-            )
-        }
+        # bootstrap_metric <- function(data, R = 500, N = nrow(data)) {
+            # median_fn <- function(data, indices) median(data[indices])
+        #     
+        #     boot_results <- boot(data = data, statistic = median_fn, R = R)
+        #     
+        #     list(
+        #         bootstrap_median = mean(boot_results$t),
+        #         bootstrap_se = sd(boot_results$t)
+        #     )
+        # }
 
         # Apply bootstrap function to each column
-        bootstrap_results <- lapply(results_df, bootstrap_metric)
+        # bootstrap_results <- lapply(results_df, bootstrap_metric)
 
-        bootstrap_mean = sapply(bootstrap_results, function(x) x$bootstrap_median) 
-        bootstrap_mean_std = sapply(bootstrap_results, function(x) x$bootstrap_se)
-        # bootstrap_mean <- apply(results_df, 2, mean)
+        # bootstrap_mean = sapply(bootstrap_results, function(x) x$bootstrap_median) 
+        # bootstrap_mean_std = sapply(bootstrap_results, function(x) x$bootstrap_se)
+        bootstrap_mean <- apply(results_df, 2, mean)
         # average_bias <- apply(results_bias, 2, mean)
-        # bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
+        bootstrap_mean_std <- apply(results_df, 2, sd) / sqrt(N_sim)
         # average_bias_std <- apply(results_bias, 2, sd) / sqrt(N_sim)
         p_value <- t.test(results_df$sum_beta, mu = 0)$p.value
         # print(results_bias[c(15:20),])
@@ -183,9 +192,10 @@ for (np in np_list) {
         print(evals)
 
         print(runtime)
-        print(results_df$SE)
-        print(results_df$PE)
+        # print(results_df$SE)
+        # print(results_df$PE)
     }
     cat("\n", file = file_name, append = TRUE)
     cat("\n", file = file_name_sum, append = TRUE)
 }
+# save(results_bias, file = "bias_100_200_Debi.RData")
