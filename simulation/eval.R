@@ -8,15 +8,16 @@ library("boot")
 
 # simulation settings
 # data_type <- "lognormal"
-data_type <- "dirichlet"
+# data_type <- "dirichlet"
 # data_type <- "multinom"
-# data_type <- "dirmult"
+data_type <- "dirmult"
 # data_type_list <- c("dirichlet", "dirmult")
 # data_type_list <- c("dirmult")
+print(data_type)
 N_sim <- 100
 # create a list of different n and p values
-np_list <- list(c(100,200))
-# np_list <- list(c(100,200),c(250,400),c(500,500),c(550,700))
+# np_list <- list(c(100,200))
+np_list <- list(c(100,200),c(250,400),c(500,500),c(550,700))
 
 sigma <- 0.5
 rho <- 0.5
@@ -25,8 +26,8 @@ tau_list <- seq(0.1, 1.9, 0.2)
 overdispersion = 5e+3
 # model settings
 model_list <- list()
-# model_list[["Debi"]] <- c(FALSE)
-model_list[["Eric"]] <- c(TRUE, TRUE)
+model_list[["Debi"]] <- c(FALSE)
+# model_list[["Eric"]] <- c(TRUE, TRUE)
 # model_list[["Coda"]] <- c(TRUE, FALSE)
 # model_list[["CoCo"]] <- c(FALSE, TRUE)
 # model_list[["Vani"]] <- c(FALSE, FALSE)

@@ -83,7 +83,7 @@ fn_proposed <- function(VV,y, alpha_real, W, mu_u, Sigma_u, EstimateSigma=T,Shri
   alpha_rclasso = as.vector(rclasso_best$beta)
   ## proposed method
   # M = solve(Sigma_zv)
-  M = solve(Sigma_zv + 1e-4 * diag(p-1))
+  M = solve(Sigma_zv)
   alpha_drclasso = alpha_rclasso + 1/n*M%*%t(ZV)%*%(y - ZV%*%alpha_rclasso)
   fit = scalreg(ZV,y) # scaled lasso estimator for sigma
   s2_eps_drclasso_hat = (fit$hsigma)^2
