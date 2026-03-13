@@ -1,6 +1,6 @@
 # Fig 1
 
-```{r warning=FALSE}
+```{r warning=FALSE,  fig.width=6, fig.height=12}
 # Load necessary libraries
 library(ggplot2)
 library(tidyr)
@@ -10,6 +10,9 @@ count_values <- function(x) {
     c('positive' = sum(x > 0), 'negative' = sum(x < 0))
 }
 load("data/RDA2_betas.RData")
+support_old = support
+load("data/RDA2_betas_for_debi.RData")
+support = append(support_old, support)
 plots <- list()
 for(model_name in names(support)){
 data <- as.data.frame(support[[model_name]])
@@ -23,19 +26,31 @@ plots[[model_name]] <- ggplot(freq_df, aes(x = Var1, y = value, fill = Var2)) +
   geom_bar(stat = "identity") +
   # geom_hline(yintercept = 0.5, linetype="dashed", color = "black") +
   coord_cartesian(ylim=c(0,1.0)) +
-  scale_y_continuous(breaks = seq(0, 1, 0.1)) +
+  scale_y_continuous(breaks = seq(0, 1, 0.2)) +
   scale_fill_manual(values = c("positive" = "#FC8D62", "negative" = "#66C2A5"),name="Sign") +
   # scale_fill_brewer(palette = "Set2", name = "Sign of Beta",breaks=c("positive","negative"),labels=c("Positive","Negative")) +
-  labs(title = ifelse(model_name=='CoDA','Coda',model_name), y = "Selection Frequency",x="genus") 
-if (model_name %in% c("CoDA","Vani")) 
-  plots[[model_name]] <- plots[[model_name]] + theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),axis.title.y = element_blank())
+  labs(title = ifelse(model_name=='CoDA','Coda',model_name), y = "Selection Frequency",x="genus") +
+  theme(
+    text = element_text(family = "Times New Roman", size = 18),
+    plot.title = element_text(size = 20, face = "bold"),
+    axis.title = element_text(size = 17),
+    axis.text = element_text(size = 17),
+    legend.title = element_text(size = 20, face = "bold"),
+    legend.text = element_text(size = 20)
+  ) 
+if (model_name != "Debi")
+  plots[[model_name]] <- plots[[model_name]] + theme(axis.text.x = element_blank(), axis.ticks.x = element_blank(),axis.title.x = element_blank())
 }
-plots[[1]] + plots[[2]] + plots[[3]] + plots[[4]] + plot_layout(guides = "collect")
+
+
+
+# plots[[1]] + plots[[2]] + plots[[3]] + plots[[4]] + plot_layout(guides = "collect")
+p_all = plots[[1]] / plots[[2]] / plots[[3]] / plots[[4]]   / plots[[5]] + plot_layout(guides = "collect")
 # Save the plot
-# ggsave(filename = "pic/Freq_plot y1.png", plot = plots[[1]] + plots[[2]] + plots[[3]] + plots[[4]] + plot_layout(guides = "collect"), width = 10, height = 5)
+ggsave(filename = "pic/Freq_plot_y1_all.png", plot = p_all, width = 10, height = 12.5)
 ```
 
-# Fig 2
+# ROC plot zoomed
 
 ```{r warning=FALSE}
 # Load necessary libraries
@@ -46,7 +61,7 @@ library(stringr)
 library(ggsci)
 library("ggrepel")   
 # Read the CSV file
-data <- read.csv("data/ROC_S2.csv")
+data <- read.csv("data/ROC_S1.csv")
 
 # Extract mean and standard deviation values
 data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
@@ -63,7 +78,7 @@ p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
     geom_point() +
     scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
     guides(fill=FALSE,color = guide_legend(order = 1), size = guide_legend(order = 2)) + # Change the order of the legends
-    labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 2") +
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 1") +
     scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0., 1)) +
     theme(legend.title = element_text(size = 14)) +
     geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1),color="#252525",linetype="dashed") 
@@ -77,7 +92,7 @@ library(stringr)
 library(ggsci)
 library("ggrepel")  
 
-data <- read.csv("data/ROC_S2.csv")
+data <- read.csv("data/ROC_S1.csv")
 data <- data %>% filter(tau!='NA')
 
 # Extract mean and standard deviation values
@@ -93,21 +108,228 @@ data$tau <- as.numeric(data$tau)
 p2 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
     geom_line() +
     geom_point(aes(size=tau)) +
-   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau)) +
-    geom_text_repel(aes(label = tau), vjust = 1) +
+   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau), range = c(1, 6)) +
+    geom_text_repel(aes(label = tau), vjust = 1, family = "Times New Roman", size = 5) +
     # geom_ribbon(aes(xmin = FPR_mean - FPR_std, xmax = FPR_mean + FPR_std,fill=model), alpha = 0.2,linetype = "blank") +
     guides(fill=FALSE) + # Change the order of the legends
-    labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 2") +
-    scale_y_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0.3, 1)) +
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 1") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0.3, 1)) +
     scale_x_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0, 0.3)) +
-    theme(legend.title = element_text(size = 14)) +
+    theme(
+      text = element_text(family = "Times New Roman", size = 18),
+      plot.title = element_text(size = 20, face = "bold"),
+      axis.title = element_text(size = 17),
+      axis.text = element_text(size = 16),
+      legend.title = element_text(size = 14),
+      legend.text = element_text(size = 12)
+    ) +
     scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
     scale_fill_npg()
 
+ggsave(filename = "ROC zoomed S1.png", plot = p2, width = 8, height = 6)
 
 # p1 + guides(fill=FALSE,color=FALSE)
 p2
 ```
+# ROC plot annotated
+
+## ROC plot annotated S1
+
+```{r}
+library(dplyr)
+library(stringr)
+library(ggrepel)
+library(ggsci)
+library(ggplot2)
+library(readr)
+
+# --- Helper: trapezoidal AUC on (FPR, TPR) ---
+auc_trapz <- function(fpr, tpr) {
+  # keep finite & in [0,1]
+  ok <- is.finite(fpr) & is.finite(tpr)
+  fpr <- pmin(pmax(fpr[ok], 0), 1)
+  tpr <- pmin(pmax(tpr[ok], 0), 1)
+
+  # add (0,0) and (1,1) if missing
+  if (!any(abs(fpr - 0) < 1e-12)) {
+    fpr <- c(0, fpr); tpr <- c(0, tpr)
+  }
+  if (!any(abs(fpr - 1) < 1e-12)) {
+    fpr <- c(fpr, 1); tpr <- c(tpr, 1)
+  }
+
+  # sort by FPR; deduplicate FPR by keeping the max TPR at ties
+  ord <- order(fpr, tpr, decreasing = c(FALSE, TRUE))
+  fpr <- fpr[ord]; tpr <- tpr[ord]
+  d <- dplyr::tibble(fpr=fpr, tpr=tpr) |>
+    dplyr::group_by(fpr) |>
+    dplyr::summarise(tpr = max(tpr), .groups="drop")
+
+  # trapezoids
+  f <- d$fpr; t <- d$tpr
+  sum(diff(f) * (head(t, -1) + tail(t, 1)) / 2)
+}
+
+# --- Read & parse (your parsing kept) ---
+data <- read.csv("data/ROC_S1.csv")
+
+data <- data |>
+  mutate(
+    FPR_mean = as.numeric(gsub("\\(.*\\)", "", FPR)),
+    FPR_std  = as.numeric(str_extract(FPR, "\\((.*?)\\)") |> gsub("\\(|\\)", "", x = _)),
+    TPR_mean = as.numeric(gsub("\\(.*\\)", "", TPR)),
+    TPR_std  = as.numeric(str_extract(TPR, "\\((.*?)\\)") |> gsub("\\(|\\)", "", x = _)),
+    tau      = as.numeric(tau)
+  )
+
+# --- Compute AUC per model ---
+# Compute AUC per model (same as before)
+auc_tbl <- data |>
+  group_by(model) |>
+  summarise(ROC_AUC = auc_trapz(FPR_mean, TPR_mean), .groups = "drop") |>
+  arrange(desc(ROC_AUC))
+
+# Format the text to display
+auc_text <- paste0("ROC-AUC values: \n",
+                   paste0(auc_tbl$model, ": ", sprintf("%.3f", auc_tbl$ROC_AUC), collapse = "\n"))
+
+# Base ROC plot (with no legend)
+p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+  geom_line() +
+  geom_point() +
+  scale_color_npg(name = "Model") +
+  labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 1") +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.1), limits = c(0, 1)) +
+  theme(legend.position = "none", # remove legend
+        legend.title   = element_text(size = 14)) +
+  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1), color = "#252525", linetype = "dashed")
+
+
+# Add the AUC box inside the plot (bottom right)
+library(grid)  # for unit()
+
+# Build pretty annotation text
+auc_text <- paste0(" AUC values: \n",   # bold title (markdown-like if you use ggtext)
+                   paste0(auc_tbl$model, ": ", sprintf("%.3f", auc_tbl$ROC_AUC), collapse = "\n"))
+
+# If you want bold support, use element_markdown in theme (from ggtext package)
+# install.packages("ggtext") if not installed
+library(ggtext)
+
+p = p1 +
+  geom_label(
+    data = data.frame(x = 0.95, y = 0.05, label = auc_text),
+    aes(x = x, y = y, label = label),
+    hjust = 1, vjust = 0,
+    size = 6,
+    family = "Times New Roman",
+    label.size = 0.6,                  # border thickness
+    label.padding = unit(0.7, "lines"),
+    fill = "lightgrey",                    # soft background
+    color = "black"
+  ) + 
+  theme(
+    legend.position = "none",
+    plot.title = element_text(family = "Times New Roman", face = "bold", size = 20),
+    axis.title = element_text(family = "Times New Roman", size = 17),
+    axis.text = element_text(family = "Times New Roman", size = 16),
+    # enable markdown so **ROC AUC** becomes bold
+    plot.tag = element_markdown(),
+    text = element_text(family = "Times New Roman", size = 18)
+  )
+ggsave(filename = "ROC S1 vals.png", plot = p, width = 6, height = 6)
+
+p
+```
+
+## ROC plot annotated S2
+
+```{r}
+library(dplyr)
+library(stringr)
+library(ggrepel)
+library(ggsci)
+library(ggplot2)
+library(readr)
+
+# --- Helper: trapezoidal AUC on (FPR, TPR) ---
+auc_trapz <- function(fpr, tpr) {
+  ok <- is.finite(fpr) & is.finite(tpr)
+  fpr <- pmin(pmax(fpr[ok], 0), 1)
+  tpr <- pmin(pmax(tpr[ok], 0), 1)
+
+  if (!any(abs(fpr - 0) < 1e-12)) {
+    fpr <- c(0, fpr); tpr <- c(0, tpr)
+  }
+  if (!any(abs(fpr - 1) < 1e-12)) {
+    fpr <- c(fpr, 1); tpr <- c(tpr, 1)
+  }
+
+  ord <- order(fpr, tpr, decreasing = c(FALSE, TRUE))
+  fpr <- fpr[ord]; tpr <- tpr[ord]
+  d <- dplyr::tibble(fpr=fpr, tpr=tpr) |>
+    dplyr::group_by(fpr) |>
+    dplyr::summarise(tpr = max(tpr), .groups="drop")
+
+  f <- d$fpr; t <- d$tpr
+  sum(diff(f) * (head(t, -1) + tail(t, 1)) / 2)
+}
+
+data <- read.csv("data/ROC_S2.csv")
+
+data <- data |>
+  mutate(
+    FPR_mean = as.numeric(gsub("\\(.*\\)", "", FPR)),
+    FPR_std  = as.numeric(str_extract(FPR, "\\((.*?)\\)") |> gsub("\\(|\\)", "", x = _)),
+    TPR_mean = as.numeric(gsub("\\(.*\\)", "", TPR)),
+    TPR_std  = as.numeric(str_extract(TPR, "\\((.*?)\\)") |> gsub("\\(|\\)", "", x = _)),
+    tau      = as.numeric(tau)
+  )
+
+auc_tbl <- data |>
+  group_by(model) |>
+  summarise(ROC_AUC = auc_trapz(FPR_mean, TPR_mean), .groups = "drop") |>
+  arrange(desc(ROC_AUC))
+
+auc_text <- paste0(" AUC values: \n",
+                   paste0(auc_tbl$model, ": ", sprintf("%.3f", auc_tbl$ROC_AUC), collapse = "\n"))
+
+p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+  geom_line() +
+  geom_point() +
+  scale_color_npg(name = "Model") +
+  labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 2") +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.1), limits = c(0, 1)) +
+  theme(legend.position = "none",
+        legend.title   = element_text(size = 14)) +
+  geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1), color = "#252525", linetype = "dashed")
+
+p_s2_annotated = p1 +
+  geom_label(
+    data = data.frame(x = 0.95, y = 0.05, label = auc_text),
+    aes(x = x, y = y, label = label),
+    hjust = 1, vjust = 0,
+    size = 6,
+    family = "Times New Roman",
+    label.size = 0.6,
+    label.padding = unit(0.7, "lines"),
+    fill = "lightgrey",
+    color = "black"
+  ) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(family = "Times New Roman", face = "bold", size = 20),
+    axis.title = element_text(family = "Times New Roman", size = 17),
+    axis.text = element_text(family = "Times New Roman", size = 16),
+    plot.tag = element_markdown(),
+    text = element_text(family = "Times New Roman", size = 18)
+  )
+ggsave(filename = "ROC S2 vals.png", plot = p_s2_annotated, width = 6, height = 6)
+p_s2_annotated
+
+```
+
+
 
 # Figure S1
 
@@ -133,17 +355,30 @@ data_long <- data_long %>%
   mutate("(n,p)" = paste0("(n,p)=(", n, ",", p, ")")) %>%
   select(-c(n, p))
 
-ggplot(data_long, aes(x = Value, fill = ifelse(grepl("CoCo", Type), "#E64B35FF", "#3C5488FF"))) + 
+p = ggplot(data_long, aes(x = Value, fill = ifelse(grepl("CoCo", Type), "#E64B35FF", "#3C5488FF"))) + 
   geom_histogram(aes(y=after_stat(count/100)),bins = 20, color = "white") + 
   # facet_wrap(~ Variable, scales = "fixed", ncol = 2, nrow = 3,dir="v") +
   geom_vline(aes(xintercept=0), linetype="dashed", color = "black") + 
   facet_grid(vars(`(n,p)`), vars(Type), scales = "free") +
   labs(x = "Sum of the Regression Coefficients", y = "Frequency ") +
   scale_x_continuous(breaks = seq(-.8, .8, 0.2)) +
-  scale_fill_identity()
+  scale_fill_identity() +
+  theme(
+    text = element_text(family = "Times New Roman", size = 18),
+    axis.title = element_text(size = 17),
+    axis.text = element_text(size = 15),
+    strip.text = element_text(size = 16),
+    legend.title = element_text(size = 16),
+    legend.text = element_text(size = 14)
+  )
+p
+ggsave(filename = "pic/hist of sumbetas.png", plot = p, width = 8, height = 9)
+
 ```
 
 # Figure S2
+
+## ROC plot S2
 
 ```{r warning=FALSE}
 # Load necessary libraries
@@ -173,10 +408,66 @@ p1 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
     guides(fill=FALSE,color = guide_legend(order = 1), size = guide_legend(order = 2)) + # Change the order of the legends
     labs(x = "False Positive Rate", y = "True Positive Rate", title = "ROC Plot for Scenario 2") +
     scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0., 1)) +
-    theme(legend.title = element_text(size = 14)) +
+    theme(
+      text = element_text(family = "Times New Roman"),
+      legend.title = element_text(size = 14)
+    ) +
     geom_segment(aes(x = 0, y = 0, xend = 1, yend = 1),color="#252525",linetype="dashed") 
 
+ggsave(filename = "ROC S2.png", plot = p1, width = 9, height = 9)
 p1 + guides(fill=FALSE,color=FALSE)
+```
+
+## ROC plot zoomed S1
+
+```{r warning=FALSE}
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(stringr)
+library(ggsci)
+library("ggrepel")  
+
+data <- read.csv("data/ROC_S1.csv")
+data <- data %>% filter(tau!='NA')
+
+# Extract mean and standard deviation values
+data$FPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$FPR))
+data$FPR_std <- str_extract(data$FPR, "\\((.*?)\\)")
+data$FPR_std <- as.numeric(gsub("\\(|\\)", "", data$FPR_std))
+data$TPR_mean <- as.numeric(gsub("\\(.*\\)", "", data$TPR))
+data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
+data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
+data$tau <- as.numeric(data$tau)
+
+p2 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+    geom_line() +
+    geom_point(aes(size=tau)) +
+   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau), range = c(1, 6)) +
+    geom_text_repel(aes(label = tau), vjust = 1, family = "Times New Roman", size = 5) +
+    guides(fill=FALSE) +
+    labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 1") +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0.3, 1)) +
+    scale_x_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0, 0.3)) +
+    theme(
+      text = element_text(family = "Times New Roman", size = 18),
+      plot.title = element_text(size = 20, face = "bold"),
+      axis.title = element_text(size = 17),
+      axis.text = element_text(size = 16),
+      legend.title = element_text(size = 14),
+      legend.text = element_text(size = 12)
+    ) +
+    scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
+    scale_fill_npg()
+
+ggsave(filename = "ROC zoomed S1.png", plot = p2, width = 8, height = 6)
+p2
+```
+
+## ROC plot zoomed S2
+
+```{r warning=FALSE}
 # Load necessary libraries
 library(ggplot2)
 library(dplyr)
@@ -197,22 +488,26 @@ data$TPR_std <- str_extract(data$TPR, "\\((.*?)\\)")
 data$TPR_std <- as.numeric(gsub("\\(|\\)", "", data$TPR_std))
 data$tau <- as.numeric(data$tau)
 
-
-p2 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
+p3 <- ggplot(data, aes(x = FPR_mean, y = TPR_mean, color = model)) +
     geom_line() +
     geom_point(aes(size=tau)) +
-   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau)) +
-    geom_text_repel(aes(label = tau), vjust = 1) +
-    # geom_ribbon(aes(xmin = FPR_mean - FPR_std, xmax = FPR_mean + FPR_std,fill=model), alpha = 0.2,linetype = "blank") +
-    guides(fill=FALSE) + # Change the order of the legends
+   scale_size_continuous(breaks=unique(data$tau), labels=unique(data$tau),name = expression(tau), range = c(1, 6)) +
+    geom_text_repel(aes(label = tau), vjust = 1, family = "Times New Roman", size = 5) +
+    guides(fill=FALSE) +
     labs(x = "False Positive Rate", y = "True Positive Rate", title = "Zoomed ROC Plot for Scenario 2") +
-    scale_y_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0.3, 1)) +
+    scale_y_continuous(breaks = seq(0, 1, by = 0.1),limits = c(0.3, 1)) +
     scale_x_continuous(breaks = seq(0, 1, by = 0.05),limits = c(0, 0.3)) +
-    theme(legend.title = element_text(size = 14)) +
+    theme(
+      text = element_text(family = "Times New Roman", size = 18),
+      plot.title = element_text(size = 20, face = "bold"),
+      axis.title = element_text(size = 17),
+      axis.text = element_text(size = 16),
+      legend.title = element_text(size = 14),
+      legend.text = element_text(size = 12)
+    ) +
     scale_color_npg(breaks=c("Eric","CoCo","Coda","Vani"),name="Model",lab=c("Eric","CoCo","Coda","Vani")) +
     scale_fill_npg()
 
-
-# p1 + guides(fill=FALSE,color=FALSE)
-p2
+ggsave(filename = "ROC zoomed S2.png", plot = p3, width = 9, height = 6.75)
+p3
 ```
